@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery - Call Arrays in li</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+    <br><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+        <h3>Update Array and List by User Input / jQuery / Advanced</h3>
+
+        
+        <h3>Favorite Fruits</h3>
+        <ol id="fruitList"></ol>
+
+        <div class="form-inline">
+          <div class="form-group">
+            <Input id="newFruit" type="text" class="form-control" placeholder="Fruit Name">
+            <Input id="newColor" type="text" class="form-control" placeholder="Color">
+            <Input id="newWeight" type="text" class="form-control" placeholder="Weight">
+            <button class="btn btn-defult" id="addNew">Add New</button>
+          </Input>
+        </div>
+        </div>
+
+        <br><br>
+
+<textarea class="form-control" rows="40">
+<h3>Favorite Fruits</h3>
+<ol id="fruitList"></ol>
+
+<div class="form-inline">
+<div class="form-group">
+    <Input id="newFruit" type="text" class="form-control" placeholder="Fruit Name">
+    <Input id="newColor" type="text" class="form-control" placeholder="Color">
+    <Input id="newWeight" type="text" class="form-control" placeholder="Weight">
+    <button class="btn btn-defult" id="addNew">Add New</button>
+  </Input>
+</div>
+</div>
+
+<script>
+    var fruits = [
+    {name:"Apple", color:"Green", weight:"10"}, 
+    {name:"Orange", color:"Orange", weight:"13"}, 
+    {name:"Banana", color:"Yellow", weight:"20"}
+    ];
+
+    function redrawList(){
+      var list = $("#fruitList");
+      // empty list
+      list.html("");
+
+      $.each(fruits,function(indexAnyText,value){
+        $("<li>").text(value.name +", "+ value.color +", "+ value.weight).appendTo(list);
+      });
+    }
+
+    redrawList();
+
+    $("#addNew").click(function(){
+      var newFruitText = $("#newFruit").val();
+      var newColorText = $("#newColor").val();
+      var newWeightText = $("#newWeight").val();
+      // push into arrays
+      
+      // if input not empty
+      if(newFruitText != "") {
+        
+        var fruitObject = {name:newFruitText, color:newColorText, weight:parseInt(newWeightText)};
+        fruits.push(fruitObject);
+
+        redrawList();
+        // remove input text
+        $("#newFruit").val("");
+        $("#newColor").val("");
+        $("#newWeight").val("");
+      }
+
+    });
+</script>
+</textarea>
+
+      </div>
+    </div>
+		
+    <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <script>
+    var fruits = [
+    {name:"Apple", color:"Green", weight:"10"}, 
+    {name:"Orange", color:"Orange", weight:"13"}, 
+    {name:"Banana", color:"Yellow", weight:"20"}
+    ];
+
+    function redrawList(){
+      var list = $("#fruitList");
+      // empty list
+      list.html("");
+
+      $.each(fruits,function(indexAnyText,value){
+        $("<li>").text(value.name +", "+ value.color +", "+ value.weight).appendTo(list);
+      });
+    }
+
+    redrawList();
+
+    $("#addNew").click(function(){
+      var newFruitText = $("#newFruit").val();
+      var newColorText = $("#newColor").val();
+      var newWeightText = $("#newWeight").val();
+      // push into arrays
+      
+      // if input not empty
+      if(newFruitText != "") {
+        
+        var fruitObject = {name:newFruitText, color:newColorText, weight:parseInt(newWeightText)};
+        fruits.push(fruitObject);
+
+        redrawList();
+        // remove input text
+        $("#newFruit").val("");
+        $("#newColor").val("");
+        $("#newWeight").val("");
+      }
+
+    });
+  </script>
+  
+</body>
+</html>
