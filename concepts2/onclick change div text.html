@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3>Onlick Button CLick Change Div Text</h3>
+
+        <div class="form-inline">
+          <input class="form-control typed-txt">
+          <button class="btn btn-default">Change Text</button>
+        </div>
+
+        <br>
+        <div class="target-div" style="background-color: #eee; padding: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eos!</div>
+
+        <br>
+        <br>
+
+        <textarea class="form-control" rows="18">
+          <div class="form-inline">
+            <input class="form-control typed-txt">
+            <button class="btn btn-default">Change Text</button>
+          </div>
+
+          <br>
+          <div class="target-div" style="background-color: #eee; padding: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eos!</div>
+          <script>
+            $(document).ready(function () {
+              $(".btn").click(function () {
+                var gettxt = $(".typed-txt").val();
+                $(".target-div").text(gettxt);
+              });
+            });
+          </script>
+        </textarea>
+
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".btn").click(function () {
+        var gettxt = $(".typed-txt").val();
+        $(".target-div").text(gettxt);
+      });
+    });
+  </script>
+
+</body>
+
+</html>
