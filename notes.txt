@@ -10,3 +10,6 @@ $(document).ready(function () {
 
 >> Boolean is tur or false
 
+
+
+https://www.youtube.com/watch?v=AdGdSUAwHnQ&list=PLpg00ti3ApRwV91rotajloOMAKxpEB132
