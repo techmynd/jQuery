@@ -4,11 +4,20 @@ $(document).ready(function () {
 
 .ready is an event
 
+
+inline CSS
+$( "a" ).css( "color", "red" );
+
+
+
+
 -----------------------
 
 >> always give a value to a var or use "" - never just declare it - assign it some value or empty value.
 
 >> Boolean is tur or false
+
+
 
 
 
