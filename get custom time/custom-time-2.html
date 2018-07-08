@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3>Custom Hours / Minutes > 1 to 12 and 1 to 60</h3>
+        <br>
+        <br>
+
+        <textarea class="form-control" rows="10">
+<script>
+  //Get Hours
+  var i = "", goHrs = "", getHrs = "";
+  for (i = 1; i <= 12; i++) {
+    getHrs += "<option value='"+ i +"'>" + i + "</option>";
+    // 1 2 3 4 ... 12
+    }
+  $('.hours').html(getHrs);
+
+  //Get Minutes
+  var x = "", goMins = "", getMins = "";
+  for (x = 1; x <= 60; x++) {
+    getMins += "<option value='"+ x +"'>" + x + "</option>";
+    // 1 2 3 4 ... 60
+    }
+  $('.minutes').html(getMins);
+</script>
+        </textarea>
+
+        <br>
+
+        <div class="row">
+          
+          <div class="col-md-6">
+            <select class="form-control hours"></select>
+          </div>
+
+          <div class="col-md-6">
+            <select class="form-control minutes"></select>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+
+  <br>
+  <br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <script>
+
+  //Get Hours
+  var i = "", goHrs = "", getHrs = "";
+  for (i = 1; i <= 12; i++) {
+    getHrs += "<option value='"+ i +"'>" + i + "</option>";
+    // 1 2 3 4 ... 12
+    }
+  $('.hours').html(getHrs);
+
+  //Get Minutes
+  var x = "", goMins = "", getMins = "";
+  for (x = 1; x <= 60; x++) {
+    getMins += "<option value='"+ x +"'>" + x + "</option>";
+    // 1 2 3 4 ... 60
+    }
+  $('.minutes').html(getMins);
+ 
+  </script>
+
+</body>
+
+</html>

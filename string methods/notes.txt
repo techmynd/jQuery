@@ -1,0 +1,118 @@
+Replacing String Content
+-------------------------
+replace()
+
+str = "Please visit Microsoft!";
+var n = str.replace("Microsoft", "W3Schools");
+>>> Please visit Microsoft!
+
+the replace() function replaces only the first match
+replace() function is case sensitive
+
+To replace case insensitive, use a regular expression with an /i flag (insensitive):
+str = "Please visit Microsoft!";
+var n = str.replace(/MICROSOFT/i, "W3Schools");
+
+To replace all matches, use a regular expression with a /g flag (global match):
+str = "Please visit Microsoft and Microsoft!";
+var n = str.replace(/Microsoft/g, "W3Schools");
+
+
+Converting to Upper and Lower Case
+----------------------------------
+toUpperCase()
+toLowerCase()
+
+var text1 = "Hello World!";       // String
+var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
+
+
+The concat() Method
+-------------------
+concat() joins two or more strings:
+var text1 = "Hello";
+var text2 = "World";
+var text3 = text1.concat(" ", text2);
+>>>>> Hello World!
+
+var text = "Hello" + " " + "World!";
+or
+var text = "Hello".concat(" ", "World!");
+
+
+TRIM
+=====
+String.trim()
+var str = "       Hello World!        ";
+alert(str.trim());
+
+The trim() method is not supported in Internet Explorer 8 and earlier versions.
+
+If you need to support IE 8, you can use String.replace with a regular expression instead:
+var str = "       Hello World!        ";
+alert(str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, ''));
+
+
+trim function
+--------------
+if (!String.prototype.trim) {
+    String.prototype.trim = function () {
+    return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+};
+var str = "       Hello World!        ";
+alert(str.trim());
+
+
+
+
+https://www.w3schools.com/js/js_string_methods.asp
+
+
+
+
+
+
+
+
+
+
+
+
+
+String Length
+---------------
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+
+Finding a String in a String
+-----------------------------
+indexOf()
+
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+document.getElementById("demo").innerHTML = pos;
+>> 7
+
+starting position 15
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate",15);
+>>> 21
+
+Extracting String Parts
+-----------------------
+slice(start, end)
+substring(start, end)
+substr(start, length)
+
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7, 13);
+>>> Banana
+
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(7, 13);
+>>> Banana
+
+var str = "Apple, Banana, Kiwi";
+var res = str.substr(7, 6);
+>>> Banana
+
