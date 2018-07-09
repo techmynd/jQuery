@@ -1,0 +1,21 @@
+
+
+
+
+var elements = $(' :contains(some text) ');
+elements.css('background','#eee');
+
+
+var elements = $(' div:contains(some text) ');
+elements.css('background','#eee');
+
+
+
+
+if ($('.box:contains("someText")').length > 0) {
+    $('.box').addClass("thisClass");
+}
+
+
+$('p:contains(some text)').css('background','yellow');
+

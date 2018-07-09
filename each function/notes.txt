@@ -1,0 +1,20 @@
+<ul>
+<li>milk</li>
+<li>coffee</li>
+<li>tea</li>
+</ul>
+
+
+$('ul li').each(function(){
+$(this).addClass('list-item');
+});
+
+
+$('ul li').each(function(){
+    $(this).css({ 'background-color':'#ccc', 'margin-bottom': '2px' });
+});
+
+
+
+
+

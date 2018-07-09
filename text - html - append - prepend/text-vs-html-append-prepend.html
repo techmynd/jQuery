@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3>.text, .html, Append, Prepend</h3>
+        <p>.text, .html, append, prepend and copy contents of some div and paste inside another</p>
+        <br>
+        <br>
+
+        <textarea class="form-control" rows="10">
+<script>
+$(document).ready(function(){ 
+//.text
+  $('.textHere').text("This is simple text.");
+  //.html
+  $('.htmlHere').html("<p>This is <strong>HTML</strong> inserted in <span style='color:#ff0000;'>div</span></p>");
+  //$('.destination').text( $('.somesource').html() )
+  $('.pasteinside').text( $('.textHere').html() );
+  //append
+  $('.container').append('<div>Random append text in .container at the end</div>');
+  //prepend
+  $('.container').prepend('<div>Random prepend text in .container at the start</div>');
+});
+</script>
+        </textarea>
+
+        <br>
+
+        <div class="row">
+          
+          <div class="col-md-6" style="background-color:#eee;">
+            <div class="textHere"></div>
+          </div>
+
+          <div class="col-md-6" style="background-color:#ccc;">
+            <div class="htmlHere"></div>
+          </div>
+
+          <div class="col-md-12" style="background-color:#f4f4f4;">
+          <br><br>
+
+          <strong>& this is just a copy of .txtHere - we take that text and paste here.</strong>
+
+          <div class="pasteinside" style="padding:10px;"></div>
+
+          <br><br>
+            
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+
+  <br>
+  <br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <script>
+  $(document).ready(function(){ 
+    //.text
+    $('.textHere').text("This is simple text.");
+    //.html
+    $('.htmlHere').html("<p>This is <strong>HTML</strong> inserted in <span style='color:#ff0000;'>div</span></p>");
+    //$('.destination').text( $('.somesource').html() )
+    $('.pasteinside').text( $('.textHere').html() );
+    //append
+    $('.container').append('<div>Random append text in .container at the end</div>');
+    //prepend
+    $('.container').prepend('<div>Random prepend text in .container at the start</div>');
+  });
+   </script>
+
+</body>
+
+</html>

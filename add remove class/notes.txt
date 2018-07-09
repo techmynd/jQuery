@@ -1,0 +1,14 @@
+
+
+$('p').addClass('newclass');
+
+$('p, h1, h2').addClass('newclass');
+
+$('p, h1, h2').addClass('newclass another-class');
+
+$('p').removeClass('newclass');
+
+$('p').addClass('newclass'), .removeClass('newclass2');
+
+$('p').toggleClass('newclass');
+

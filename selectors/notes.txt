@@ -1,0 +1,3 @@
+https://api.jquery.com/category/selectors/
+https://www.w3schools.com/jquery/jquery_ref_selectors.asp
+

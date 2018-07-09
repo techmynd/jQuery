@@ -1,0 +1,32 @@
+
+
+$('div').width();
+
+$('div').height();
+
+alert ( $('div').height() );
+
+alert ( $('div').width() + " " + $('div').height() );
+
+console.log ( $('div').height() );
+
+
+
+get window width and height
+-----------------------------
+
+alert ( $(window).width() );
+alert ( $(window).height() );
+
+
+set width
+---------
+
+
+$('div').width(300);
+$('div').height(500);
+
+
+without px
+
+

@@ -1,0 +1,31 @@
+div
+-p < class=first
+-p
+-span
+
+
+All Siblings
+============
+Siblings are not children 
+in above notation div has 2 p siblings and one span sibling
+There is no single sibling
+
+
+$('div').siblings();
+
+// will retuen multiple elements but not single element 
+// coz single element has no sibling 
+// span above has no other span sibling
+// 2 p above are 2 siblings of div
+
+$('div').siblings().addClass('newclass');
+
+$('div').siblings('p');
+// only select p related siblings
+
+$('div').siblings('p, span');
+
+$('div').siblings().find('p.first');
+// find p sibling that has .first class
+
+

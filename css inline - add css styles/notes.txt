@@ -1,0 +1,41 @@
+
+
+$('div').css('background-color','red');
+
+$('div').css({ 'background-color':'red', 'color':'white' });
+
+
+$('div').animate({ width:'500px', height:'400px', paddingBottom:'40px', backgroundColor: 'black' });
+
+or
+
+$('div').animate({ 'width':'500px', 'height':'400px', 'paddingBottom':'40px', 'backgroundColor': 'black' });
+
+>>> note the camel case in animate css
+
+
+
+
+$('div').animate({ 
+
+width:'500px', 
+height:'400px', 
+paddingBottom:'40px'
+
+
+});
+
+
+
+get css value
+-------------
+
+$('div').css('background-color');
+$('div').css('padding');
+
+var divPadding = $('div').css('padding');
+or
+alert ( $('div').css('padding') );
+
+
+

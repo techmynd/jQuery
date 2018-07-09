@@ -1,0 +1,6 @@
+$( "input" ).prop( "disabled", false );
+$( "input" ).prop( "checked", true );
+$( "input" ).val( "someValue" );
+
+http://api.jquery.com/prop/
+

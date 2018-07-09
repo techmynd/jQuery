@@ -1,0 +1,41 @@
+
+HAS
+===
+
+if p has <b></b> in it
+
+$('p').has('b').addClass('classname');
+
+
+
+if paragraph and h1 have <span></span>
+
+$('p,h1').has('span').addClass('classname');
+
+$('.inbox-wrap').has('.deleted').addClass('red');
+
+if( $('p').has('.first') ){ ... }
+
+
+
+
+IS
+==
+
+match or not > returns true or false
+
+if p has class .first
+if( $('p').is('.first') ){ ... }
+
+
+
+if( $('.checkbox').is(':checked') ){ ... }
+
+if ($('input.checkbox_check').is(':checked')) { ... }
+
+
+
+
+
+
+

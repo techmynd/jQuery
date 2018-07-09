@@ -1,0 +1,93 @@
+div
+-p 
+-p 
+-p < class=third
+-p 
+-div
+-a
+-span
+
+Go through all and find filter and select that element
+
+//first element
+$('p').first().addClass('');
+
+//first element
+$('p').last().addClass('');
+
+Class Based Filter
+==================
+
+//class based select / filter
+$('p').filter('.third').addClass('');
+
+
+NOT Filter
+==========
+
+//class based select / filter
+$('p').not('.third').addClass('');
+
+$( "li" ).not( ":even" ).css( "background-color", "red" );
+
+$( "li" ).not( document.getElementById( "notli" ) ).css( "background-color", "red" );
+
+
+$( "p" ).not( $( "div p.selected" ) );
+
+
+$( "p" ).not( "#selected" );
+
+$( "p" ).not( $( "#selected" )[ 0 ] );
+
+
+EVEN
+=====
+
+$('p').filter(":even").css( "background-color", "red" );
+
+
+
+
+
+
+
+
+
+jquery filter search
+====================
+https://www.w3schools.com/jquery/jquery_filters.asp
+
+
+
+
+
+
+
+
+
+
+
+We can select the list items, then filter them based on their contents:
+
+$( "li" )
+  .filter(function( index ) {
+    return $( "strong", this ).length === 1;
+  }).css( "background-color", "red" );
+
+
+
+
+$("div").css( "background", "#c8ebcc" )
+.filter( ".middle" ).css( "border-color", "red" );
+
+
+
+$( "div" )
+  .css( "background", "#b4b0da" )
+  .filter(function( index ) {
+    return index === 1 || $( this ).attr( "id" ) === "fourth";
+  })
+    .css( "border", "3px double red" );
+
+

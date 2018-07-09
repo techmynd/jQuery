@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3>Handling Attributes</h3>
+        
+        <br>
+        <br>
+
+        <textarea class="form-control" rows="10">
+<script>
+$(document).ready(function(){ 
+     $('.at1').attr('href','http://www.javedkhalil.com');
+     $('.at1').attr('target','_blank');
+     // cant apply class coz we are targetting its class
+     // $('.at1').attr('class','myclass');
+     $('.at1').attr('id','myid');
+     $('.at1').attr('custom-attribute','custom value');
+     $('.at1').attr('title','custom title');
+     $('.at1').attr('alt','alt value');
+
+     // multiple attributes
+     $('.at1').attr({ 'additional-attribute':'additional value 1' , 'additional-attribute-2':'additional value 2' });   
+
+     // $('input').attr('type','password');
+
+     // get value of attribute
+     var linkvalue = $('.at1').attr('href');
+     $('.thelink').text(linkvalue);
+     //or
+     // $('.thelink').text( $('.at1').attr('href') );
+     // $('.thelink').text( $('.at1').attr('title') );
+     // $('.thelink').text( $('.at1').attr('class') );
+
+     // remove attribute
+     // $('.at1').removeAttr('href');    
+});
+</script>
+        </textarea>
+
+        <br>
+
+        <div class="row">
+          
+          <div class="col-md-12">
+            <a class="at1">Add href, link, target and more attributes via jQuery</a>
+            
+            <h6>Getting href value from attribute</h6>
+            <div class="thelink"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+
+  <br>
+  <br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <script>
+  $(document).ready(function(){ 
+   
+     $('.at1').attr('href','http://www.javedkhalil.com');
+     $('.at1').attr('target','_blank');
+     // cant apply class coz we are targetting its class
+     // $('.at1').attr('class','myclass');
+     $('.at1').attr('id','myid');
+     $('.at1').attr('custom-attribute','custom value');
+     $('.at1').attr('title','custom title');
+     $('.at1').attr('alt','alt value');
+
+     // multiple attributes
+     $('.at1').attr({ 'additional-attribute':'additional value 1' , 'additional-attribute-2':'additional value 2' });   
+
+     // $('input').attr('type','password');
+
+     // get value of attribute
+     var linkvalue = $('.at1').attr('href');
+     $('.thelink').text(linkvalue);
+     //or
+     // $('.thelink').text( $('.at1').attr('href') );
+     // $('.thelink').text( $('.at1').attr('title') );
+     // $('.thelink').text( $('.at1').attr('class') );
+
+     // remove attribute
+     // $('.at1').removeAttr('href');
+    
+  });
+   </script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+
+
+
+$('div').clone();
+
+$('div').clone().appendTo('body');
+
+
+or
+
+var copyelement = $('div').clone();
+$(copyelement)insertAfter('.box');
+
+
+
+
+
+
+
+
+

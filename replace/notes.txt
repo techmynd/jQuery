@@ -1,0 +1,24 @@
+
+replaceWith
+replaceAll
+
+
+// replace all text in p with hello world
+$('p').replaceWith("hello world");
+
+$('p').replaceWith("<b>hello world</b>");
+
+
+$('p.box').replaceWith("new text");
+
+
+
+$( "div.third" ).replaceWith( $( ".first" ) );
+
+
+$('<p>new text</p>').replaceAll('h1');
+
+$('<p>new text</p>').replaceAll('h1,span');
+
+
+

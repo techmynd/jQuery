@@ -1,0 +1,9 @@
+
+
+$('div').hasClass('box');
+
+if($('div').hasClass('box')){
+ .. do something
+}
+
+

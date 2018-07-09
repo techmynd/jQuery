@@ -1,0 +1,44 @@
+div
+-p < class=first
+-p < class-second
+-div
+-a
+-span
+
+====
+NEXT
+====
+
+Select next element / from p sibling that has class second 
+
+$('.second').next().addClass('classname');
+$('div').siblings('.second').next().addClass('classname');
+
+$('a').next().addClass('classname');
+// this will select all span that are next to a
+
+$('p').nextAll().addClass('classname');
+// it will select div, a and span next to p
+
+$('p').nextAll('a').addClass('classname');
+
+
+
+find next but stop at specific
+=============================
+$('p').nextUntil('a').addClass('classname');
+
+
+========
+PREVIOUS
+========
+
+
+$('div').prev().addClass('');
+
+$('div').prevAll().addClass('');
+
+$('span').prevUntil(.first).addClass('');
+
+
+

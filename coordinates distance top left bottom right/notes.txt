@@ -1,0 +1,34 @@
+
+
+
+
+$(this).mousemove(function(e){
+
+	$('#tip-wrap').text(thetext).show();
+	$('#tip-wrap').css({ 'top':e.clientY+20, 'left':e.clientX+10 });
+
+}
+
+
+
+
+
+//distance from left
+
+$('p').offset().left;
+
+$('p').offset().right;
+$('p').offset().top;
+$('p').offset().bottom;
+
+var x = $('p').offset().left;
+alert (x);
+var y = $('p').offset().top;
+
+change distance of an element
+-----------------------------
+
+$('p').offset({ top:'100' });
+// this will shift the p 100px from top
+
+$('p').offset({ top:'100', left:'50' });

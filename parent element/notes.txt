@@ -1,0 +1,57 @@
+
+body
+-div
+--ul
+---li
+----span
+
+
+single parent
+==============
+
+$('span').parent();
+
+var spanParent = $('span').parent();
+spanParent.css({ border:'2px solid red' });
+
+//or
+
+$('span').parent().css({ border:'2px solid red' });
+
+$('span').parent().addClass('newclassname');
+
+
+All Parents
+============
+
+$('span').parents();
+
+$('span').parents().addClass('newclassname');
+
+$('.box').parent('.wrapper').addClass('wrapperclass');
+
+
+Specific Parent
+================
+
+$('span').parent('div');
+$('span').parent('.wrapper');
+
+$('span').parent('.wrapper').addClass('wrapperclass');
+
+
+ParentIntil
+-----------
+return all parent elements before div
+return all parent elements until div
+return all parent elements until div arrives but leave div alone and select parent inside of it
+
+$('span').parentsUntil("div");
+$('span').parentsUntil("div").addClass('newclass');
+
+
+
+
+
+
+

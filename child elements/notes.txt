@@ -1,0 +1,58 @@
+div
+-p < class=first
+-p
+-span
+
+p and span and children of div
+
+
+find() method is only for children() and not parents()
+
+
+All Children
+============
+returns direct children only - not grand children
+
+
+$('div').children();
+$('div').children().addClass('newclass');
+
+$('div').children('p');
+// all first p inside div - but not all p that are inside p
+
+to select all the children and grand children we use find()
+
+$('div').children().find('p');
+// all children and grand children select
+
+to select every children (everything p, div, span) use *
+
+$('div').find('*').addClass('applytoall');
+
+
+single child
+==============
+
+$('div').child('span');
+
+var thechild = $('div').child('span');
+thechild.css({ border:'2px solid red' });
+
+//or
+
+$('div').child('span').css({ border:'2px solid red' });
+
+$('div').child('span').addClass('newclassname');
+
+
+Specific child
+================
+
+$('div').child('p.first');
+$('div').child('.wrapper');
+
+$('div').child('.wrapper').addClass('wrapperclass');
+
+
+
+
