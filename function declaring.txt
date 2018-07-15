@@ -1,0 +1,33 @@
+$(document).ready(function(){
+  
+  // call function
+  centerDiv();
+
+  function centerDiv() 
+  {
+   // ur code
+  }
+
+});
+
+
+
+single block of code for document ready and window resize
+=========================================================
+
+// call function
+  
+  centerDiv();
+
+  function centerDiv() 
+  {
+    
+    // all the code
+
+  }
+
+  $(window).resize(function(){
+    centerDiv();
+  });
+
+// create function, put all code in it and call it. Then call window resize and call ur function inside it.

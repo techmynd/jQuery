@@ -1,0 +1,11 @@
+var mytxt = $('.form-control').val();
+
+jQuery.trim(mytxt);
+or
+jQuery.trim('.form-control');
+
+if(jQuery.trim(mytxt); != '') {
+ // ... if trim result is not empty then proceed
+}
+
+

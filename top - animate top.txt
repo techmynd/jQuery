@@ -1,0 +1,9 @@
+$('.top').click(function(event){
+    event.preventDefault();
+    $('body,html').animate({ scrollTop:0 }, 800, 'easeOutExpo');
+  });
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+

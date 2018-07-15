@@ -1,0 +1,6 @@
+$('.something').mousemove(function(e){
+    // ... e not necessary only in case of preventdefault or binding .something position
+}).mouseout(function(){
+    // ///
+});
+

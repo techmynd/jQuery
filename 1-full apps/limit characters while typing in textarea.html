@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3>Limit Characters and show remaining limit as characters counter</h3>
+        <br>
+        <br>
+
+        <textarea class="form-control" rows="10">
+<script>
+$(document).ready(function(){
+
+  // set maxlength
+  $('.editor').attr('maxlength','50');
+  // store max length
+  var max_length = $('.editor').attr('maxlength');
+  // get the length
+  $('.counter').text(max_length + " characters remaining ...");
+
+  // on keyup
+  $('.editor').keyup(function(){
+    // get length from eitor characters
+    var length = $(this).val().length;
+    // calculate remaining by sutracting it from original
+    var remaining = max_length - length;
+    // update counter
+    $('.counter').text(remaining + " characters remaining ...");  
+   });
+  
+});
+</script>
+        </textarea>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+      <textarea class="form-control editor"></textarea>
+      <div class="counter"></div>
+
+      <br><br>
+
+      </div>
+    </div>
+  </div>  
+
+  <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <script>
+$(document).ready(function(){
+  
+  // set maxlength
+  $('.editor').attr('maxlength','50');
+  // store max length
+  var max_length = $('.editor').attr('maxlength');
+  // get the length
+  $('.counter').text(max_length + " characters remaining ...");
+
+  // on keyup
+  $('.editor').keyup(function(){
+    // get length from eitor characters
+    var length = $(this).val().length;
+    // calculate remaining by sutracting it from original
+    var remaining = max_length - length;
+    // update counter
+    $('.counter').text(remaining + " characters remaining ...");
+
+  });
+
+});
+  </script>
+
+</body>
+
+</html>

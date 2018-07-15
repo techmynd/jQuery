@@ -1,0 +1,26 @@
+var windowHeight = $(window).height();
+var windowWidth = $(window).width();
+
+var divHeight = $('.pop').height();
+var divWidth = $('.pop').width();
+
+
+   // get window height
+    var windowHeight = $(window).height();
+    // get div height
+    var divHeight = $('.pop').height();
+    // middle div
+
+    // apply top position to div and deduct half of window height and half of div height - if div has padding
+    $('.pop').css({ 'top': windowHeight/2 - divHeight/2 });
+    $('.pop').css({ 'top': windowHeight/2 - divHeight/2 -20 });
+    // -20 is because div has 40px padding so we deduct half from padding also 
+
+    // get window width
+    var windowWidth = $(window).width();
+    // get div width
+    var divWidth = $('.pop').width();
+    // center div
+    // apply left position to div and deduct half of window width and half of div width - if div has padding
+    $('.pop').css({ 'left': windowWidth/2 - divWidth/2 });
+    $('.pop').css({ 'left': windowWidth/2 - divWidth/2 -20 });

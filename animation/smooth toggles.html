@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+
+        <h3>Smooth Toggles</h3>
+        <br>
+        <br>
+
+        <textarea class="form-control" rows="10">
+<script>
+$(document).ready(function(){
+
+$('.down').click(function(event){
+  event.preventDefault();
+  $('.slide1').slideDown(800, 'easeInOutExpo');
+});
+
+$('.up').click(function(event){
+  event.preventDefault();
+  $('.slide1').slideUp(800, 'easeOutCirc');
+});
+
+});
+</script>
+        </textarea>
+      </div>
+
+      <div class="col-md-6">
+
+        <h3>Smooth Toggles</h3>
+        <br>
+        <br>
+
+        <textarea class="form-control" rows="10">
+<script>
+$(document).ready(function(){
+
+$('.toggle').click(function(event){
+  event.preventDefault();
+  $('.slide2').slideToggle(800, 'easeInOutExpo');
+});
+
+});
+</script>
+        </textarea>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+
+       <p>
+         <a href="#" class="down">Slide Down</a>
+       </p>
+       <div class="slide1" style="background-color:#eee;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem veniam dolor consequuntur ipsam fugit aut sequi nobis accusamus asperiores aspernatur neque nam sint magnam nihil harum, quasi earum a cupiditate, quia. Laborum dolor ullam corporis numquam pariatur repudiandae, ea sed amet nemo. Reprehenderit quis, ratione veritatis ut sequi ducimus nulla, laboriosam quos minus temporibus explicabo aliquid, porro, pariatur maxime eligendi. Id cum facere aliquam.</div>
+       <p>
+         <a href="#" class="up">Slide Up</a>
+       </p>
+
+      </div>
+      <div class="col-md-6">
+
+       <p>
+         <a href="#" class="toggle">Toggle</a>
+       </p>
+       <div class="slide2" style="background-color:#eee;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem veniam dolor consequuntur ipsam fugit aut sequi nobis accusamus asperiores aspernatur neque nam sint magnam nihil harum, quasi earum a cupiditate, quia. Laborum dolor ullam corporis numquam pariatur repudiandae, ea sed amet nemo. Reprehenderit quis, ratione veritatis ut sequi ducimus nulla, laboriosam quos minus temporibus explicabo aliquid, porro, pariatur maxime eligendi. Id cum facere aliquam.</div>
+      </div>
+    </div>
+  </div>  
+
+  <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+
+  <script>
+$(document).ready(function(){
+  
+  $('.down').click(function(event){
+    event.preventDefault();
+    $('.slide1').slideDown(800, 'easeInOutExpo');
+  });
+
+  $('.up').click(function(event){
+    event.preventDefault();
+    $('.slide1').slideUp(800, 'easeOutCirc');
+  });
+
+  $('.toggle').click(function(event){
+    event.preventDefault();
+    $('.slide2').slideToggle(800, 'easeInOutExpo');
+  });
+
+});
+  </script>
+
+</body>
+
+</html>

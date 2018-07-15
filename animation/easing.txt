@@ -1,0 +1,46 @@
+http://gsgd.co.uk/sandbox/jquery/easing/
+
+https://easings.net
+
+easeOutCirc
+===========
+
+jQuery
+div.animate({ top: '-=100px' }, 600, 'easeOutCirc', function () { … })
+
+SCSS
+div {
+  @include transition(all 600ms ceaser($easeOutCirc)); }
+
+CSS
+div {
+  -webkit-transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition:         all 600ms cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+
+
+
+
+
+  $('.down').click(function(event){
+    event.preventDefault();
+    $('.slide1').slideDown(800, 'easeInOutExpo');
+  });
+
+  $('.up').click(function(event){
+    event.preventDefault();
+    $('.slide1').slideUp(800, 'easeOutCirc');
+  });
+
+  $('.toggle').click(function(event){
+    event.preventDefault();
+    $('.slide2').slideToggle(800, 'easeInOutExpo');
+  });
+
+
+
+
+
+
+
+
