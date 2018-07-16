@@ -1,0 +1,25 @@
+// dont use if else inside each
+
+
+
+$('.btn').click(function(){
+    
+    var status = false;
+
+    // go through each field and see if all required fields are entered
+    $('.must').each(function(){
+      if( $(this).val() == "" ) {
+        // if any field is empty return true and get out of each
+        status = true;
+        // dont use if else inside each
+        // conclude something in each, store it and then get the conclusion outside and do if else
+      }
+    });
+
+    if( status==true ) {
+      $('.info').html("<h4 style='color:red;'>Please Fill all the Fields</h4>");
+    } else {
+      $('.info').html("<h4 style='color:green;'>Thanks for filling up form</h4>");
+    }
+
+  });

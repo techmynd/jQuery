@@ -1,0 +1,8 @@
+count = $('img').size();
+
+size was depricated - use length
+
+  var totalImages = $('.slider img').length;
+
+no. of images
+

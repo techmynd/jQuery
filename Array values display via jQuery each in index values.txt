@@ -1,0 +1,17 @@
+var fruits = ['Apple','Bananna', 'Grapes'];
+  // run the function
+  show();
+
+  function show() {
+    jQuery.each(fruits, function(index,fruit){
+      $('ul').append("<li>" + fruit + "</li>");
+    });
+  }
+
+
+arrray push
+============
+var newFruit = $('.new-fruit').val();
+fruits.push(newFruit);
+
+fruits is array

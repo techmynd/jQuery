@@ -1,0 +1,9 @@
+var fruits = ['Apple','Bananna', 'Grapes'];
+  // run the function
+  show();
+
+  function show() {
+    jQuery.each(fruits, function(index,fruit){
+      $('ul').append("<li>" + fruit + "</li>");
+    });
+  }

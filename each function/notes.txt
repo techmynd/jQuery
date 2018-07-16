@@ -1,3 +1,6 @@
+each is a function 
+
+
 <ul>
 <li>milk</li>
 <li>coffee</li>
@@ -16,5 +19,6 @@ $('ul li').each(function(){
 
 
 
+https://www.sitepoint.com/jquery-each-function-examples/
 
-
+https://stackoverflow.com/questions/749084/jquery-map-vs-each

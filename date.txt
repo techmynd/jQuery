@@ -1,0 +1,7 @@
+$.now();
+
+today's date in milli seconds
+remove nilli seconds and convert it into seconds
+
+var seconds = $.now()/1000;
+

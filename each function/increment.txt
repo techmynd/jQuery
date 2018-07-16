@@ -1,0 +1,9 @@
+// count images and loop through images and set z-index from top to lower number while loop through images
+
+  // count total images
+  var totalImages = $('.slider img').length;
+
+  $('.slider img').each(function () { 
+    $(this).css('zIndex',totalImages+1-$(this).attr('id'));
+  });
+

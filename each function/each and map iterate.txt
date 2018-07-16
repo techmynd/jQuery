@@ -1,0 +1,15 @@
+$( "#slider ul li img" ).each(function( index ) {
+  console.log( index + ": " + $(this).src() );
+});
+edit:Your array map also works fine i think your are iterating before document is loaded
+
+$(document).ready(function(){
+  var tn_array = $("#slider ul li img").map(function() {
+
+    return $(this).attr("src");
+  });
+
+  for (var i=0; i<tn_array.length; i++) {
+    alert(tn_array[i]);
+  }
+});

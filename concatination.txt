@@ -1,0 +1,10 @@
+<div></div>
+
+
+$(document).ready(function(){
+    var myvar = "1234";
+   $('div').html("<p>my variable is</p><h2>" + myvar + "</h2> <p>and here is some more text</p>");
+});
+
+
+"some text" + myvar + "some text";

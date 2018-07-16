@@ -1,0 +1,22 @@
+scrollTop()
+returns the position from top
+
+
+position from top of window for p in px
+('p').css('top')
+
+-------------------------------------------
+
+$(document).ready(function(){
+  
+  // get initial top position of div without px
+  var initialTop = parseInt( $('.moving-block').css('top') );
+
+  $(window).scroll(function(){
+
+    var windowTop = $(this).scrollTop();
+    $('.moving-block').css('top',windowTop+initialTop);
+
+  });
+  
+});

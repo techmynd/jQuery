@@ -1,0 +1,56 @@
+$(document).ready(function(){
+
+  calculateIt();
+
+  $('button').click(function(){
+    calculateIt();
+  });
+
+  function calculateIt() {
+
+    // do some math ...	
+    $('.output').html("");
+    $('.output').html("<b> " + daysLeft + "</b> are left from" + getField);
+
+  }
+
+});
+
+
+----------------------------------------------------------
+inside functions - you have to ge the fields value again if you are going to use value from input
+
+
+
+$(document).ready(function(){
+
+  var getField = $('.future-date').val();
+  calculateIt();
+
+  $('button').click(function(){
+    calculateIt();
+  });
+
+  function calculateIt() {
+
+    var getField = $('.future-date').val();
+
+    $('.output').html("");
+
+    console.log(getField);
+
+    var eventTime = Date.parse(getField) / 1000; // 1000 is to remove milli seconds
+    var currentTime = Math.floor($.now()/1000); // 1000 is to remove milli seconds
+    // calculate time remaining in seconds
+    var timeInSecondsLeft = eventTime - currentTime;
+    // convert seconds into days
+    var daysLeft = Math.floor(timeInSecondsLeft/(60*60*24));
+
+    $('.output').html("<b> " + daysLeft + "</b> are left from" + getField);
+
+  }
+
+});
+
+
+---------------------------------------------------------------

@@ -1,0 +1,17 @@
+$(document).ready(function(){
+  var tn_array = $("#slider ul li img").map(function() {
+
+    return $(this).attr("src");
+  });
+
+  for (var i=0; i<tn_array.length; i++) {
+    alert(tn_array[i]);
+  }
+});
+
+
+
+
+
+
+https://stackoverflow.com/questions/749084/jquery-map-vs-each

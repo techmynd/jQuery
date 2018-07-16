@@ -1,0 +1,7 @@
+e.g. remove px from value
+
+
+var divTop = parseInt( $('.scroller').css('top') );
+
+if div was at 20px position from top, divTop will return 20
+

@@ -1,0 +1,5 @@
+$( "div" ).remove( ".hello" );
+
+$( "ul" ).remove( "li" );
+
+$('ul').html("");
