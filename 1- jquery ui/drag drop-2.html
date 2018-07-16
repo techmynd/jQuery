@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+
+<style type="text/css">
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    margin-bottom:10px;
+}
+li {
+    margin:5px;
+    padding:5px;
+    width:150px;
+    border:1px solid #ddd;
+    background:#fff;
+    cursor:pointer;
+}
+.containerr {
+    position:relative;
+    float:left;
+    width:170px;
+    border:1px solid #ff0000;
+    margin-right:10px;
+    min-height:100px;
+}
+#memulinks {
+    clear:both;
+    display:block;
+}
+.addtofavs, .addtoquicklinks {
+    float:left;
+    width:250px;
+}
+.addtofavs ul {
+    background:#fef;
+    border:1px solid #ddd;
+}
+.addtoquicklinks ul {
+    background:#efefef;
+    border:1px solid #ccc;
+}
+.addtofavs ul li, .addtoquicklinks ul li {
+    border-color:#222;
+}
+h4 {
+    margin:20px 0 0 0;
+    font-size:14px;
+}
+h4 span {
+    font-weight:normal;
+    font-size:12px;
+}
+.ui-state-highlight {
+    background:#000;
+    height:1px;
+    padding:0;
+    border:none;
+}    
+</style>    
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h2>Drag Drop</h2>
+        
+        <br>
+        <br>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+    
+<ul id="menulinks">
+    <li>Menu Link 1</li>
+    <li>Menu Link 2</li>
+    <li>Menu Link 3</li>
+    <li>Menu Link 4</li>
+</ul>
+<div class="addtofavs">
+     <h4>Add to Favourites (<span id="atf-count"></span>)</h4>
+
+    <ul class="containerr"></ul>
+</div>
+<div class="addtoquicklinks">
+     <h4>Add to Quicklinks (<span id="atq-count"></span>)</h4>
+
+    <ul class="containerr"></ul>
+</div>
+
+
+  
+      </div>
+    </div>
+  </div>  
+
+  <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <script>
+$(document).ready(function(){
+  
+ $(function () {
+    var x = $(".addtofavs li").length;
+    var y = $(".addtoquicklinks li").length;
+    $("#atf-count").text(x);
+    $("#atq-count").text(y);
+
+    $("#menulinks li").draggable({
+        connectToSortable: '.containerr',
+        helper: 'clone',
+        revertDuration: 0,
+        create: function () {
+            var eq = $(this).index();
+            $(this).attr('data-index', eq);
+        }
+    });
+
+    $(".containerr").sortable({
+        connectWith: '.containerr',
+        placeholder: "ui-state-highlight",
+        receive: function (event, ui) {
+            var uiIndex = ui.item.attr('data-index');
+            var item =  $(this).find('[data-index=' + uiIndex + ']');
+            if (item.length > 1) {
+              item.last().remove();
+            }
+        },
+        revert: true
+    });
+
+    $(".containerr li").draggable({
+        connectToSortable: '.containerr',
+        placeholder: "ui-state-highlight",
+        revert: true
+    });
+
+
+}); 
+  
+});
+  </script>
+
+</body>
+</html>

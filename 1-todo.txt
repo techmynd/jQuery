@@ -1,0 +1,129 @@
+
+2-37
+setInterval
+clearInterval
+
+2-39
+array methods
+pop, push, shift, unshift
+inArray
+isArray
+
+
+.trim()  >> remove space from start or end
+
+2-42 > switch
+
+
+.append
+
+2-44
+for loop - print all elements from array
+
+2-45
+for in loop
+
+
+2-48
+while / do while
+
+
+3-54
+.css selector
+
+3-55
+empty selector
+
+
+
+
+3-56
+not selector
+
+4-3-57
+hidden visible selector
+
+4-58
+has selector
+
+
+.text and .append difference
+
+
+3-64
+attribute selector
+
+
+4-71
+mouse move get x and y
+
+
+4-72
+hover event
+
+4-73
+chaining
+
+
+
+4-81
+get position of scroll
+
+4-82
+get position of scroll left
+
+
+4-83
+4-84
+event handler
+more than one events 
+
+
+5-87
+call back function - call function when something is done.
+
+
+5-91
+chaining and delay
+
+
+
+5-94 slide up down with delay
+
+5-96 > animate
+
+5-99
+5-100
+animate in queue
+
+
+5-107
+show hide with same button
+
+5-108
+images fadeTo > opacity on hover and out
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
