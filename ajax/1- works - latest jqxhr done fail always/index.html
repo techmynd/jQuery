@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3>Ajax Function - Ajax jQuery PHP</h3>
+        <p></p>
+        
+        <br>
+        <br>
+
+        <textarea class="form-control" rows="10">
+<script>
+$(document).ready(function(){
+
+  $('.btn').click(function(){
+    
+    // get text field value
+    var userName = $('.myField').val();
+    var emailAddress = 'myemail@server.com';
+    // store variable containing value (userName) in > passVarOne and send to process.php
+    // ajax request and response in function
+    //data: 'passVarOne='+userName+'&passVarTwo='+emailAddress,
+    //data: 'passVarOne='+userName+'&passVarTwo='+emailAddress+'&phoneNumber=123456',
+    // Notice & // for every other variable next to first, you have to use &variableName
+
+    // error was removed from jquery 3
+
+      var jqxhr = $.ajax({
+            url: 'process.php', 
+            type: 'POST',
+            data: 'passVarOne='+userName+'&passVarTwo='+emailAddress,
+            success:function(responseAnyNameHere) {
+              $('.responseArea').html(responseAnyNameHere);
+            },
+            statusCode:{
+              404:function(){
+                $('.error').html("Page not found!");
+              }
+            }
+          }).done(function() {
+          alert( "success" );
+          }).fail(function() {
+          alert( "error" );
+          }).always(function() {
+          alert( "complete" );
+        });
+       
+        jqxhr.always(function() {
+          alert( "second complete" );
+       });
+
+  });
+  
+});
+</script>
+        </textarea>
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        
+          <input type="text" class="form-control myField"> 
+          <br>
+          <button class="btn btn-default">Submit</button>
+        
+
+        <br><br> 
+        
+        <div class="responseArea"></div>
+        <div class="error"></div>
+        <div class="success"></div>
+
+      </div>
+    </div>
+  </div>  
+
+  <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+
+  <script>
+$(document).ready(function(){
+  
+  $('.btn').click(function(){
+    
+    // get text field value
+    var userName = $('.myField').val();
+    var emailAddress = 'myemail@server.com';
+    // store variable containing value (userName) in > passVarOne and send to process.php
+    // ajax request and response in function
+    //data: 'passVarOne='+userName+'&passVarTwo='+emailAddress,
+    //data: 'passVarOne='+userName+'&passVarTwo='+emailAddress+'&phoneNumber=123456',
+    // Notice & // for every other variable next to first, you have to use &variableName
+
+    // error was removed from jquery 3
+
+      var jqxhr = $.ajax({
+            url: 'process.php', 
+            type: 'POST',
+            data: 'passVarOne='+userName+'&passVarTwo='+emailAddress,
+            success:function(responseAnyNameHere) {
+              $('.responseArea').html(responseAnyNameHere);
+            },
+            statusCode:{
+              404:function(){
+                //$('.error').html("Page not found!");
+                alert( "file not found" );
+              }
+            }
+          }).done(function() {
+          alert( "success" );
+          }).fail(function() {
+          alert( "error" );
+          }).always(function() {
+          alert( "complete" );
+        });
+       
+        jqxhr.always(function() {
+          alert( "second complete" );
+       });
+
+  });
+
+});
+
+  </script>
+
+</body>
+</html>

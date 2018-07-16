@@ -1,0 +1,64 @@
+$ not a function or other conflicts???
+
+
+
+<script type="text/javascript">
+    (function($) {
+        // You pass-in jQuery and then alias it with the $-sign
+        // So your internal code doesn't change
+    })(jQuery);
+</script>
+
+
+or use jQuery instead of $
+
+
+
+Conflict Handling
+=================
+
+
+<script>
+$.noConflict();
+// Code that uses other library's $ can follow here.
+</script>
+
+
+<script>
+$.noConflict();
+jQuery( document ).ready(function( $ ) {
+  // Code that uses jQuery's $ can follow here.
+});
+// Code that uses other library's $ can follow here.
+</script>
+
+
+jQuery.noConflict();
+// Do something with jQuery
+
+// Do something with another library's $()
+
+
+
+
+
+jQuery.noConflict();
+(function( $ ) {
+  $(function() {
+    // More code using $ as alias to jQuery
+  });
+})(jQuery);
+
+
+
+
+var $j = jQuery.noConflict();
+// $j is now an alias to the jQuery function; creating the new alias is optional.
+ 
+$j(document).ready(function() {
+    $j( "div" ).hide();
+});
+
+
+https://www.w3schools.com/jquery/jquery_noconflict.asp
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3>Send Get Ajax jQuery PHP</h3>
+        <p></p>
+        
+        <br>
+        <br>
+
+        <textarea class="form-control" rows="10">
+<script>
+$(document).ready(function(){
+
+  $('.btn').click(function(){
+    
+    // get text field value
+    var username = $('.myField').val();
+    // store variable containing value (username) in > passVarOne and send to process.php
+    // $.get('process.php', { passVarOne:username }, function(response){ ... });
+    // send two values to process.php
+    // ajax request and response in function
+    $.get('process.php', { passVarOne:username, passVarTwo:"email@domain.com" }, 
+      function(responseAnyNameHere){
+      // responseAnyNameHere will contain the response
+        // $('.responseArea').text(responseAnyNameHere);
+        // $('.responseArea').append(responseAnyNameHere);
+        $('.responseArea').html(responseAnyNameHere);
+        // use .html and not the .text because you gonna through html based response from php page so it needs
+        // to go in html format
+      }).on("error", function(){
+        // .error(function() {} was depricated
+        $('.errorArea').append("Error!");
+      }).complete(function(){
+        $('.successArea').html("Status: Complete!");
+      }).success(function(){
+         $('.successArea2').html("Status: Success!");
+      });
+
+  });  
+  
+});
+</script>
+        </textarea>
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        
+          <input type="text" class="form-control myField"> 
+          <br>
+          <button class="btn btn-default">Submit</button>
+        
+
+        <br><br> 
+        
+        <div class="responseArea"></div>
+        <div class="errorArea"></div>
+        <div class="successArea"></div>
+        <div class="successArea2"></div>
+
+      </div>
+    </div>
+  </div>  
+
+  <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+
+  <script>
+$(document).ready(function(){
+  
+  $('.btn').click(function(){
+    
+    // get text field value
+    var username = $('.myField').val();
+    // store variable containing value (username) in > passVarOne and send to process.php
+    // $.get('process.php', { passVarOne:username }, function(response){ ... });
+    // send two values to process.php
+    // ajax request and response in function
+    $.get('process.php', { passVarOne:username, passVarTwo:"email@domain.com" }, 
+      function(responseAnyNameHere){
+      // responseAnyNameHere will contain the response
+        // $('.responseArea').text(responseAnyNameHere);
+        // $('.responseArea').append(responseAnyNameHere);
+        $('.responseArea').html(responseAnyNameHere);
+        // use .html and not the .text because you gonna through html based response from php page so it needs
+        // to go in html format
+      }).on("error", function(){
+        // .error(function() {} was depricated
+        $('.errorArea').append("Error!");
+      }).complete(function(){
+        $('.successArea').html("Status: Complete!");
+      }).success(function(){
+         $('.successArea2').html("Status: Success!");
+      });
+
+  });
+
+});
+  </script>
+
+</body>
+</html>

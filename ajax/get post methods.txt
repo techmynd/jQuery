@@ -1,0 +1,11 @@
+get method is less secure
+Use POST
+
+and .error, .complete wont work - were depricated.
+
+Use fail, done, always methods. 
+
+See folder > 1- works - latest jqxhr done fail always
+
+http://api.jquery.com/jquery.ajax/
+
