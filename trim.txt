@@ -9,3 +9,4 @@ if(jQuery.trim(mytxt); != '') {
 }
 
 
+trim removes spaces from before and after text

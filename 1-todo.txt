@@ -1,13 +1,4 @@
-
-
-
-.trim()  >> remove space from start or end
-
-2-42 > switch
-
-
-.append
-
+2-43
 2-44
 for loop - print all elements from array
 
@@ -24,8 +15,6 @@ while / do while
 
 3-55
 empty selector
-
-
 
 
 3-56
@@ -93,28 +82,4 @@ show hide with same button
 
 5-108
 images fadeTo > opacity on hover and out
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

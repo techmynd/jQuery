@@ -1,0 +1,33 @@
+var marks = 90;
+
+switch(marks)
+
+{
+	case 90:
+	{
+		alert ("A+");
+		break;
+	}
+
+	case 80:
+	{
+		alert ("B+");
+		break;
+	}
+	case 70:
+	{
+		alert ("C+");
+		break;
+	}
+	default:
+	{
+		alert ("Input wrong");
+
+	}
+
+}
+
+
+
+
+case 90: >>> if marks are equal to 90
