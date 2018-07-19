@@ -1,0 +1,33 @@
+array methods
+=============
+pop, push, shift, unshift
+inArray
+isArray
+
+
+pop > removes the last element from array
+push > insert value in the last , end of array
+shift > removes first index value from array
+unshift > adds value at the start of array
+ 
+inArray > search
+jQuery.inArray (45,test);  > find 45 from test > will return index
+if nothing found returns -1
+
+isArray > jQuery.isArray (test); > returns true or false
+
+
+var test = [1,2,3,4,5];
+
+test.toStrinf();
+
+test.unshift(20);
+test.push(56);
+test.shift();
+test.pop();
+
+
+
+
+lectures > 2-39, 2-40
+

@@ -1,3 +1,25 @@
+jQuery beginner to pro > lecture > 2:37
+=======================================
+
+repeat the code after every 2 seconds
+=====================================
+setInterval(function(){
+	alert("hello");
+},2000);
+
+
+
+call a function after every second
+===================================
+
+setInterval(time,1000);
+
+function time(){
+$('div').text( $.now() );
+}
+
+===================================
+
   $('.btn').click(function(){
 
     var val = 0;

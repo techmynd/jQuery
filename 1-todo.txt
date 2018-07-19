@@ -1,13 +1,4 @@
 
-2-37
-setInterval
-clearInterval
-
-2-39
-array methods
-pop, push, shift, unshift
-inArray
-isArray
 
 
 .trim()  >> remove space from start or end

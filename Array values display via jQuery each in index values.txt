@@ -15,3 +15,11 @@ var newFruit = $('.new-fruit').val();
 fruits.push(newFruit);
 
 fruits is array
+
+
+
+array methods
+=============
+pop, push, shift, unshift
+inArray
+isArray
