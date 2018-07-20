@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/152975/how-do-i-detect-a-click-outside-an-element
+
+https://stackoverflow.com/questions/2868582/click-outside-menu-to-close-in-jquery

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3>Close Menu On Outside Click</h3>
+        <P>Check three conditions</P>
+        <ul>
+          <li>Menu is not already closed (menuwrap has not class opened)</li>
+          <li>click was done outside menuwrap</li>
+          <li>click was done outside menu child elements</li>
+        </ul>
+        <p>if( !$(event.target).is($menu) ) { // hide menu }</p>
+        <p>!$menu.is(e.target)</p>
+        <p>$menu.has(e.target).length === 0 </p>
+        <p>($menuWrap).hasClass('opened')</p>
+        
+        <br>
+        <br>
+
+        <textarea class="form-control" rows="10">
+<script>
+$(document).ready(function(){
+  $('.btn').click(function(){
+    $('.menu-drop').slideToggle(800, 'easeInOutExpo');
+    $('.menu-wrap').toggleClass('opened');
+  });
+});
+
+$(document).mouseup(function (e) {
+   // get the menu wrap and the menu 
+   var $menu = $('.menu-wrap');
+   var $menuBlock = $('.menu-wrap ul');
+   // three conditions
+   if(
+   !$menu.is(e.target) 
+   && $menu.has(e.target).length === 0 
+   && ($menu).hasClass('opened') 
+   )
+
+   {
+     $menuBlock.hide(800, 'easeInOutExpo');
+     $($menu).removeClass('opened');
+   }
+});
+</script>
+        </textarea>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="menu-wrap" style="position:relative; display:inline-block;">
+          <buton class="btn btn-primary">I am Menu - Click Me</buton>
+          <ul class="list-unstyled menu-drop" style="display:none; border:1px solid #eee; padding:10px; background-color:#eee; position:absolute; left:0; top:38px; right:0;">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>  
+
+  <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+
+  <script>
+$(document).ready(function(){
+  
+  $('.btn').click(function(){
+    $('.menu-drop').slideToggle(800, 'easeInOutExpo');
+    $('.menu-wrap').toggleClass('opened');
+  });
+
+});
+
+/*
+MOUSEUP EVENT
+you can click somewhere else on the screen, hold down the click button, and move the pointer to your mouseup element, and then release the mouse pointer.
+CLICK EVENT
+A click event requires the mousedown and mouseup event to happen on that element.
+*/
+
+$(document).mouseup(function (e) {
+   
+   // get the menu wrap and the menu 
+   var $menu = $('.menu-wrap');
+   var $menuBlock = $('.menu-wrap ul');
+
+   // three conditions
+   // 1- if the click was outside of menu-wrap
+   // 2- if the click was outside menu itself
+   // 3- if the menu is not previously closed already // see if menu wrap has class opened // if yes then close
+
+   if(
+   !$menu.is(e.target) // if the target of the click isn't the container...
+   && $menu.has(e.target).length === 0 // ... nor a descendant of the container 
+   && ($menu).hasClass('opened') // and menu-wrap has class opened then close otherwise dont do anything
+   )
+
+   {
+     
+     // hide() >> will cause it to shrink not slideUp
+     // we want slideUp
+
+     $menuBlock.slideUp(800, 'easeInOutExpo');
+     $($menu).removeClass('opened');
+     //console.log('menu closed fired');
+   }
+
+});
+
+  </script>
+
+</body>
+</html>
+
