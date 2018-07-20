@@ -17,3 +17,30 @@ single block of code for document ready and window resize
   });
 
 // create function, put all code in it and call it. Then call window resize and call ur function inside it.
+
+
+
+
+//////////////////////////////
+
+
+
+shiftColsLeftRight();
+
+
+// shift columns for small screen
+function shiftColsLeftRight() {
+    if( jQuery(window).width() <= 991 ) {
+        jQuery('.col-shift-left-js').insertBefore('.col-shift-right-js');
+    } else {
+        jQuery('.col-shift-right-js').insertBefore('.col-shift-left-js');
+    }
+}
+
+// window resize triggers
+jQuery(window).resize(function() {
+    shiftColsLeftRight();
+});
+
+
+
