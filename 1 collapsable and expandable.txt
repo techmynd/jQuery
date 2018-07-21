@@ -1,0 +1,35 @@
+/*Collapsable*/
+  // $(".collapsable h3").on('click', function(event){
+  //   event.preventDefault();
+  //   $(this).closest('.collapsable').find('.collapse').stop().slideToggle('fast');
+  //   $(this).closest('.collapsable').find('.h3 span').stop().toggleClass('fa-angle-down fa-angle-up');
+  // });
+
+  /*Categories Panel Collapsable*/
+  // $(".collapsable a").on('click', function(event){
+  //   event.preventDefault();
+  //   $(this).closest('.collapsable').find('.nav-tab-line').stop().slideToggle('fast');
+  //   $(this).closest('.collapsable').find('.check-circle span').stop().toggleClass('fa-angle-right fa-angle-down');
+  // });
+
+  // collapsable widgets // with single function
+  $('.widget-expandable .title a').on('click', function(event){
+    event.preventDefault();
+    $(this).closest('.widget-expandable').find('.w-body').stop().slideToggle('fast');
+    $(this).closest('.widget-expandable').find('.title a i').stop().toggleClass('fa-minus fa-plus');
+  });
+
+  $('.widget-expandable-reverse .title a').on('click', function(event){
+    event.preventDefault();
+    $(this).closest('.widget-expandable-reverse').find('.w-body').stop().slideToggle('fast');
+    $(this).closest('.widget-expandable-reverse').find('.title a i').stop().toggleClass('fa-minus fa-plus');
+  });
+  // collapsable widgets // with single function
+
+  // categories collapse starts
+  $(".collapsable a").on('click', function(event){
+    event.preventDefault();
+    $(this).closest('.collapsable').find('.nav').stop().slideToggle('fast');
+    $(this).closest('.collapsable').find('a .fa').stop().toggleClass('fa-angle-right fa-angle-down');
+  });
+  // categories collapse ends
