@@ -40,3 +40,18 @@ function shiftColsLeftRight() {
 }
 
 
+
+
+==================================
+
+
+
+<div class="row rowOne">
+<div class="col-md-6 col-shift-right-js">...</div>
+<div class="col-md-6 col-shift-left-js">...</div>
+</div>
+
+<div class="row rowTwo">
+<div class="col-md-6 col-shift-right-js">...</div>
+<div class="col-md-6 col-shift-left-js">...</div>
+</div>
