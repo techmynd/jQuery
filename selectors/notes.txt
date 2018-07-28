@@ -1,3 +1,7 @@
 https://api.jquery.com/category/selectors/
 https://www.w3schools.com/jquery/jquery_ref_selectors.asp
 
+
+nth selector
+==============
+$(".radio:nth-child(1)").insertAfter(".radio:nth-child(2)");
