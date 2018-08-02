@@ -1,0 +1,9 @@
+declate a global variavle inside a function or anywhere:
+
+Just remove the var
+
+$("#main").click(function() {
+ one = 1;
+});
+
+now one is a global var - use it anywhere wth value 1 unless value changes by any action...
