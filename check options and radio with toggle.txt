@@ -1,0 +1,13 @@
+$('.choose-engraving-wrap .typo-box').click(function(){
+    $('.choose-engraving-wrap .typo-box').not(this).removeClass('active');
+    $(this).toggleClass('active');
+    
+    if ( $(this).find('.typo-check').is(':checked') ) {
+      $(this).find('.typo-check').prop("checked", false);  
+      $('.selected-typo').text("");
+    } else {
+      $(this).find('.typo-check').prop("checked", true);
+      $('.selected-typo').text("Typography: " + $(this).find('.typo-check').val() );
+    }
+
+  });
