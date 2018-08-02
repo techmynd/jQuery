@@ -1,0 +1,11 @@
+this toggleclass / not this remove class
+==========================================
+
+remove class from siblings that not not quite siblings but toggle class on this
+-------------------------------------------------------------------------------
+
+
+$('.choose-metal-wrap .metal-box').click(function(){
+    $('.choose-metal-wrap .metal-box').not(this).removeClass('active');
+    $(this).toggleClass('active');
+});
