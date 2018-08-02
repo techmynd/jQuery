@@ -1,0 +1,29 @@
+use parseInt bcoz it needs to be integer otherwise + will not sum it - it will just add 1 in existing thing 
+
+pageID = parseInt(pageID)+1;
+
+
+
+$('.sections-control .next').click(function(){
+    var currentProgress = $('.sections-control .progress-control').val();
+    if(currentProgress < 4) {
+      var newProgress = parseInt(currentProgress) + 1;
+      $('.sections-control .progress-control').val(newProgress);
+      updateProgress();
+    }
+  });
+
+
+
+
+
+  $('.sections-control .back').click(function(){
+    var currentProgress = $('.sections-control .progress-control').val();
+    if(currentProgress > 1) {
+      var newProgress = parseInt(currentProgress) - 1;
+      $('.sections-control .progress-control').val(newProgress);
+      updateProgress();
+    }
+  });
+
+
