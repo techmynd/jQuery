@@ -1,0 +1,37 @@
+  $(".stone-check").click(function(){
+  $('.selected-stones').text("");
+    var getStones = $(".choose-stones-wrap input:checkbox:checked").map(function(){
+      return $(this).val();
+    }).get(); // <----
+    $('.selected-stones').text(getStones);
+  });
+
+
+
+
+
+
+
+<div class="stone-box">
+              <div class="stone color-amethyst"></div>
+              <h4>AMETHYST</h4>
+              <div class="price">$15</div>
+              <input name="stone-check" class="stone-check" type="checkbox" value="AMETHYST">
+            </div>
+
+
+<div class="stone-box">
+              <div class="stone color-amethyst"></div>
+              <h4>AMETHYST</h4>
+              <div class="price">$15</div>
+              <input name="stone-check" class="stone-check" type="checkbox" value="AMETHYST">
+            </div>
+
+
+
+<div class="stone-box">
+              <div class="stone color-amethyst"></div>
+              <h4>AMETHYST</h4>
+              <div class="price">$15</div>
+              <input name="stone-check" class="stone-check" type="checkbox" value="AMETHYST">
+            </div>
