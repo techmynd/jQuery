@@ -1,63 +1,72 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"> 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>jQuery Mobile Site</title>   
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<head>
+	<title>Text App</title>   
+
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" />  
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>
+
 </head>
 <body>
+
 <div data-role="page" data-theme="b">
 	<div data-role="header" data-theme="b">
-		<h1>Site Name</h1>
+		<h1>Text App</h1>
 	</div>
 	<div data-role="content"> 
-	<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="a">
-		<li data-role="list-divider">Transition Effects</li>
-		<li><a href="#foo" data-transition="slide">Slide</a></li>
-		<li><a href="#foo" data-transition="slideup">Slide Up</a></li>
-		<li><a href="#foo" data-transition="slidedown">Slide Down</a></li>
-		<li><a href="#foo" data-transition="pop">Pop</a></li>
-		<li><a href="#foo" data-transition="flip">Flip</a></li>
-		<li><a href="#foo" data-transition="fade">Fade</a></li>
-	</ul>
-	<br /><br />
-	<ul data-role="listview" data-dividertheme="e">
-		<li data-role="list-divider">Seamless List (margin-less)</li>
-		<li><a href="#foo" data-transition="slide">Internal Link 1</a></li>
-		<li><a href="#bar" data-transition="slide">Internal Link 2</a></li>
-		<li><a href="#" data-transition="slide">Example Item 3</a></li>
-	</ul>
-		<br /><br />
-		<a href="#" data-role="button" data-theme="a" data-icon="back" data-inline="true">Return to Article</a> 
-		<a href="#" data-role="button" data-theme="c" data-icon="check" data-inline="true">Another Link</a> 
+		<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="a">
+			<li data-role="list-divider">Pages</li>
+			<li><a href="#page1" data-transition="slide">Page 1</a></li>
+			<li><a href="#page2" data-transition="slide">Page 2</a></li>
+			<li><a href="#page3" data-transition="slide">Page 3</a></li>
+		</ul>
 	</div>
+	
 	<div data-role="footer">
-		<h1>&copy; Copyright Info or Site URL</h1>
+		<h1>&copy; 2018 - TextApp - All Rights Reserved</h1>
 	</div>
 
 </div>
-<div data-role="page" data-theme="b" id="foo">
+
+<div data-role="page" data-theme="b" id="page1">
 	<div data-role="header" data-theme="b">
-		<h1>Site Name</h1>
+		<h1>TextApp</h1>
 	</div>
 	<div data-role="content">
-		<h1>This is an internal page 1 - the HTML is located in the footer.</h1>
-	</div>
-	<div data-role="footer" data-position="fixed">
-		<h1>&copy; Copyright Info or Site URL</h1>
+		<h2>Page 1</h2>
+		<p>This page 1. Information regading page one goes here.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate!</p>
 	</div>
 </div>
-<div data-role="page" data-theme="b" id="bar">
+
+<div data-role="page" data-theme="b" id="page2">
 	<div data-role="header" data-theme="b">
-		<h1>My Site</h1>
+		<h1>TextApp</h1>
 	</div>
 	<div data-role="content">
-		<h1>This is an internal page 2 - the HTML is located in the footer.</h1>
-	</div>
-	<div data-role="footer" data-position="fixed">
-		<h1>&copy; Copyright Info or Site URL</h1>
+		<h2>Page 2</h2>
+		<p>This page 2. Information regading page one goes here.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate!</p>
 	</div>
 </div>
+
+<div data-role="page" data-theme="b" id="page3">
+	<div data-role="header" data-theme="b">
+		<h1>TextApp</h1>
+	</div>
+	<div data-role="content">
+		<h2>Page 3</h2>
+		<p>This page 1. Information regading page one goes here.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quasi minima veritatis voluptatibus, a voluptas nihil, animi similique laboriosam maxime. Cumque est ab non? Assumenda ab laudantium temporibus, aut voluptate!</p>
+	</div>
+</div>
+
+
 </body>
 </html>
