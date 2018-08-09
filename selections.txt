@@ -1,0 +1,46 @@
+$(document).ready(function(){
+  
+$('p:first').hide();
+$('ul li:first').hide();
+$('ul li:first-child').hide();
+
+});
+
+
+select link
+$('[href]').hide();
+
+select button
+$(':button').hide();
+
+
+$('tr:even').hide();
+$('tr:odd').hide();
+
+$('tr:even').css('background-color','#eee');
+
+
+select next
+$('input').next('span').css('','');
+
+$('input').focus(function(){
+$(this).next('span').css('','');
+});
+
+
+$('input[type=text]').focus(function(){
+$(this).next('span').css('','');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+

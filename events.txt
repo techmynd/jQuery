@@ -1,0 +1,46 @@
+mouse click
+form submission
+page loading
+page scroll
+selecting anything
+
+mouse events
+============
+click >> .click
+double click >> .dblclick
+mouseenter
+mouseleave
+
+keyboard events
+===============
+keyup
+keypress
+keydown
+
+form events
+===========
+form submit
+change
+blur
+focus
+
+document events
+===============
+load
+unload
+scroll
+resize
+
+
+
+
+
+
+
+
+
+
+
+
+
+

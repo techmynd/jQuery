@@ -1,0 +1,11 @@
+$('selector').bind(event, data, function, map) {
+
+}
+
+
+$('a').bind("click", function(){
+
+});
+
+
+
