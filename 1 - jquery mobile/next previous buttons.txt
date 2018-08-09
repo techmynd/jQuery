@@ -1,0 +1,26 @@
+$(document).ready(function() {
+
+    $('.nextBtn').click(function() {
+        $page = $(this).closest('div[data-role="page"]').next();
+        $.mobile.changePage( $page, { transition: "slide", changeHash: false });
+    });
+
+    $('.prevBtn').click(function() {
+        $page = $(this).closest('div[data-role="page"]').prev();
+        $.mobile.changePage( $page, { transition: "slide", reverse: true, changeHash: false });
+    });
+
+});
+
+
+
+
+<a href="#" class="ui-btn prevBtn">Previous</a>
+<a href="#" class="ui-btn nextBtn">Next</a>
+
+
+
+
+https://stackoverflow.com/questions/15121019/jquery-mobile-add-next-and-previous-buttons
+http://jsfiddle.net/Gajotres/BnB7X/
+
