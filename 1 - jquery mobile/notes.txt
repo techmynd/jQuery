@@ -1,0 +1,4 @@
+http://demos.jquerymobile.com/1.3.0/
+https://jquerymobile.com/resources/
+https://jquerymobile.com/download/
+
