@@ -1,0 +1,124 @@
+http://jsfiddle.net/sgliser/8Yq36/5/
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html> 
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Single page template</title> 
+    <link rel="stylesheet" href="//ajax.aspnetcdn.com/ajax/jquery.mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+    
+</head> 
+
+<body id="body"> 
+
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>StackOverflow Example</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">   
+        <h2>What would you like to see from Flickr?</h2>
+        <form action="" id="searchForm" onsubmit="return false">
+            <input id="searchFor" type="text" name="searchFor">
+            <input data-inline="true" type="submit" name="submit" value="go" />
+        </form>
+        <p>This is a <a href="http://www.roughlybrilliant.com/">Roughly Brilliant</a> example.</p>
+    </div><!-- /content -->
+    
+    <div data-role="footer">
+        <h4>Footer content</h4>
+    </div><!-- /footer -->
+    
+</div><!-- /page -->
+
+<script id="imagesBasePage" type="text/x-jquery-tmpl">
+    <div id="${pageId}" data-role="page">
+        <div data-role="header">
+            <a href="#" data-rel="back" data-icon="arrow-l">Back</a>
+            <h1>${pageId} Results</h1>
+        </div>
+        <div data-role="content">    
+            {{each items}}
+                <img src="${media.m}" />
+            {{/each}}
+        </div>
+        <div data-role="footer">
+            <h4>Footer content</h4>
+        </div>
+    </div>   
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    $("#searchForm").submit(function(){
+        var searchFor = $("#searchFor").val();
+        
+        $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+        {
+            tags: searchFor,
+            tagmode: "any",
+            format: "json"
+        },
+        function(data) {
+            data.pageId = searchFor;
+            $("#imagesBasePage").tmpl(data).appendTo($("#body"));
+            $("#"+searchFor).one( 'pagecreate', $.mobile._bindPageRemove );
+            $.mobile.changePage("#"+searchFor);
+        });
+        event.preventDefault();
+        return false;
+    });

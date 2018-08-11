@@ -1,0 +1,2791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<head>
+	<title>Zodiac Booklet</title>   
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="styles/font-awesome.min.css" />
+	<link rel="stylesheet" href="styles/custom.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<!--custom js should be before jq-mobile js-->
+	<script src="scripts/custom.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="home">
+
+	<header data-role="header" data-position="fixed" data-theme="b">
+		<h1>ZODIAC BOOKLET</h1>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+		<ul data-role="listview" data-theme="a" data-filter="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+			<li>
+				<a href="#detail-1" data-transition="slide">
+					<img src="images/img-z-11.jpg">
+					<h1>What's Your's Zodiac Sign?</h1>
+					<p>Find out your zodiac sign</p>
+				</a>
+			</li>
+			<li>
+				<a href="#detail-2">
+					<img src="images/img-z-12.jpg">
+					<h1>Zodiac Elements</h1>
+					<p>Which element belong to your zodiac?</p>
+				</a>
+			</li>
+			<li>
+				<a href="#detail-3">
+					<img src="images/img-z-9.jpg">
+					<h1>Zodiac Mottoes/Slogans</h1>
+					<p>Your specific slogan based on your zodiac sign</p>
+				</a>
+			</li>
+			<li>
+				<a href="#detail-4">
+					<img src="images/img-z-7.jpg">
+					<h1>Zodiac Compatibility Chart</h1>
+					<p>Which sign is most compatible with your's?</p>
+				</a>
+			</li>
+			<li>
+				<a href="#detail-5">
+					<img src="images/img-z-10.jpg">
+					<h1>What's Your Chinese Zodiac Sign</h1>
+					<p>Find out your chinese zodiac sign</p>
+				</a>
+			</li>
+			<li>
+				<a href="#detail-6">
+					<img src="images/img-z-8.jpg">
+					<h1>Chinese Zodiac Signs Qualities</h1>
+					<p>What are your chinese zodiac qualities?</p>
+				</a>
+			</li>
+			<li>
+				<a href="#detail-ch-comp">
+					<img src="images/img-z-1.jpg">
+					<h1>Chinese Zodiac Signs Compatibility</h1>
+					<p>Which chinese signs are most compatible?</p>
+				</a>
+			</li>
+			<li>
+				<a href="#detail-7">
+					<img src="images/img-z-3.jpg">
+					<h1>Famous Celebrities in Zodiac Signs</h1>
+					<p>Know famous celebrities who share sign with you</p>
+				</a>
+			</li>
+			<li>
+				<a href="#articles-index">
+					<img src="images/img-z-4.jpg">
+					<h1>Know Your Zodiac Sign (Articles)</h1>
+					<p>Interesting stuff about your zodiac sign</p>
+					<span class="ui-li-count ui-btn-up-c ui-btn-corner-all">11</span>
+				</a>
+			</li>
+		</ul>
+	</article>
+
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#articles-index" data-transition="fade" data-icon="grid">ARTICLES</a></li>
+				<li><a href="#info" data-transition="fade" data-icon="info">INFO</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="detail-1">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+	<h1>What's Your Zodiac Sign</h1>
+
+	<div class="centered-grid">
+		
+		<div class="row">
+			<div class="col-md-6">
+				<img src="images/aries.png">
+	    		<h3>ARIES</h3>
+				<h4>21 March to 20 April</h4>
+				<p>Planet: Mars<br>Element: Fire</p>
+				<div class="text-center"><a href="#aries" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
+			</div>
+			<div class="col-md-6">
+				<img src="images/taurus.png">
+				<h3>TAURUS</h3>
+				<h4>21 April to 21 May</h4>
+				<p>Planet: Venus<br>Element: Soil</p>
+				<div class="text-center"><a href="#taurus" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
+			</div>
+		</div>
+		<div class="row">
+    		<div class="col-md-6">
+    			<img src="images/gemini.png">
+				<h3>GEMINI</h3>
+				<h4>22 May to 22 June</h4>
+				<p>Planet: Mercury<br>Element: Air</p>
+				<div class="text-center"><a href="#gemini" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
+			</div>
+    		<div class="col-md-6">
+    			<img src="images/cancer.png">
+				<h3>CANCER</h3>
+				<h4>23 June to 23 July</h4>
+				<p>Planet: Moon<br>Element: Water</p>
+				<div class="text-center"><a href="#cancer" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
+			</div>
+		</div>
+		<div class="row">
+    		<div class="col-md-6">
+    			<img src="images/leo.png">
+				<h3>LEO</h3>
+				<h4>24 July to 23 August</h4>
+				<p>Planet: Sun<br>Element: Fire</p>
+				<div class="text-center"><a href="#leo" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
+			</div>
+    		<div class="col-md-6">
+    			<img src="images/virgo.png">
+				<h3>VIRGO</h3>
+				<h4>24 August to 23 September</h4>
+				<p>Planet: Mercury<br>Element: Soil</p>
+				<div class="text-center"><a href="#virgo" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
+			</div>
+		</div>
+		<div class="row">		
+    		<div class="col-md-6">
+    			<img src="images/law.png">
+				<h3>LIBRA</h3>
+				<h4>24 September to 23 October</h4>
+				<p>Planet: Venus<br>Element: Air</p>
+				<div class="text-center"><a href="#libra" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
+			</div>
+    		<div class="col-md-6">
+    			<img src="images/scorpio.png">
+				<h3>SCORPIO</h3>
+				<h4>24 October to 22 November</h4>
+				<p>Planet: Mars<br>Element: Water</p>
+				<div class="text-center"><a href="#scorpio" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
+			</div>
+		</div>
+		<div class="row">		
+    		<div class="col-md-6">
+    			<img src="images/centaur.png">
+				<h3>SAGITTARIUS</h3>
+				<h4>23 November to 20 December</h4>
+				<p>Planet: Jupiter<br>Element: Fire</p>
+				<div class="text-center"><a href="#sagittarius" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
+			</div>
+    		<div class="col-md-6">
+    			<img src="images/capricorn.png">
+				<h3>CAPRICORN</h3>
+				<h4>21 December to 19 January</h4>
+				<p>Planet: Saturn<br>Element: Soil</p>
+				<div class="text-center"><a href="#capricorn" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
+			</div>
+		</div>
+		<div class="row">		
+    		<div class="col-md-6">
+    			<img src="images/aquarius.png">
+				<h3>AQUARIUS</h3>
+				<h4>20 January to 18 February</h4>
+				<p>Planet: Saturn<br>Element: Air</p>
+				<div class="text-center"><a href="#aquarius" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
+			</div>
+    		<div class="col-md-6">
+    			<img src="images/pisces.png">
+				<h3>PISCES</h3>
+				<h4>19 February to 20 March</h4>
+				<p>Planet: Jupiter<br>Element: Water</p>
+				<div class="text-center"><a href="#pisces" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
+			</div>
+		</div>
+	</div>
+
+	<p class="text-center">
+		<strong>Capricorn:</strong> Jan 20 - Feb 16<br>
+		<strong>Aquarius:</strong> Feb 16 - March 11<br>
+		<strong>Pisces:</strong> March 11 - April 18<br> 
+		<strong>Aries:</strong> April 18 - May 13<br> 
+		<strong>Taurus:</strong> May 13 - June 21<br> 
+		<strong>Gemini:</strong> June 21 - July 20<br> 
+		<strong>Cancer:</strong> July 20 - Aug 10<br> 
+		<strong>Leo:</strong> Aug. 10 - Sept 16<br>
+		<strong>Virgo:</strong> Sept 16 - Oct 30<br> 
+		<strong>Libra:</strong> Oct 30 - Nov 23<br>
+		<strong>Scorpio:</strong> Nov 23 - Nov 29<br> 
+		<strong>Ophiuchus:</strong> Nov 29 - Dec 17<br>
+		<strong>Sagittarius:</strong> Dec 17 - Jan 20
+	</p>
+
+
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#detail-2" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="detail-2">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+	<h1>Zodiac Elements</h1>
+	
+	<div class="centered-grid">
+		
+		<div class="row">
+			<div class="col-md-6">
+				<img src="images/fire.png">
+	    		<h3>FIRE</h3>
+				<h4>Aries, Leo, Sagittarius</h4>
+				<p>People having element fire are adventerous, powerful, full from power of action, intelligent having creative abilities and have firm faith in them.</p>
+			</div>
+			<div class="col-md-6">
+				<img src="images/drop.png">
+				<h3>WATER</h3>
+				<h4>Cancer, Scorpio, Pisces</h4>
+				<p>They are emotional, mysterious, cool minded, emotional, sensitive and broad minded.</p>
+			</div>
+		</div>
+		<div class="row">
+    		<div class="col-md-6">
+    			<img src="images/sprout.png">
+				<h3>SOIL</h3>
+				<h4>Taurus, Virgo, Capricorn</h4>
+				<p>They are materialistic.</p>
+			</div>
+    		<div class="col-md-6">
+    			<img src="images/air.png">
+				<h3>AIR</h3>
+				<h4>Gemini, Libra, Aquarius</h4>
+				<p>They give importance to social relationships and play with colors and words.</p>
+			</div>
+		</div>
+	</div>
+
+<p>There are four elements of nature relevant for our deeper understanding of Astrology and many other things in life: Earth, Water, Fire and Air. They all have a long history, recognized way before our time. Used by the alchemist to find answers, or by common people trying to understand Mother Nature, these four have been the pillar of everything we are surrounded by and everything we carry within.</p>
+
+<p>All four elements speak of certain tendencies each zodiac sign has simply because it belongs to one of them. They help us understand that there are other ways of looking at each individual, give us patience for those that are different from us, and make it clearer why some sings are more compatible than others.</p>
+
+<p>If we observe this division on a higher scale, we will notice that life itself wouldn’t be possible without any of these elements. In nature, they are in perfect harmony, working with each other every day. The division on their higher and lower energies only reflects the need of human race to divide things into two – the good and the bad, emotion and reason, masculine and feminine, plus and minus.</p>
+
+<h3>The Fire Signs</h3>
+
+<p>Like fire itself, fire signs tend to be passionate, dynamic, and temperamental. Fire can keep you warm, or it can do great destruction outside or inside. While fire burns out quickly without fuel to keep it going, it can also regenerate its power from the ashes. A single spark can set off a forest fire. As a result, fire signs need to be nurtured and managed carefully.</p>
+
+<h3>The Air Signs</h3>
+
+<p>Air signs are all about action, ideas, and motion. They are the "winds of change". When a strong gust hits you, you can’t help but move. While some within their ranks may be true-life "airheads", others are as powerful as a gravity-defying G-force. Air signs bring everyone a breath of fresh air when things start to get stale. Like the breeze, you can’t quite catch them, and you never know where they’ll drop you once they sweep you up. It will almost always been an adventure, though.</p>
+
+<h3>The Earth Signs</h3>
+
+<p>Earth signs keep it real. They are the "grounded" people on the planet, the ones who bring us down to earth and remind us to start with a solid foundation. Slow and steady, these "builders" are loyal and stable, and stick by their people through hard times. On good days, they’re practical; at worst, they can be materialistic or too focused on the surface of things to dig into the depths.</p>
+
+<h3>The Water Signs</h3>
+
+<p>Intuitive, emotional and ultra-sensitive, water signs can be as mysterious as the ocean itself. Like water, they can be refreshing, or they can drown you in their depths. These signs often have intense dreams and borderline-psychic intuition. Security is important to them—after all, water needs a container, or it dries up and disappears.</p>
+
+<div class="text-center"><a href="#detail-4" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">ZODIACS COMPATIBILITY</a></div>
+
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#detail-3" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="detail-3">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+	<h1>Zodiac Mottos / Slogans</h1>
+
+<p>Every zodiac has his own motto or slogan for life. Lets compare different star signs and their motto for life.</p>
+
+<h3>ARIES (I am)</h3>
+<p>Qualities (Pioneering, assertive, active, enthusiastic, self-starter, leading, initiator, aggressive, confident, eager, proud.)</p>
+
+<h3>TAURUS (I have)</h3>
+<p>Qualities (Steadfast, loyal, possessive, stubborn, loves beauty, indulgent, stable, practical, physical, determined, artistic, placid, affectionate).</p>
+
+<h3>GEMINI (I think)</h3>
+<p>Qualities (Inquisitive, charming, mental, versatile changeable, communicative, witty, restless, adaptable, nervous, sociable, expressive, fun).</p>
+
+<h3>CANCER (I feel)</h3>
+<p>Qualities (Sensitive, nurturing, tenacious, protective, emotional, intuitive, caring, moody, dependent, absorptive, domestic, maternal, enveloping, sheltering).</p>
+
+<h3>LEO (I will)</h3>
+<p>Qualities (Confident, warmhearted, magnanimous, proud, creative, ardent, dramatic, enthusiastic, romantic, generous, loyal, self-centered, hearty, commanding, affectionate, noble, dignified).</p>
+
+<h3>VIRGO (I analyze)</h3>
+<p>Qualities (Analytical, precise, skeptical, finicky, critical, careful, detail-oriented, practical, diversified, mechanical, industrious, reserved, studious, assimilative, dedicated, moral, dependable, health-conscious).</p>
+
+<h3>LIBRA (I balance)</h3>
+<p>Qualities (Pleasant, charming, sociable, aesthetic, beauty- and luxury-loving, artistic, balancing, mediating, refined, cooperative, romantic, relationship-oriented, peacemaking).</p>
+
+<h3>SCORPIO (I transform)</h3>
+<p>Qualities (Intense, courageous, manipulative, emotional, persistent, penetrating, resourceful, passionate, secretive, magnetic, bold, regenerating, extreme, loyal, sarcastic, scientific, sensitive, probing, researcher).</p>
+
+<h3>SAGITTARIUS (I see, I perceive, I observe, I sense)</h3>
+<p>Qualities (Independent, enthusiastic, sporting, philosophical, explorative, happy-go-lucky, escapist, extravagant, athletic, foreign, forthright, outspoken, religious, wandering).</p>
+
+<h3>CAPRICORN (I use)</h3>
+<p>Qualities (Organizing, structuring, practical, leading, stubborn, ambitious, executive, efficient, restrained, business-like, self-sufficient, responsible, systematic, cautious, conventional).</p>
+
+<h3>PISCES (I believe)</h3>
+<p>Qualities (Emotional, sensitive, compassionate, confused, impressionable, visionary, vacillating, poetic, artistic, mystical, humble, creative, intuitive, idealistic, romantic, sympathetic).</p>
+
+
+
+
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#detail-4" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="detail-4">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+	<h1>Zodiac Compatibility Chart</h1>
+	<p class="text-center">Select your zodiac and the zodiac to compare with</p>
+	
+	<div class="text-center comp-results">
+	<i class="fa fa-heart fa-3x color-red"></i>
+	<i class="fa fa-thumbs-up fa-3x color-green"></i>
+	<i class="fa fa-times fa-3x color-black"></i>
+	</div>
+
+	<div class="clear20"></div>
+
+	<select name="select-choice-1" id="select-choice-1">
+		<option value="">Select Zodiac Sign</option>
+		<option value="Capricorn">Capricorn</option>
+		<option value="Aquarius">Aquarius</option>
+		<option value="Pisces">Pisces</option>
+		<option value="Aries">Aries</option>
+		<option value="Taurus">Taurus</option>
+		<option value="Gemini">Gemini</option>
+		<option value="Cancer">Cancer</option>
+		<option value="Leo">Leo</option>
+		<option value="Virgo">Virgo</option>
+		<option value="Libra">Libra</option>
+		<option value="Scorpio">Scorpio</option>
+		<option value="Ophiuchus">Ophiuchus</option>
+		<option value="Sagittarius">Sagittarius</option>
+	</select>
+
+	<div class="text-center">and</div>
+
+	<select name="select-choice-2" id="select-choice-2">
+		<option value="">Select Zodiac Sign</option>
+		<option value="Capricorn">Capricorn</option>
+		<option value="Aquarius">Aquarius</option>
+		<option value="Pisces">Pisces</option>
+		<option value="Aries">Aries</option>
+		<option value="Taurus">Taurus</option>
+		<option value="Gemini">Gemini</option>
+		<option value="Cancer">Cancer</option>
+		<option value="Leo">Leo</option>
+		<option value="Virgo">Virgo</option>
+		<option value="Libra">Libra</option>
+		<option value="Scorpio">Scorpio</option>
+		<option value="Ophiuchus">Ophiuchus</option>
+		<option value="Sagittarius">Sagittarius</option>
+	</select>
+
+	<br>
+
+	<a href="#" class="ui-btn ui-corner-all ui-btn-b ui-icon-arrow-r ui-btn-icon-right btn-compare-compatibility">COMPARE</a>
+
+	<div class="clear10"></div>
+
+	<div class="text-center comp-results">
+	<i class="fa fa-heart fa-3x color-red"></i>
+	<i class="fa fa-thumbs-up fa-3x color-green"></i>
+	<i class="fa fa-times fa-3x color-black"></i>
+	</div>
+
+	<div class="clear10"></div>
+
+	<h3>Compatibility Scale</h3>
+
+	<ul class="fa-ul">
+	  <li><i class="fa-li fa fa-heart color-red"></i>80%+ to 100% compatible (Great Match)</li>
+	  <li><i class="fa-li fa fa-thumbs-up color-green"></i>50%+ compatible (Favorable Match)</li>
+	  <li><i class="fa-li fa fa-times color-black"></i>Not compatible (Not a Great Match)</li>
+	</ul>
+
+	<div class="clear10"></div>
+
+	<strong>Aries:</strong> Aries, Leo, Sagittarius, Gemini, Libra, Aquarius<br>
+	<strong>Taurus:</strong> Taurus, Virgo, Capricorn, Cancer, Scorpio, Pisces<br>
+	<strong>Gemini:</strong> Aries, Leo, Gemini, Libra, Aquarius<br>
+	<strong>Cancer:</strong> Taurus, Virgo, Capricorn, Cancer, Scorpio, Pisces<br>
+	<strong>Leo:</strong> Aries, Leo, Sagittarius, Gemini, Libra<br>
+	<strong>Virgo:</strong> Taurus, Virgo, Capricorn, Cancer, Scorpio<br>
+	<strong>Libra:</strong> Leo, Sagittarius, Gemini, Libra, Aquarius<br>
+	<strong>Scorpio:</strong> Taurus, Virgo, Capricorn, Cancer, Scorpio, Pisces<br>
+	<strong>Sagittarius:</strong> Aries, Leo, Sagittarius, Gemini, Libra, Aquarius<br>
+	<strong>Capricorn:</strong> Taurus, Virgo, Capricorn, Cancer, Scorpio, Pisces<br>
+	<strong>Aquarius:</strong> Aries, Leo, Sagittarius, Gemini, Libra, Aquarius<br>
+	<strong>Pisces:</strong> Taurus, Capricorn, Cancer, Scorpio, Pisces<br>
+
+	<div class="clear10"></div>
+
+	<p class="text-center">General rule: If your zodiac elements match, you are most likely to be compatible with the other zodiac. Same zodiac also usually go along well.</p>
+
+	<div class="text-center"><a href="#detail-2" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">SEE ZODIAC ELEMENTS</a></div>
+
+	<p class="text-center">PRO TIP: You just can not be into a person based only on their zodiac sign. You should also be attracted towards him/her in different other ways before you decide for the 'ONE' for you. Regardless of popular beliefs, you can be totally attracted towards a person who's zodiac is not compatible with your zodiac sign and vice versa. Here is personal experience > I am a Sagittarius and no website on earth will tell you otherwise about LEO and Sagittarius but only that they are 100% compatible. NOP! I have never been at peace with any LEO in my entire life for long enough to tell you that LEO and Sagittarius can be at peace for long time. If I will ever be, I will update this app and let you know. There you go. Peace!</p>
+
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#detail-5" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="detail-5">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+	<h1>What's Your Chinese Zodiac Sign</h1>
+	
+	<p class="text-center">The year you were born in, represents your chinese zodiac sign.</p>
+
+	<div class="centered-grid">
+		
+		<div class="row">
+			<div class="col-md-6">
+				<img src="images/rat.gif">
+	    		<h3>RAT</h3>
+				<h4>1924 1936 1948 1960 1972 1984 1996 2008</h4>
+			</div>
+			<div class="col-md-6">
+				<img src="images/ox.gif">
+	    		<h3>OX</h3>
+				<h4>1925 1937 1949 1961 1973 1985 1997 2009</h4>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<img src="images/tiger.gif">
+	    		<h3>TIGER</h3>
+				<h4>1926 1938 1950 1962 1974 1986 1998 2010</h4>
+			</div>
+			<div class="col-md-6">
+				<img src="images/rabbit.gif">
+	    		<h3>RABBIT</h3>
+				<h4>1927 1939 1951 1963 1975 1987 1999 2011</h4>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<img src="images/dragon.gif">
+	    		<h3>DRAGON</h3>
+				<h4>1928 1940 1952 1964 1976 1988 2000 2012</h4>
+			</div>
+			<div class="col-md-6">
+				<img src="images/snake.gif">
+	    		<h3>SNAKE</h3>
+				<h4>1929 1941 1953 1965 1977 1989 2001 2013</h4>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<img src="images/horse.gif">
+	    		<h3>HORSE</h3>
+				<h4>1930 1942 1954 1966 1978 1990 2002 2014</h4>
+			</div>
+			<div class="col-md-6">
+				<img src="images/sheep.gif">
+	    		<h3>SHEEP</h3>
+				<h4>1931 1943 1955 1967 1979 1991 2003 2015</h4>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<img src="images/monkey.gif">
+	    		<h3>MONKEY</h3>
+				<h4>1932 1944 1956 1968 1980 1992 2004 2016</h4>
+			</div>
+			<div class="col-md-6">
+				<img src="images/rooster.gif">
+	    		<h3>ROOSTER</h3>
+				<h4>1933 1945 1957 1969 1981 1993 2005 2017</h4>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<img src="images/dog.gif">
+	    		<h3>DOG</h3>
+				<h4>1934 1946 1958 1970 1982 1994 2006 2018</h4>
+			</div>
+			<div class="col-md-6">
+				<img src="images/pig.gif">
+	    		<h3>PIG</h3>
+				<h4>1935 1947 1959 1971 1983 1995 2007 2019</h4>
+			</div>
+		</div>
+
+	</div>
+
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#detail-6" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="detail-6">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+	<h1>Chinese Zodiac Signs Qualities</h1>
+
+<h3>Animal	Personality Traits</h3>
+
+<strong>Rat:</strong> quick-witted, smart, charming, and persuasive<br>
+<strong>Ox:</strong> patient, kind, stubborn, and conservative<br>
+<strong>Tiger:</strong> authoritative, emotional, courageous, and intense<br>
+<strong>Rabbit:</strong> popular, compassionate, and sincere<br>
+<strong>Dragon:</strong> energetic, fearless, warm-hearted, and charismatic<br>
+<strong>Snake:</strong> charming, gregarious, introverted, generous, and smart<br>
+<strong>Horse:</strong> energetic, independent, impatient, and enjoy traveling<br>
+<strong>Sheep:</strong> mild-mannered, shy, kind, and peace-loving<br>
+<strong>Monkey:</strong> fun, energetic, and active<br>
+<strong>Rooster:</strong> independent, practical, hard-working, and observant<br>
+<strong>Dog:</strong> patient, diligent, generous, faithful, and kind<br>
+<strong>Pig:</strong> loving, tolerant, honest, and appreciative of luxury<br>
+
+<div class="clear10"></div>
+
+<h3>Rat</h3>
+
+<p>Rat represents wisdom. Personality traits for the people born in the year of the Rat are intelligent, charming, quick-witted, practical, ambitious, and good at economizing as well as social activities. The weaknesses are that the Rats are likely to be timid, stubborn, wordy, greedy, devious, too eager for power and love to gossip.</p>
+<p>Lucky Numbers: 2, 3; Avoid: 5, 9</p>
+<p>Lucky Flowers: Lily, African Violet, Lily Of The Valley</p>
+<p>Lucky Colors: Blue, Golden, Green; Avoid: Yellow And Brown</p>
+<p>Famous People Born in the Year of Rat: George Bush, Engelbert Humperdinck, Charles Prince of Wales, Diego Maradonna, Zinedine Zidane, prince Harry, Connor Ball.</p>
+
+<h3>Ox</h3>
+
+<p>Ox is the symbol of diligence in Chinese culture. People under the sign of the Ox are usually hard working, honest, creative, ambitious, cautious, patient and handle things steadily. On the negative side, Ox people might be stubborn, narrow-minded, indifferent, prejudiced, slow and not good at communication.</p>
+<p>Lucky Numbers: 1,9; Avoid: 3, 4</p>
+<p>Lucky Flowers: Tulip, Evergreen, Peach Blossom</p>
+<p>Lucky Colors: Blue, Red, Purple; Avoid: White, Green</p>
+<p>Famous People Born in the Year of Ox: Margaret Thatcher, Antony Hopkins, Arsene Wagner, Barack Obama, Peter Andre, Christiano Ronaldo.</p>
+
+<h3>Tiger</h3>
+
+<p>Ranking as the third animal in the Chinese zodiac, Tigers are the symbol of brave. People born in the year of the Tiger are friendly, brave, competitive, charming and endowed with good luck and authority. With indomitable fortitude and great confidence, the tiger people can be competent leaders. On the other side, they are likely to be impetuous, irritable, overindulged and love to boast to others.</p>
+<p>Lucky Numbers: 1, 3, 4; Avoid: 6, 7, 8</p>
+<p>Lucky Flowers: Cineraria</p>
+<p>Lucky Colors: Blue, Grey, White, Orange; Avoid: Golden, Silver, Brown, Black</p>
+<p>Famous People Born in the Year of Tiger: Queen Elizabeth, Terry Wogan, Richard Branson, Tom Curise, Victoria Beckham, Lady Gaga.</p>
+
+<h3>Rabbit</h3>
+
+<p>Rabbit represents longevity, discretion and good luck. It has the fourth position in the Chinese Zodiac. People born under the sign of the Rabbit are kind-hearted, friendly, intelligent, cautious, skillful, gentle, quick and live long. They dislike fighting and like to find solutions through compromise and negotiation. On the negative side, Rabbit people might be they have the potential to be superficial, stubborn, melancholy and overly-discreet.</p>
+<p>Lucky Numbers: 3, 4, 9; Avoid: 1, 7, 8</p>
+<p>Lucky Flowers: Snapdragon, Flower Of Fragrant Plantainlily, Nerve Plant</p>
+<p>Lucky Colors: Red, Pink, Purple, Blue; Avoid: Dark Brown, Dark Yellow, White</p>
+<p>Famous People Born in the Year of Rabbit: Roger Moore, Tina Turner, Louis Van Gaal, Michael Jordan, Tiger Wood, Lionel Messi.</p>
+
+<h3>Dragon</h3>
+
+<p>As the symbol of Chinese nation, dragon represents authority and good fortune. It has the fifth position among the Chinese zodiac animals. People born in the year of the Dragon are powerful, kind-hearted, successful, innovative, brave, healthy courageous and enterprising. However, they tend to be conceited, scrutinizing, tactless, quick-tempered and over-confident.</p>
+<p>Lucky Numbers: 1, 6, 7; Avoid 3, 8, 9</p>
+<p>Lucky Flowers: Bleeding Heart Vine, Larkspur</p>
+<p>Lucky Colors: Golden, Silver, Yellow, Hoary; Avoid Red, Green, Purple</p>
+<p>Famous People Born in the Year of Dragon: Bruce Forsyth, Bruce Lee, Louis Walsh, Boris Johnson, Benedict Cumberbatch, Adele.</p>
+
+<h3>Snake</h3>
+
+<p>Among the Chinese Zodiac animals, Snake has the sixth position. Snake is regarded to be pliable. Some of the positive characteristics of the people born in the year of the Snake are wise, discreet, agile, attractive and full of sympathy. On the other hand, there is a tendency for them to be lazy, greedy, arrogant and indulging in self-admiration.</p>
+<p>Lucky Numbers: 2, 8, 9; Avoid: 1, 6, 7</p>
+<p>Lucky Flowers: Orchid, Cactus</p>
+<p>Lucky Colors: Red, Light Yellow, Black; Avoid: White, Golden, Brown</p>
+<p>Famous People Born in the Year of Snake: Audrey Hepburn, Alex Ferguson, Tony Blair, JK Rowling, PSY, Gareth Bale.</p>
+
+<h3>Horse</h3>
+
+<p>Horse has an indomitable spirit and is always moving toward a goal. It ranks the seventh in the Chinese Zodiac. People born under the sign of the Horse are clever, active, energetic, quick-witted, fashionable, agile, popular among others and have the ability to persuade others. On the other side, they might be some selfish, arrogant and over-confident.</p>
+<p>Lucky Numbers: 2, 3, 7; Avoid 1, 5, 6</p>
+<p>Lucky Flowers: Calla Lily, Jasmine, Marigold</p>
+<p>Lucky Colors: Brown, Yellow, Purple, Red; Avoid: Blue, White, Golden</p>
+<p>Famous People Born in the Year of Horse: Sean Connery, Paul McCartney, Jackie Chan, Gordon Ramsey, Nicole Scherzinger, Emma Watson.</p>
+
+<h3>Sheep</h3>
+
+<p>Ranking the eighth position of all the animals in Chinese zodiac, Sheep (also Goat or Ram) represents solidarity, harmony and calmness. People born in the year of the Sheep are polite, mild mannered, shy, imaginative, determined and have good taste. On the negative side, they are sometimes pessimistic, unrealistic, short-sighted and slow in behavior.</p>
+<p>Lucky Numbers: 3, 9, 4; Avoid: 6, 7, 8</p>
+<p>Lucky Flowers: Carnation, Primrose, Alice Flower</p>
+<p>Lucky Colors: Green, Red, Purple; Avoid: Golden, Coffee</p>
+<p>Famous People Born in the Year of Sheep (Goat or Ram): James Dean, Mick Jagger, Bill Gates, Nicole Kidman, Andrea Pirlo, Ed Sheeran.</p>
+
+<h3>Monkey</h3>
+
+<p>Monkey ranks ninth position in the Chinese Zodiac. They are cheerful and energetic by nature and usually represent flexibility. People under the sign of the Monkey are wise, intelligent, confident, charismatic, loyal, inventive and have leadership. The weaknesses of the Monkeys are being egotistical, arrogant, crafty, restless and snobbish.</p>
+<p>Lucky Numbers: 1, 7, 8; Avoid: 2, 5, 9</p>
+<p>Lucky Flowers: Chrysanthemum</p>
+<p>Lucky Colors: White, Golden, Blue; Avoid: Red, Black, Grey, Dark Coffee</p>
+<p>Famous People Born in the Year of Monkey: Elizabeth Taylor, George Lucas, David Copperfield, Daniel Craig, Steven Gerrad, Neymar.</p>
+
+<h3>Rooster</h3>
+
+<p>Rooster ranks the tenth among the Chinese zodiac animals. In Chinese culture, Rooster represents fidelity and punctuality, for it wakes people up on time. People born in the year of the Rooster are beautiful, kind-hearted, hard-working, courageous, independent, humorous and honest. They like to keep home neat and organized. On the other side, they might be arrogant, self-aggrandizing, persuasive to others and wild as well as admire things or persons blindly.</p>
+<p>Lucky Numbers: 5, 7, 8; Avoid: 1, 3, 9</p>
+<p>Lucky Flowers: Gladiola, Impatiens, Cockscomb</p>
+<p>Lucky Colors: Golden, Brown, Brownish Yellow, Yellow; Avoid White, Green</p>
+<p>Famous People Born in the Year of Rooster: Michael Caine, Rod Stewart, Martin Luther King, Jennifer Aniston, Beyonce, Naill Horan.</p>
+
+<h3>Dog</h3>
+
+<p>Ranking as the eleventh animal in Chinese zodiac, Dog is the symbol of loyalty and honesty. People born in the Year of the Dog possess the best traits of human nature. They are honest, friendly, faithful, loyal, smart, straightforward, venerable and have a strong sense of responsibility. On the negative side, they are likely to be self-righteous, cold, terribly stubborn, slippery, critical of others and not good at social activities.</p>
+<p>Lucky Numbers: 3, 4, 9; Avoid: 1, 6, 7</p>
+<p>Lucky Flowers: Rose, Oncidium, Cymbidium Orchids</p>
+<p>Lucky Colors: Green, Red, Purple; Avoid: Blue, White, Golden</p>
+<p>Famous People Born in the Year of Dog: Judith Dench, Steven Spielberg, Sharon Stone, Naomi Campbell, Kate Middleton, Justin Bieber.</p>
+
+<h3>Pig</h3>
+
+<p>Occupying the last position in 12 Chinese Zodiac animals, Pig is mild and a lucky animal representing carefree fun, good fortune and wealth. Personality traits of the people born under the sign of the Pig are happy, easygoing, honest, trusting, educated, sincere and brave. The possible dark sides the Pig people are stubbornness, naive, over-reliant, self-indulgent, easy to anger and materialistic. They are sometimes regarded as being lazy.</p>
+<p>Lucky Numbers: 2, 5, 8; Avoid 1, 3, 9</p>
+<p>Lucky Flowers: Hydrangea, Pitcher Plant, Marguerite</p>
+<p>Lucky Colors: Yellow, Grey, Brown, Golden; Avoid: Red, Blue, Green</p>
+<p>Famous People Born in the Year of Pig: Elvis Presley, Stephen King, Simon Cowell, David Tennant, Kim Jong-Un, Nicola Peltz.</p>
+
+<div class="clear10"></div>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#detail-ch-comp" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="detail-ch-comp">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+	<h1>Chinese Zodiac Signs Compatibility</h1>
+
+<p>Some signs are perfect matches while some are less compatible or even born opponents.</p>
+
+<strong>Rat:</strong> Ox, Dragon, Monkey<br>
+<strong>Ox:</strong> Rat, Monkey, Rooster<br>
+<strong>Tiger:</strong> Dragon, Horse, Pig<br>
+<strong>Rabbit:</strong> Sheep, Monkey, Dog, Pig<br>
+<strong>Dragon:</strong> Rooster, Rat, Monkey<br>
+<strong>Snake:</strong> Dragon, Rooster<br>
+<strong>Horse:</strong> Tiger, Sheep, Rabbit<br>
+<strong>Sheep:</strong> Rabbit, Horse, Pig<br>
+<strong>Monkey:</strong> Ox, Rabbit<br>
+<strong>Rooster:</strong> Ox, Snake<br>
+<strong>Dog:</strong> Rabbit<br>
+<strong>Pig:</strong> Tiger, Rabbit, Sheep<br>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#detail-7" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="detail-7">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+	<h1>Famous Celebrities in Zodiac Signs</h1>
+
+<h3>Aries</h3>
+
+<p>Abdul Qadeer Khan, Ajay Devgan, Akon, Al Gore, Celine Dion, Colin Powell, Conan O'Brien, Eddie Murphy, Emma Watson, Emraan Hashmi, J. P. Morgan, Lady Gaga, Larry Page, Leonardo da Vinci, Mariah Carey, Rani Mukerji, Robert Downey Jr.</p>
+
+<div><a href="https://enquotes.com/authors.php?star_sign=aries" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Aries</a>
+
+<h3>Taurus</h3>
+
+<p>Al Pacino, Anushka Sharma, Audrey Hepburn, Ayub Khan, Christina Hendricks, Enrique Iglesias, Eric Schmidt, Henry Cavill, Jessica Alba, Madhuri Dixit, Mark Zuckerberg, Megan Fox, Penelope Cruz, Sunny Leone, Uma Thurman, William Shakespeare</p>
+
+<div><a href="https://enquotes.com/authors.php?star_sign=taurus" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Taurus</a>
+
+<h3>Gemini</h3>
+
+<p>Adriana Lima, Alexander Pope, Angelina Jolie, Anna Kournikova, Bob Dylan, Clint Eastwood, Donald Trump, Heidi Klum, Johnny Depp, Kate Upton, Liam Neeson, Marilyn Monroe, Morgan Freeman, Natalie Portman, Shilpa Shetty, Sonakshi Sinha, Sonam Kapoor</p>
+
+<div><a href="https://enquotes.com/authors.php?star_sign=gemini" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Gemini</a>
+
+<h3>Cancer</h3>
+
+<p>Benazir Bhutto, Bill Cosby, Elon Musk, George Michael, George W. Bush, Harrison Ford, Karisma Kapoor, Katrina Kaif, Malala Yousafzai, Tom Cruise, Tom Hanks, Vin Diesel, Princess Diana, Robin Williams, Selena Gomez</p>
+
+<div><a href="https://enquotes.com/authors.php?star_sign=cancer" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Cancer</a>
+
+<h3>Leo</h3>
+
+<p>Arnold Schwarzenegger, Asif Ali Zardari, Barack Obama, Ben Affleck, Charlize Theron, Chris Hemsworth, Demi Lovato, Fatima Jinnah, George Bernard Shaw, Henry Ford, Jennifer Lawrence, Jennifer Lopez, Kajol, Larry Ellison, Olivia Munn</p>
+
+<div><a href="https://enquotes.com/authors.php?star_sign=leo" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Leo</a>
+
+<h3>Virgo</h3>
+
+<p>Adam Sandler, Akshay Kumar, Asha Bhosle, Beyonce Knowles, Cameron Diaz, Charlie Sheen, Claudia Schiffer, Lakshmi Mittal, Michael Faraday, Michael Jackson, Mother Teresa, Paul Walker, Paulo Coelho, Salma Hayek, Sean Connery, Warren Buffett</p>
+
+<div><a href="https://enquotes.com/authors.php?star_sign=virgo" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Virgo</a>
+
+<h3>Libra</h3>
+
+<p>A. P. J. Abdul Kalam, Amitabh Bachchan, Christopher Reeve, Eminem, Ezra Miller, Gwen Stefani, John Lennon, Kim Kardashian, Lata Mangeshkar, Lil Wayne, Mahatma Gandhi, Margaret Thatcher, Monica Bellucci, Nusrat Fateh Ali Khan, Om Puri, Oscar Wilde, Ranbir Kapoor, Usher, Will Smith, Yash Chopra, Zakir Naik</p>
+
+<div><a href="https://enquotes.com/authors.php?star_sign=libra" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Libra</a>
+
+<h3>Scorpio</h3>
+
+<p>Aishwarya Rai, Amartya Sen, Anne Hathaway, Bill Gates, Bryan Adams, Carl Sagan, Demi Moore, Emma Stone, Jack Dorsey, Jawaharlal Nehru, John Keats, Katy Perry, Kendall Jenner, Martin Luther, Napoleon Hill, Allama Muhammad Iqbal, Muhammad Ali, Shahrukh Khan, Tim Cook</p>
+
+<div><a href="https://enquotes.com/authors.php?star_sign=scorpio" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Scorpio</a>
+
+<h3>Sagittarius</h3>
+
+<p>Bruce Lee, Alyssa Milano, Amanda Seyfried, Andrew Carnegie, Brad Pitt, Britney Spears, Dale Carnegie, Esha Gupta, Imran Khan, Jahangir Khan, John Abraham, Mark Twain, Miley Cyrus, Nicki Minaj, Raj Kapoor, Samuel L. Jackson, Scarlett Johansson, Taylor Swift, Walt Disney, William Blake, Sir. Winston Churchill, Woody Allen</p>
+
+<div><a href="https://enquotes.com/authors.php?star_sign=sagittarius" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Sagittarius</a>
+
+<h3>Capricorn</h3>
+
+<p>A. R. Rahman, Muhammad Ali Jinnah, Alan Watts, Anil Kapoor, Bipasha Basu, Bradley Cooper, Brian Tracy, Deepika Padukone, Grant Gustin (Barry Allen), Hrithik Roshan, Isaac Newton, J. R. R. Tolkien, Jeff Bezos, Jim Carrey, Kate Moss, Khalil Gibran, Mel Gibson, Michelle Obama, Nicolas Cage, Salman Khan</p>
+
+<div><a href="https://enquotes.com/authors.php?star_sign=capricorn" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Capricorn</a>
+
+<h3>Aquarius</h3>
+
+<p>Abdus Salam, Abhishek Bachchan, Abraham Lincoln, Bob Marley, Charles Darwin, Christian Bale, Enzo Ferrari, Jennifer Aniston, John Travolta, Les Brown, Michael Jordan, Oprah Winfrey, Paris Hilton, Preity Zinta, Shakira, Thomas A. Edison</p>
+
+<div><a href="https://enquotes.com/authors.php?star_sign=aquarius" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Aquarius</a>
+
+<h3>Pisces</h3>
+
+<p>Aamir Khan, Albert Einstein, Alexander Graham Bell, Anupam Kher, Bruce Willis, Chuck Norris, Drew Barrymore, Elizabeth Taylor, Emily Blunt, George Washington, Justin Bieber, Mitt Romney, Niki Taylor, Olivia Wilde</p>
+
+<div><a href="https://enquotes.com/authors.php?star_sign=pisces" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Pisces</a>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#articles-index" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--ARTICLES //////////////////////////////////////////////////////////////////////////////////////-->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="articles-index">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+	<h1>Know Your Zodiac Sign (ARTICLES)</h1>
+	
+		<ul data-role="listview" data-theme="a" data-filter="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+			<li>
+				<a href="#article-1" data-transition="slide">
+					<h1>Zodiac Do's & Don'ts</h1>
+				</a>
+			</li>
+			<li>
+				<a href="#article-2" data-transition="slide">
+					<h1>Zodiac Signs Compatibility</h1>
+				</a>
+			</li>
+			<li>
+				<a href="#article-3" data-transition="slide">
+					<h1>Zodiac Bedtime Prayers</h1>
+				</a>
+			</li>
+			<li>
+				<a href="#article-4" data-transition="slide">
+					<h1>Zodiac Qualities Comparison</h1>
+				</a>
+			</li>
+			<li>
+				<a href="#article-5" data-transition="slide">
+					<h1>Business Star Signs - What's Your Business Sign?</h1>
+				</a>
+			</li>
+			<li>
+				<a href="#article-6" data-transition="slide">
+					<h1>How to Make Anybody Fall in Love With Your Zodiac</h1>
+				</a>
+			</li>
+			<li>
+				<a href="#article-7" data-transition="slide">
+					<h1>Zodiac Signs Qualities - Positives & Negatives</h1>
+				</a>
+			</li>
+			<li>
+				<a href="#article-8" data-transition="slide">
+					<h1>Zodiac Temper Meter</h1>
+				</a>
+			</li>
+			<li>
+				<a href="#article-9" data-transition="slide">
+					<h1>After Making Love, Reaction of Different Zodiac Signs</h1>
+				</a>
+			</li>
+			<li>
+				<a href="#article-10" data-transition="slide">
+					<h1>The Way Different Zodiac Sign Say Sorry</h1>
+				</a>
+			</li>
+			<li>
+				<a href="#article-11" data-transition="slide">
+					<h1>Zodiac Quotes</h1>
+				</a>
+			</li>
+		</ul>
+	
+
+
+
+
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#article-1" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--ARTICLES //////////////////////////////////////////////////////////////////////////////////////-->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="article-1">
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+	<article data-role="content" class="ui-body-a">
+	
+	<h1>Zodiac Do's & Don'ts</h1>
+
+<h2>Aries</h2>
+
+<strong>DO’S</strong>
+
+<p>Aries are naturally active and vibrant people and they tend to like such people too. You will have to increase your pace to be in step with them. They like and appreciate frank and straightforward persons. With them you can be your true self (but don’t try your luck being over frank. they are volatile). If you are in love with an Arian, then you have to show your enthusiasm in all their activities (you can always yawn later!).</p>
+
+<strong>DON’TS</strong>
+
+<p>Do not tell an Aries that s/he may be wrong. Any such statement may stir a storm in a teacup. Aries are very faithful and passionate lovers. Do not give air to the smoldering fire within them by making them jealous. No flirtation or fooling around with others in their presence unless of course you wish to write your death wish (you will be granted!).</p>
+
+<h2>Taurus</h2>
+
+<strong>DO’S</strong>
+
+<p>Stability and dependability characterize Taurus. They like people who can blend and grow with them. If you have a Taurus partner you should appreciate all things bright and beautiful. They have an inherent artistic sense and are fond of color and music. Judge life with them from a purely materialistic point of view. Enjoy everything luxurious that money can provide. Enjoy good food (better if you can cook to please them) and good drinks with them.</p>
+
+<strong>DON’TS</strong>
+
+<p>Taurus do not loose their temper easily (in fact you may spend the whole life with them and still no spark) but you should not push your luck too much. Being unreasonable or aggressive with them may get you into trouble. Do not press him/her into a corner, and if you do, be prepared for a violent rage. Taurus is capable of violent outbursts though such an event is is very rare occasions. They can be suffocating when they are possessive about you.</p>
+
+<h2>Gemini</h2>
+
+<strong>DO’S</strong>
+
+<p>Gemini is a highly intellectual and versatile person. If you have a Gemini partner you have to match your wits with his/her wits to keep the zing in the relationship. They want to be mentally stimulated so you have to be good at conversing. Your sense of humor will get you a permanent residence in the heart of a Gemini. Be more communicative with them, and if you are good at this, you will never know how hours pass by holding each other’s hand.</p>
+
+<strong>DON’TS</strong>
+
+<p>Gemini’s like to do many things at the same time, so if unfortunately you are the type who is looking for stability you may get disappointed. Do not hold back a Gemini or you may lose him/her, as they are restless and need change in life constantly. You should try to adopt yourself with the ever-changing Gemini. Orthodox or conservative old fashion ideas are no-no in their dictionary. Change with the ever-changing Gemini and do not flow against the current.</p>
+
+<h2>Cancer</h2>
+
+<strong>DO’S</strong>
+
+<p>Try to adapt yourself with the changing moods of the Cancer. At one moment they may be laughing and enjoying and in another they may sulk. You may have to adjust with the moody and sensitive Cancer. They are like the tides in the ocean, always fluctuating. Cancerians love food, so if you know how to cook and can be poetic and romantic (added Bonus) then you know the way to their heart.</p>
+
+<strong>DON’TS</strong>
+
+<p>Cancerians are very sensitive people and can get easily hurt. So do not play with their emotions and sentiments. They are like tides that can sweep you along. They form emotional bonds with even inanimate things, so do not ask them to discard old caps or souvenirs. Such things hold special meaning to them. You have to realize that the crabs have a soft heart and are vulnerable. Do not contradict their tested line of thought and action, it would only lead to confusion.</p>
+
+<h2>Leo</h2>
+
+<strong>DO’S</strong>
+
+<p>If you have Leo partner respect him and his majestic manners. Accept the advice of Leo, the lion, as he is the king of the jungle. It is the sign of a showman, so if your partner does everything in grand style enjoy it. They fall easily for flattery and want to be center of attraction of all eyes (sometimes they can be quiet theatrical too).</p>
+
+<strong>DON’TS</strong>
+
+<p>Never ever hurt the ego of a Leo. Pride, ego and vanity are some of the bags Leo’s always carry with them. Do not touch these bags. An authoritative Leo is even more difficult to handle in such circumstances. Leo is a sunny sign so they do not like people who are gloomy or depressed. Even if you are crying at heart keep a sunny smile on your lips and then let the lion take charge and remove all worries from your life.</p>
+
+<h2>Virgo</h2>
+<strong>DO’S</strong>
+
+<p>Virgo’s are very methodical and have a great sense of duty. However, they are blind to their own faults. So, if you have a Virgo partner emphasize more on their qualities. Take keen interest in what they are doing and you will realize that they will go out of their way to help you. Do rely and appreciate their mental powers rather than their physical powers. They can turn even an unsuccessful venture into a success.</p>
+
+<strong>DON’TS</strong>
+
+<p>Do not push a Virgo into limelight or on the center stage unless of course they do so on their own. They are shy and reserved by nature and do not like to be the cynosure of all eyes. Virgo’s have secrets that they would not like to bring out in the open. So, even if you have the key to their secret skeleton-closet, hide it; do not even admit that you know anything about it. Virgo, the virgins, do not want to tarnish their public image.</p>
+
+<h2>Libra</h2>
+<strong>DO’S</strong>
+
+<p>Librans need peace and harmony in all their relationships, so help them maintain that. Venus, the ruling planet, gives them beauty and they have weakness for people who can compliment them about their beauty (you will not have to make an effort to do that anyway). You can help Libra seek union and partnership in life. If you have a Libra partner you can be sure to share beautiful and pleasurable moments together.</p>
+
+<strong>DON’TS</strong>
+
+<p>Libra is kind and gentle soul but very argumentative. Hence, do not start an argument or discussion unless, of course, you are free and do not know how to pass your time. They hate to lose and most probably during an argument may change sides too (remember scales can tilt) and still continue arguing from the other side. Do not push your Libra partner into making decisions. They will keep weighing pros and cons and may still not be able to come to any decision. Have patience!</p>
+
+<h2>Scorpio</h2>
+<strong>DO’S</strong>
+
+<p>Scorpio’s are full of passion and zest for life. They have tremendous drive that can involve you too. Tune in to their wavelength and you can enjoy the harmony and music of life with them. Scorpio’s are loyal and never forget a kind deed done by you. If you want to enjoy life with your Scorpio lover, share their passion and intensity and you will be fascinated by how beautiful life can be with them.</p>
+
+<strong>DON’TS</strong>
+
+<p>Scorpio’s are very passionate and intense but they are also fiercely possessive and would like to possess your mind, body and soul. Do not let seeds of jealousy grow in them because then you may have to suffer agonies of jealousy and discontentment in life. Scorpio’s have explosive tempers be careful how you handle them. They never let anyone know what is going on in their mind till they strike and you may be caught unaware. Do not flirt around in the presence of your Scorpio lover.</p>
+
+<h2>Sagittarius</h2>
+<strong>DO’S</strong>
+
+<p>Sagittarius is basically a happy go lucky kind. You can enjoy with them their zest and enthusiasm for life. They bubble with excitement. And if you share the same interests and hobbies, life can be great fun together. They are frank and straightforward so if you want some truthful opinion about anything or anyone go to them. Be optimistic as they are and view life as glass half full.</p>
+
+<strong>DON’TS</strong>
+
+<p>Sagittarius is fiercely independent and cannot tolerate restriction. Hence, do not try to hold them back in life. Let them enjoy their freedom because if you hold any special place in their heart they will always come back for you. Do not feel irritated by the exaggeration in their speech. They may go on and on, talking about certain things that may not even interest you, but its their way of trying to communicate with you. They are basically frank and outspoken (to the point of being rude), so do not feel offended by their talks.</p>
+
+<h2>Capricorn</h2>
+<strong>DO’S</strong>
+
+<p>Capricornians are strong and dependable. Hence, if you want to put your money on anyone it is of course this zodiac sign. They are practical and conservative in their outlook and they expect you to blend in their color. They set certain standards for themselves in their life and they will always try to maintain those standards. For them social status and image is very important in life.</p>
+
+<strong>DON’TS</strong>
+
+<p>Do not expect a Capricorn mate to open his/her heart and pour everything to you. They are very secretive and reserved people. They are very thorough in all their affairs and hate any kind of sloppiness. People born under this zodiac are very tight-fisted and economical. Do not expect lavish gifts from them and if they do give you any gift (that is very rare) it will have some practical use (no romance please) but that does not mean you will be deprived of anything; on the contrary you will be well provided.</p>
+
+<h2>Aquarius</h2>
+<strong>DO’S</strong>
+
+<p>Aquarius are friendly and fascinating people. They have in-depth knowledge about various subjects and you can converse with them for hours without getting bored. They are capable of giving a lot of love that can be amazing. They have a very broad outlook of life and you can relax in their presence. They will always welcome your ideas and actions about humanitarian causes. To keep an Aquarius lover interested you must possess that mysterious and intriguing quality. Once hooked they will always be very faithful to you.</p>
+
+<strong>DON’TS</strong>
+
+<p>Do not expect or plan a normal, simple and predictable life with an Aquarius partner. Aquarians are totally unpredictable. They can go to any direction without giving any advance notice. They are basically very restless and get bored easily. Though they are very friendly, do not expect them to reveal their inner most feelings to you (they never will). They can be detached and impersonal, which may seem strange to others.</p>
+
+<h2>Pisces</h2>
+<strong>DO’S</strong>
+
+<p>Pisceans are sensitive and charming. If you are looking for someone who is understanding and can understand your feelings then you have met the right person. You should appreciate their feelings too, as in your time of need they are sure to help you. Pisces have a keenly developed sixth sense and have great intuitive powers. Their hunches may usually be right on mark. But they can exhaust their physical and mental energies. They are born dreamers and you can build palaces with your dream lover (only in real life it may become a little difficult preposition).</p>
+
+<strong>DON’TS</strong>
+
+<p>Pisces are dreamers and you should not expect them to have worldly ambitions. They are not materialistic in nature. It is not that they like living below the poverty line but they have no earnest desire to accumulate wealth. They are very sensitive and you have to be always careful about their feelings. The fishes are capable of drowning you in their tears (even men born under this sign).</p>
+	
+
+	<div class="text-center"><a href="#articles-index" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">ALL ARTICLES</a></div>
+	</article>
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#article-2" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="article-2">
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+	<article data-role="content" class="ui-body-a">
+	
+	<h1>Zodiac Signs Compatibility</h1>
+<!--////////////////////////////////////////////-->
+<div class="compat-long">
+<p>Find out which zodiac sign is compatible with the other and how!</p>
+<p><span class="myheading">ARIES MATE</span></p>
+<p>You will not tolerate being bossed around by your mate. You hate have your space infringed upon and you can’t stand it if your mate shows up late for a date. You like to be asked for advice and flattery always makes you feel important. You will never slow down and wait for your lover. It’s keep up or get left behind. You match up to your sign and the remaining eleven signs as follows.</p>
+<p><strong>ARIES &amp; ARIES:</strong> Temper tantrums are quite likely to erupt into major wars with this combination. Remember only one party can win and neither one will accept defeat. Passionate but problems.</p>
+<p><strong>ARIES &amp; TAURUS:</strong> The Bull has trouble with your free spirited attitude. With compromise it can work. A little bit dull for you at times however it can be a stabilizing experience for you.</p>
+<p><strong>ARIES &amp; GEMINI:</strong> Wonderful alliance. This is an exciting, sexual encounter that can in fact last. Both you and Gemini are so spontaneous and full of life that there is no time for either of you to become bored.</p>
+<p><strong>ARIES &amp; CANCER:</strong> The Crab is far too sensitive and slow for your speedy and hot tempered nature. You will have difficulty listening to the Crabs nagging and negativity. This is really a poor match up right from day one.</p>
+<p><strong>AIRES &amp; LEO:</strong> This is a most exhilarating combination. You both share the same likes and dislikes. You are both always on the go, craving excitement, love and fun. This is truly a link made in heaven.</p>
+<p><strong>ARIES &amp; VIRGO:</strong> Your impulsiveness is just too much for the Virgoan. Virgo’s practical, critical nature will drive you away rapidly. This is a relationship better left alone.</p>
+<p><strong>ARIES &amp; LIBRA:</strong> Although opposites attract, the Scales are just a little too lazy to keep up with you. You on the other hand lack the sophistication required to keep a Libran happy.</p>
+<p><strong>ARIES &amp; SCORPIO: </strong>You are both ruled by the catalyst Mars that makes this union hot and heavy. The possessive Scorpio will, however, does clash with your free spirited nature.</p>
+<p><strong>ARIES &amp; SAGITTARIUS: </strong>This can be a good and a lasting relationship. You are both fun-loving and quite oblivious to the faults that might drive most people crazy. This is an exciting and adventurous union.</p>
+<p><strong>ARIES &amp; CAPRICORN:</strong> Finances are the biggest detriment in this connection. You can spend it as fast as the hard working Goat can make it that drives the frugal Capricorn insane.</p>
+<p><strong>ARIES &amp; AQUARIUS:</strong> This is not a bad connection. You are both inquisitive, however at times you may find it difficult to contemplate what the Water-bearer will do next.</p>
+<p><strong>ARIES &amp; PISCES:</strong> Sexually this is not a bad alliance, but your temperaments are just so different that it does put a strain on the relationship. You could never handle the Fishes emotional whims for any length of time.</p>
+<p><span class="myheading">LIBRA MATE</span></p>
+<p>When it comes to compatible signs for you harmony is the most important factor to keep in mind. Without harmony you can’t possibly survive.</p>
+<p><strong>LIBRA &amp; ARIES</strong>: Polarity attraction. Shooting stars in the bedroom. Tension, however, at a mental level. It can work if you are both willing to compromise.</p>
+<p><strong>LIBRA &amp; TAURUS:</strong> Not too bad as you both value the finer things in life. The Bull’s possessiveness can bring about some problems for you however if the price is right you’ll put up with a little control.</p>
+<p><strong>LIBRA &amp; GEMINI:</strong> Intellectual connection. This relationship is much better left as a friendship. You both need a great deal of freedom to experience other people. If you both agree on ground rules right from day one it can last.</p>
+<p><strong>LIBRA &amp; CANCER:</strong> This is not the best match. The moody Crab is just too difficult for you to handle. You need to surround yourself with positive individuals who will create a harmonious environment.</p>
+<p><strong>LIBRA &amp; LEO:</strong> This is a good union, similar lifestyles, both hooked on sex. The Lion’s dazzle, and your refined nature balances out quite nicely. Together you make an extremely nice looking couple.</p>
+<p><strong>LIBRA &amp; VIRGO:</strong> No Way! The practical Virgoan will never satisfy your desires. You’re better not to pursue this partner for any kind of a long term commitment.</p>
+<p><strong>LIBRA &amp; LIBRA:</strong> This is not a bad connection, but boredom can be a definite risk as you will both expect to be entertained. Your lazy nature when it comes to domestic chores will also be a problem if you can’t afford to hire help.</p>
+<p><strong>LIBRA &amp; SCORPIO:</strong> The Scorpions’ jealousy vexes the casual, harmonious nature that you possess. This is certainly not an alliance made in heaven and usually quite difficult for you to balance.</p>
+<p><strong>LIBRA &amp; SAGITTARIUS:</strong> This is an auspicious relationship. The Archer’s charisma and thirst for adventure will hold your interest. Your good looks and cultural knowledge will entice the Archer.</p>
+<p><strong>LIBRA &amp; CAPRICORN: </strong>It’s difficult for the Goat to accept your inactivity. Physically there is a powerful attraction between you, unfortunately it is seldom lasting.</p>
+<p><strong>LIBRA &amp; AQUARIUS: </strong>This is a compatible coalition, you are capable of making love in the highest form. Your two of a kind, neither of you care about detail nor domestics.</p>
+<p><strong>LIBRA &amp; PISCES:</strong> This is not usually lasting. The Fish is too confused and sensitive in nature that makes this connection a highly complicated combination. The end result can be devastating if you aren’t careful.</p>
+<p><span class="myheading">TAURUS MATE</span></p>
+<p>Your lover must approach you properly in order to win your heart. You love good cooking and fine wine. The way to your heart is definitely through your stomach. You are turned off by individuals who exaggerate or color the truth. You like to be admired and will respond if your lover is encouraging. Your connection to someone born under the same sign as yourself or one of the remaining eleven signs is as follows.</p>
+<p><strong>TAURUS &amp; ARIES:</strong> This union is better as a hot passionate affair. Your possessiveness will cramp the Aries free-loving nature.</p>
+<p><strong>TAURUS &amp; TAURUS:</strong> Not bad sexually, however this union is somewhat dull in other areas of life. You will have a tendency to grow fat together. Visualize two couch potatoes eating in front of the television.</p>
+<p><strong>TAURUS &amp; GEMINI: </strong>Gemini’s lack of respect for possessions and stability will drive you up a wall. You aren’t spontaneous enough for the versatile Twin. Not really a likely combination.</p>
+<p><strong>TAURUS &amp; CANCER:</strong> Good partnership. You will enhance one another. You offer the Crab the necessary security and in return you receive the affection and loyalty you desire.</p>
+<p><strong>TAURUS &amp; LEO: </strong>This is not only an unlikely connection but one that is built on deception. If your financial position is good you will attract the Lion however, this partner will want the freedom to roam.</p>
+<p><strong>TAURUS &amp; VIRGO:</strong> Problems usually arise in the bedroom, however in all other areas you and your Virgoan will do remarkably well. You are both practical and hard working.</p>
+<p><strong>TAURUS &amp; LIBRA: </strong>Compromise is necessity if you want this union to work. Your Libran mate will be far too indecisive for you and you lack the sophistication that the Scales demand in a partner.</p>
+<p><strong>TAURUS &amp; SCORPIO:</strong> Polarity attraction, sexually dynamic, however you are both fixed signs that can cause difficulties. Your stubbornness and the Scorpions jealousy will result in a no win situation.</p>
+<p><strong>TAURUS &amp; SAGITTARIUS:</strong> This combo is better left as friends. The archer likes to gamble, free-spirited and taking each day as it comes. You on the other hand could never live without routine and would frown up the Sagittarians irresponsibility.</p>
+<p><strong>TAURUS &amp; CAPRICORN:</strong> This is not a bad alliance as you both have the same interests where money, possessions and security are concerned. The biggest drawback is the old ‘all work and no play’ syndrome.</p>
+<p><strong>TAURUS &amp; AQUARIUS: </strong>You are both fixed signs with a totally different concept of life. The water-bearer is too much of a loner and you always want to own or possess your partner.</p>
+<p><strong>TAURUS &amp; PISCES:</strong> This combination can work, however the Fish lack practicality which can be a deterrent for you. On the other hand your Pisces mate may leave if you become too domineering</p>
+<p><span class="myheading">GEMINI MATE</span></p>
+<p>You can play a heartless game using your keen intellect, charm and sex appeal to your advantage. You can easily persuade any sign to have a passionate affair with you, however a long term relationship is another story. You aren’t likely to stay in any union that restricts, confines or holds you back in any way. You match up as follows to your own sign and the remaining eleven signs.</p>
+<p><strong>GEMINI &amp; ARIES:</strong> This is one of your best matches. You both have a high energy, a thirst for adventure and spontaneity. Passionate, sudden and compelling this union can last.</p>
+<p><strong>GEMINI &amp; TAURUS:</strong> This is not a good connection for the Bull. Your lack of routine upsets this steady sign. You find Taureans far too dull for your liking and will tend to wander early into the relationship.</p>
+<p><strong>GEMINI &amp; GEMINI: </strong>You can have some real good times but you seldom stay together unless you meet in later years. There is a lack of direction that usually prevails, however you can have some wonderful times together.</p>
+<p><strong>GEMINI &amp; CANCER: </strong>The Moon child is far too moody and sensitive for your fickle ways. You are not a homebody like the Crab. You have totally different interests then a Cancer.</p>
+<p><strong>GEMINI &amp; LEO:</strong> This is not a bad connection. You both complement one another. The generous Lion will bend to whatever you want as long as you let your flattering silver-tongue lead the way.</p>
+<p><strong>GEMINI &amp; VIRGO: </strong>This is not the best union, the practical Virgo views you as being disorganized and frivolous. You on the other hand don’t think that the Virgoan knows how to have a good time.</p>
+<p><strong>GEMINI &amp; LIBRA:</strong> Magnetic union, however not long lasting. The Scales find it difficult to live in the turmoil and melodrama that you thrive on. This relationship is usually short, hot and sweet.</p>
+<p><strong>GEMINI &amp; SCORPIO:</strong> Scorpio’s jealous tendencies are impossible for you to handle. You flirtatious ways and little white lies will drive the Scorpion as far away as possible.</p>
+<p><strong>GEMINI &amp; SAGITTARIUS:</strong> This union can work, however you both love to travel therefore you may not spend much time together. You both tend to leave your fate to luck which can make this a risky relationship.</p>
+<p><strong>GEMINI &amp; CAPRICORN: </strong>Not great. The goat is too ambitious and organized for you. You have totally different priorities in love and in life.<br>
+<strong><br>
+GEMINI &amp; AQUARIUS:</strong> Super alliance, you are both original and like variety. This makes for a fun loving couple. This is not always a lasting union but it is certainly worth pursuing.</p>
+<p><strong>GEMINI &amp; PISCES: </strong>Insecurity usually ruins this relationship. This can be an extremely emotional union. Unique, destructive, yet passionate and lustful resulting in hurt and anxiety.</p>
+<p><span class="myheading">CANCER MATE</span></p>
+<p>Your sensitive nature can be difficult to deal with. You are often misunderstood at an emotional level You need a mate that can understand your tenderness. You match up you your own sign and the other eleven as follows.</p>
+<p><strong>CANCER &amp; ARIES:</strong> This is not a very good combination for you. The Ram’s lack of tact and their hot temper is just too devastating for your sensitive and insecure nature.</p>
+<p><strong>CANCER &amp; TAURUS:</strong> The Bull is one of your best partners. You are both homebodies who appreciate good food, good quality and thrift. You can keep each other quite happy. Truly an enduring relationship.</p>
+<p><strong>CANCER &amp; GEMINI: </strong>The Twins play too many mind games for your soft and innocent approach to life. Gemini’s flirtatious free-spirited nature is just too hurtful for you to have to deal with.</p>
+<p><strong>CANCER &amp; CANCER:</strong> Together you are far too negative for this union to work. Emotional problems will exist throughout the entire relationship. Neither one of you has the ability to see the positive side to the relationship.</p>
+<p><strong>CANCER &amp; LEO: </strong>The Lion needs to be the center of attention, therefore you will often feel quite neglected in this relationship. You have a tendency to nag and that will drive a Leo mate on to greener pastures.</p>
+<p><strong>CANCER &amp; VIRGO: </strong>This partnership lacks excitement, to say the least, however that doesn’t usually matter to either you or your mate. Security and the home are much more important to both you and the practical Virgoan.</p>
+<p><strong>CANCER &amp; LIBRA:</strong> Your mood swings are far too upsetting for the Scales. Libra Needs harmony and a variety of entertainment which really isn’t your style or your intent. You create melodrama at an emotional level and would prefer to stay at home where it’s safe and secure.</p>
+<p><strong>CANCER &amp; SCORPIO:</strong> You are both too possessive that can and usually does lead to problems at some time. As long as you deal with these issues promptly you can have a happy, satisfying and loving union.</p>
+<p><strong>CANCER &amp; SAGITTARIUS:</strong> The Archer is too worldly for you. You don’t like to take risks and Sagittarians thrive on chance. This is not your best bet for a lasting union but it is one that often attracts you.</p>
+<p><strong>CANCER &amp; CAPRICORN: </strong>Polar opposites, Usually there is a lot of chemistry, but the Goat does not usually have the time to show you enough affection. If you can put up with their workaholic ways you can rest assured that you will be well-taken care of financially.</p>
+<p><strong>CANCER &amp; AQUARIUS:</strong> You are far too sensitive for the Water-bearers aloofness. Aquarians cannot tolerate your need to cling to them.</p>
+<p><strong>CANCER &amp; PISCES: </strong>You and the Fish are probably the two most sensitive signs of the zodiac. Although you can comprehend one another you can also play emotional games and hurt each other. This connection can work if you communicate openly and honestly.</p>
+<p><span class="myheading">LEO MATE</span></p>
+<p>When looking for a prospective mate you will interact diversely with all the other constellations including your own.</p>
+<p><strong>LEO &amp; ARIES: </strong>This is a capricious match. Your common interests and lusty passionate nature bring about outrageous social and sexual encounters.</p>
+<p><strong>LEO &amp; TAURUS:</strong> This is an ill-fated connection, your extravagance and desire to party are antagonizing to the prudent Bull. This relationship is not likely to start up in the first place, and not likely to last if you do make it to first base.</p>
+<p><strong>LEO &amp; GEMINI: </strong>You are enticed by the clever Twins, nevertheless the Twins’ fickleness enrages you. Intriguing while this connection lasts, however it’s usually short lived.</p>
+<p><strong>LEO &amp; CANCER:</strong> You’re powerful desire to be the center of attention along with your vanity is pernicious for the shy, sensitive Crab. Not a choice alliance.</p>
+<p><strong>LEO &amp; LEO: </strong>This is a dramatic combination, a sexual delight, providing both desist from dominating one another. This is truly a royal match and believe it or not, it often works.</p>
+<p><strong>LEO &amp; VIRGO: </strong>Virgo’s desire to be in command and methodical nature collides with your carefree, spontaneous temperament. This combo takes a lot of compromise on the part of the Virgoan.</p>
+<p><strong>LEO &amp; LIBRA: </strong>Libra’s sophistication and your flair constitute an entertaining coalition, unless a financial deficit prevails. You can both be quite extravagant and wasteful.</p>
+<p><strong>LEO &amp; SCORPIO:</strong> You can dance rather well in a horizontal position, the end result can be crimes of passion, due to jealousy. This union is usually hot, heavy and short lived.</p>
+<p><strong>LEO &amp; SAGITTARIUS:</strong> This is probably your foremost partner physically and mentally. This union will revel in spending, travel and adventure. Quite an exciting connection.</p>
+<p><strong>LEO &amp; CAPRICORN:</strong> You’ll get bored with the Goat’s careful and enterprising ways, which is too bad because the Goat is the one sign that can usually afford to spoil you monetarily.</p>
+<p><strong>LEO &amp; AQUARIUS:</strong> The polarities usually attract passionately, nevertheless the Water-bearer’s expansive interests and higher mind leave you feeling somewhat neglected and unimportant.</p>
+<p><strong>LEO &amp; PISCES: </strong>This is a detrimental relationship for the shy Pisces and a most unlikely attraction for you. Not compatible and very hurtful for the Fish that is attracted to you.</p>
+<p><span class="myheading">VIRGO MATE</span></p>
+<p>Zodiacal match-ups for you are not the easiest due to your critical analytical nature.</p>
+<p><strong>VIRGO &amp; ARIES: </strong>The volatile Aries will upset your nervous nature, the conclusion being ill-fated and certainly not lasting. The Ram just won’t put up with your put-downs.</p>
+<p><strong>VIRGO &amp; TAURUS:</strong> You both share the same high standards and, needless to say, are not the most exciting couple on earth. This is a much better connection during the last half of life.</p>
+<p><strong>VIRGO &amp; GEMINI: </strong>Not a chance. The risky, carefree fickle Gemini sees you as a drag. Truly a miracle if the two of you do interact for any length of time. This union is best left alone unless other factors prevail in both charts.</p>
+<p><strong>VIRGO &amp; CANCER: </strong>Somewhat dull. You both tend to avoid getting involved in activities outside your own environment. Neither of you bother to end the relationship even if it isn’t working. This union is a critical and nagging match that results in lowered self-esteem for both of you.</p>
+<p><strong>VIRGO &amp; LEO: </strong>You will have continuous arguments concerning finances and sex. Your critical tongue will make the Lion wander, seeking the ego-boosting that is necessary for the proud Leo’s existence.</p>
+<p><strong>VIRGO &amp; VIRGO: </strong>You are quite likely to agree on most subjects. Virgo’s are work, security and cleanliness oriented. When two of you get together in this capacity, unusual sexual pleasures can unfold.</p>
+<p><strong>VIRGO &amp; LIBRA: </strong>Libra’s extravagant, indecisive nature bothers you, however Libra’s charm can normally melt your critical tongue. Not likely to be lasting but it can be passionate while it lasts.</p>
+<p><strong>VIRGO &amp; SCORPIO:</strong> This is an interesting match. If the scorpion can tempt you into sexual encounters that are exotic, the end result will end in fireworks.</p>
+<p><strong>VIRGO &amp; SAGITTARIUS:</strong> This is sexually not bad. The Archer’s non-committal approach to life however, drives you up a wall. This combo works better as a passing affair.</p>
+<p><strong>VIRGO &amp; CAPRICORN:</strong> This is an excellent union. Practicality and neatness go hand in hand for the Goat as well as for you. Fear of material loss locks you in tight for a long term union.</p>
+<p><strong>VIRGO &amp; AQUARIUS: </strong>This is a far more mental then physical connection. You rule the lower mind and the Water-bearer the higher mind. This is an intellectual union that is likely to be lasting.</p>
+<p><strong>VIRGO &amp; PISCES: </strong>This is a polarity attraction. You are enamored by the Pisces empathetic ways and in turn the Fish needs your practical direction. Pisces’ sexuality can bring out the erotic side in you.</p>
+<p><span class="myheading">SCORPIO MATE<span></span></span></p>
+<p>You have an all-or-nothing approach to relationships, therefore you do not match up to all the signs. Here’s a look at how you do interact with others.<br>
+<strong><br>
+SCORPIO &amp; ARIES: </strong>You make a hot combination in bed. Highly aggressive sex that could be described as implied violence. Lustful but not lasting due to your jealous nature.</p>
+<p><strong>SCORPIO &amp; TAURUS:</strong> Polar opposites that actually do quite well together. The Bull is stable and loyal enough to satisfy your intense nature. You both value long-term unions and are willing to work at them together.</p>
+<p><strong>SCORPIO &amp; GEMINI:</strong> This is not a likely match, the Illusive, fickle Gemini will drive you to distraction, which in turn could bring out your vengeful side.</p>
+<p><strong>SCORPIO &amp; CANCER: </strong>This is one of your best connections. The Crab is a loyal mate who is usually willing to stand behind you. Cancers are attracted to your strong, demanding ways.</p>
+<p><strong>SCORPIO &amp; LEO: </strong>This connection can lead to crimes of passion. Although you are strongly attracted to the Lion, Leo’s flamboyant, flirtatious nature will cause anger that could erupt into murder-suicide.</p>
+<p><strong>SCORPIO &amp; VIRGO: </strong>The Virgoan has difficulties with your sexual leanings. You will bore easily and move on to more passionate partners.</p>
+<p><strong>SCORPIO &amp; LIBRA: </strong>This is not the best match. Libra is far too good looking and easy going for your jealous nature. You would likely end up spying on this social butterfly.</p>
+<p><strong>SCORPIO &amp; SCORPIO: </strong>Sexually you are truly compatible, however out of the bedroom you are far too much alike — creating problems and mind games. You will always think that the other is having an affair.</p>
+<p><strong>SCORPIO &amp; SAGITTARIUS:</strong> This alliance is a waste of time for both parties. You are a homebody and the Archer is a travel nut. This is not a likely attraction.</p>
+<p><strong>SCORPIO &amp; CAPRICORN:</strong> This is a wonderful partnership. You both have the same values and cherish your home environment. Mentally and physically you match up well, easily satisfying one anothers needs.</p>
+<p><strong>SCORPIO &amp; AQUARIUS: </strong>Why bother. This will never work due to the Aquarian’s need for freedom and your need to possess. Your values, ethics and approach to life are just too different.</p>
+<p><strong>SCORPIO &amp; PISCES:</strong> This is not bad. Probably the most erotic sexual combination. The Fish is willing to be a part of your whims and desires, and that makes for a lasting union.</p>
+<p><span class="myheading">SAGITTARIUS MATE<span></span></span></p>
+<p>You do much better when it comes to friendships then you do in love relationships. Here’s a look at how you do match up to other signs.</p>
+<p><strong>SAGITTARIUS &amp; ARIES:</strong> This is not a bad match while it lasts. Fun-loving, adventuresome, certainly compatible. Both you and the Ram like to do your own thing, therefore you often part on friendly terms as you go off in your own directions.</p>
+<p><strong>SAGITTARIUS &amp; TAURUS: </strong>The Bull leads too structured a life for you to conform to. This is not a likely match. Taureans see you as a wanderer with no apparent direction.</p>
+<p><strong>SAGITTARIUS &amp; GEMINI:</strong> You are polar opposites giving this connection plenty of chemistry, however outside activities tend to take you both in different directions. You both like to take chances and depend too much on luck.</p>
+<p><strong>SAGITTARIUS &amp; CANCER: </strong>You are a traveler and the Crab is a homebody that automatically puts you on a different wave length. This combination makes a much better friendship. You could never live within the other’s life-style and remain happy.</p>
+<p><strong>SAGITTARIUS &amp; LEO: </strong>This is probably one of your best match ups. You bring out the best in one another. You both have a very carefree approach to life and love.</p>
+<p><strong>SAGITTARIUS &amp; VIRGO:</strong> Virgo’s do not handle your lifestyle well. You can not put up with the Virgoan’s meticulous, detailed way of doing everything.</p>
+<p><strong>SAGITTARIUS &amp; LIBRA: </strong>This is probably one of your best connections. You get the freedom you desire and both of you absolutely hate confrontation, therefore problems are just put on the shelf.</p>
+<p><strong>SAGITTARIUS &amp; SCORPIO:</strong> The Scorpion cannot live with your freedom loving wandering spirit. When the jealousy sets in you’ll be off to greener pastures.</p>
+<p><strong>SAGITTARIUS &amp; SAGITTARIUS:</strong> You will shake well with one another. This combination is somewhat unpredictable. It’s not always a lasting union due to a lack of being in the same place at the same time, but truly a hot affair.</p>
+<p><strong>SAGITTARIUS &amp; CAPRICORN: </strong>You are impulsive, risk-taking and always looking for adventure that frightens the cautious Goat. This is really not a suitable union, You are far too different to ever exist together.</p>
+<p><strong>SAGITTARIUS &amp; AQUARIUS: </strong>You both love adventure, travel and the great outdoors. You can have a lasting relationship, especially if it is a long distance romance.</p>
+<p><strong>SAGITTARIUS &amp; PISCES: </strong>This is a passionate attraction, but unfortunately neither one of you can supply the other with the emotional factor required to make this coalition work.</p>
+<p><span class="myheading">AQUARIUS MATE<span></span></span></p>
+<p>You tend to match up to most signs in a friendly manner, but when it comes to love some signs are better than others.</p>
+<p><strong>AQUARIUS &amp; ARIES: </strong>This is an excellent match. You both enjoy a large variety of entertainment. A truly adventuresome union as long as neither one of you tries to dominate or regulate activities.</p>
+<p><strong>AQUARIUS &amp; TAURUS: </strong>The stubborn Bull will have difficulties understanding the unpredictable side of you. Concessions will be necessary on the part of both of you if success is to follow.</p>
+<p><strong>AQUARIUS &amp; GEMINI:</strong> This is a delightful, intellectually stimulating relationship. Not always smooth but certainly an exciting and entertaining connection.</p>
+<p><strong>AQUARIUS &amp; CANCER:</strong> You are far too aloof for the insecure Crab. Not a likely encounter, highly dangerous for Cancer and somewhat binding for you.</p>
+<p><strong>AQUARIUS &amp; LEO:</strong> You are polar opposites. The is plenty of chemistry, however the Lion is more physical in nature then you are. You on the other hand are concerned with the intellectual aspect of the relationship that is often lacking.</p>
+<p><strong>AQUARIUS &amp; VIRGO:</strong> You are both into the intellect, however you might be a little bit too progressive for the practical Virgoan. Virgo’s are just not social enough to hang on to you or hold your interest.</p>
+<p><strong>AQUARIUS &amp; LIBRA: </strong>Very well-suited couple both mentally and physically. Exciting, fun loving and carefree connection. Your spending habits are the only foreseeable dilemma.</p>
+<p><strong>AQUARIUS &amp; SCORPIO:</strong> This is not the best coalition. You are both fixed in your beliefs and your free-spirited nature arouses suspicious side of the Scorpion.</p>
+<p><strong>AQUARIUS &amp; SAGITTARIUS: </strong>This is a wonderful affair, two ships that pass in the night. You are an active and outgoing couple, however seldom lasting because eventually you will both go in your own direction.</p>
+<p><strong>AQUARIUS &amp; CAPRICORN: </strong>This is not good. You both have totally different goals in life. You are far too humanitarian to live with the Goat’s manipulative, ambitious ways.</p>
+<p><strong>AQUARIUS &amp; AQUARIUS:</strong> Although this is probably the most inventive coalition, it is lacking in the sexual arena. Not a lasting relationship but it can be fun for the moment.</p>
+<p><strong>AQUARIUS &amp; PISCES:</strong> This is a pretty dicey combination. The Fish’s emotional blackmail only drives you further away. This Pisces is likely to end up hurt and confused.</p>
+<p><span class="myheading">CAPRICORN MATE<span></span></span></p>
+<p>When it comes to compatible mates, You can compliment a number of different signs.</p>
+<p><strong>CAPRICORN &amp; ARIES:</strong> You are both far too independent to get along for any length of time. Although there is an attraction and mutual respect, arguments will make this union impossible.</p>
+<p><strong>CAPRICORN &amp; TAURUS:</strong> You both have the same regard for quality and money. This is almost a match made in heaven. Sexually adequate and certainly a long lasting alliance.</p>
+<p><strong>CAPRICORN &amp; GEMINI:</strong> Forget it — the flirtatious, fun-loving Twin will not impress you. To you, Gemini’s are irresponsible and unworthy of your dedication.</p>
+<p><strong>CAPRICORN &amp; CANCER:</strong> You are polar opposites that do quite well together. You feed each other exactly what’s needed. Security from you and loyalty and trust from the Crab.</p>
+<p><strong>CAPRICORN &amp; LEO: </strong>The extravagant Lion will disgust you. You hate wasteful, flamboyant individuals. Although sexually you are compatible this combination is best as a one night stand.</p>
+<p><strong>CAPRICORN &amp; VIRGO:</strong> This is a very good mental connection, nevertheless not the most sexually oriented combination.</p>
+<p><strong>CAPRICORN &amp; LIBRA:</strong> You will be mesmerized by the sophisticated Libran, but that is about as far as this amalgamation will go. You will also tire of the lazy Libran’s ways.</p>
+<p><strong>CAPRICORN &amp; SCORPIO:</strong> Not bad at all. You both understand one another perfectly and can appreciate the same values and directions. Sexually you can dance superbly together.</p>
+<p><strong>CAPRICORN &amp; SAGITTARIUS:</strong> You are far too different in your likes and dislikes. The adventurous risk-taking Archer finds you boring due to your cautious, routine nature.</p>
+<p><strong>CAPRICORN &amp; CAPRICORN:</strong> This relationship lacks stimulation. You are both far too cautious, frugal and self-righteous to last. This is a dead end in the bedroom.</p>
+<p><strong>CAPRICORN &amp; AQUARIUS:</strong> Although you can appreciate the Water-bearer’s mind and originality, the Aquarian’s lack of direction and carefree nature will cause you to shy away.</p>
+<p><strong>CAPRICORN &amp; PISCES: </strong>This is not a bad match. The Pisces’ eagerness to please will attract and hold you. This union will only encounter problems if you neglect the Fish’s need for attention.</p>
+<p><span class="myheading">PISCES MATE<span></span></span></p>
+<p>When you get involved with the other eleven signs or another Fish different reactions occur.</p>
+<p><strong>PISCES &amp; ARIES:</strong> You are far too sensitive for the aggressive Ram. You will be left behind to drown in your sorrows. An unfortunate match.</p>
+<p><strong>PISCES &amp; TAURUS: </strong>This is not a bad connection, however the Bull can get upset with your impractical nature. You, on the other hand, may find that the Bull is too stubborn.</p>
+<p><strong>PISCES &amp; GEMINI:</strong> Your emotional blackmail will usually hold a Gemini, however sorrow almost always prevails. A very destructive union for both parties involved.</p>
+<p><strong>PISCES &amp; CANCER: </strong>You belong together. You are both sensitive, weepy and love to dwell in self-pity. This is a great match, certainly lasting, however someone negative and moody.</p>
+<p><strong>PISCES &amp; LEO:</strong> You are doomed in this alliance. The Lion is too outgoing and you are far too sensitive. A hurtful relationship with little substance.</p>
+<p><strong>PISCES &amp; VIRGO:</strong> This is your polar attraction. It can be extremely perverse in the bedroom, but difficult at a mental level. You are impractical and this will really try the Virgoans patience.</p>
+<p><strong>PISCES &amp; LIBRA:</strong> You are both creatively inclined, however you are just not sophisticated enough for the Scales. Librans also have trouble putting up with your emotional whims.</p>
+<p><strong>PISCES &amp; SCORPIO: </strong>This is a highly sexual union. You love to be possessed and cared for with the deep, warm affection that the Scorpion can provide. Truly a match made in heaven.</p>
+<p><strong>PISCES &amp; SAGITTARIUS:</strong> This is not your best alliance as the Archer’s non-committal nature will hurt your tender heart. Your daily melodramas will drive the Sagittarius away.</p>
+<p><strong>PISCES &amp; CAPRICORN: </strong>This is not a bad combo in general however, you will probably run around on the Goat due to loneliness. You are also too wasteful for the Capricorn to deal with.</p>
+<p><strong>PISCES &amp; AQUARIUS:</strong> This is not the best union. The Water-bearer is far too cool and detached for you. Your tears and tantrums will soon tire the Aquarius.</p>
+<p><strong>PISCES &amp; PISCES: </strong>This is an emotional connection. Extremely good in the bedroom, but difficult out of the bedroom. You both crave attention and affection yet you want to do your own thing. Exhausting but exciting.</p>
+</div>
+
+<!--///////////////////////////////////////////-->
+	<div class="text-center"><a href="#articles-index" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">ALL ARTICLES</a></div>
+	</article>
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#article-3" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="article-3">
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+	<article data-role="content" class="ui-body-a">
+	
+	<h1>Zodiac Bedtime Prayers</h1>
+
+<h3>ARIES</h3>
+<p>“Dear God! Give me PATIENCE and I want it NOW!</p>
+
+<h3>TAURUS</h3>
+<p>“God, please help me accept CHANGE in my life, but NOT YET.”</p>
+
+<h3>GEMINI</h3> 
+<p>“Yo God (or is it Goddess?)<br>
+Who are you?<br>
+What are you?<br>
+Where are You?<br>
+How many of you ARE there?<br>
+I can’t figure you out!”</p>
+
+<h3>CANCER</h3>
+<p>“Dear God, I know I shouldn’t depend on you so much, but you’re the only One I can count on while my security blanket is at the cleaners.”</p>
+
+<h3>LEO</h3>
+<p>“Hi God! I’ll bet you’re really proud to have me!”</p>
+
+<h3>VIRGO</h3>
+<p>“Dear God, please make the world a better place, and don’t do like you did the last time.”</p>
+
+<h3>LIBRA</h3>
+<p>“Dear God, I know I should make decisions for myself. But, on the other hand, what do YOU think?”</p>
+
+<h3>SCORPIO</h3>
+<p>“Dear God, help me forgive my enemies, even if the creeps don’t deserve it.”</p>
+
+<h3>SAGITTARIUS</h3>
+<p>“OH ALMIGHTY,<br>
+ALL KNOWING,<br>
+ALL-LOVING,<br>
+ALL- POWERFUL,<br>
+OMNIPRESENT,<br>
+EVERLASTING GOD,<br>
+IF I’VE ASKED YOU ONCE, I’VE ASKED YOU A THOUSAND TIMES — HELP ME STOP EXAGGERATING!”</p>
+
+<h3>CAPRICORN</h3>
+<p>“Dear God, I was going to pray, but I guess I ought to figure things out for myself. Thanks anyway.</p>
+
+<h3>AQUARIUS</h3>
+<p>“Hi God! Some say you’re this; Some say you’re that!!! I say we’re ALL God. So, why pray? Let’s have a party!”</p>
+
+<h3>PISCES</h3>
+<p>“Heavenly Almighty, as I prepare to consume this last fifth of Scotch to drown out my pain and sorrow,
+may my inebriation be for Thy greater Honor and Glory.”</p>	
+
+
+	<div class="text-center"><a href="#articles-index" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">ALL ARTICLES</a></div>
+	</article>
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#article-4" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="article-4">
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+	<article data-role="content" class="ui-body-a">
+	
+	<h1>Zodiac Qualities Comparison</h1>
+
+<h3>ARIES – The Aggressive</h3>
+
+<p>Outgoing. Lovable. Spontaneous. Not one to mess with. Funny. EXTREMELY adorable. Loves relationships, and family is very important to an aries. Aries are known for being generous and giving. Addictive. Loud. Always has the need to be ‘Right’. Aries will argue to prove their point for hours and hours. Aries are some of the most wonderful people in the world.</p>
+
+<h3>TAURUS – The Tramp</h3>
+
+<p>Aggressive. Loves being in long relationships. Likes to give a good fight. Fight for what they want. Can be annoying at times, but for the love of attention. Extremely outgoing. Loves to help people in times of need. Good personality. Stubborn. A caring person. They can be self centered and if they want something they will do anything to get it. They love to sleep and can be lazy. One of a kind. Not one to mess with. Are the most attractive people on earth!</p>
+
+<h3>GEMINI – The Twin</h3>
+
+<p>Nice. Love is one of a kind. Great listeners Very Good at confusing people… Lover not a fighter. Gemini’s like to tell people what they should do and get offended easily. They are great at losing things and are forgetful. Gemini’s can be very sarcastic and childish at times, and are very nosey. Trustworthy. Always happy. VERY Loud. Talkative. Outgoing VERY FORGIVING. Loves to make out. Has a beautiful smile. Generous. Strong.</p>
+
+<h3>CANCER – The Beauty</h3>
+
+<p>Very high appeal. A Cancer’s Love is one of a kind. Very romantic. Most caring person you will ever meet in your life. Entirely creative Person, most’s are artists and insane respectfully speaking. Extremely random. An Ultimate Freak. Extremely funny and is usually the life of the party. Most cancers will take you under their wing and into their hearts where you will remain forever. Cancers make love with a passion beyond compare. Spontaneous. Not a Fighter, But will kick your a** good if it comes down to it.</p>
+
+<h3>LEO – The Lion</h3>
+
+<p>Great talker. Attractive and passionate. Laid back. Usually happy, but when unhappy tend to be grouchy and childish. A leo’s problem becomes everyone’s problem. Most Leos are very predictable and tend to be monotonous. Knows how to have fun. Is really good at almost anything. Very predictable. Outgoing. Down to earth. Addictive. Attractive. Loud. Loves being in long relationships. Talkative. Not one to mess with. Rare to find. Good when found.</p>
+
+<h3>VIRGO – The One that Waits</h3>
+
+<p>Dominant in relationships. Always wants the last word. Caring. Smart. Loud. Loyal. Easy to talk to. Everything you ever wanted. Easy to please. A pushover. Loves to gamble and take chances. Needs to have the last say in everything. They think they know everything and usually do. Respectful to others but you will quickly lose their respect if you do something untrustworthy towards them and never regain respect. The do not forgive and never forget the one and only.</p>
+
+<h3>LIBRA – The Lame One</h3>
+
+<p>Nice to everyone they meet. Their Love is one of a kind. Silly, fun and sweet. Have own unique appeal. Most caring person you will ever meet! However, not the kind of person you want to mess with… you might end up crying… Libras can cause as much havoc as they can prevent. Faithful friends to the end. Can hold a grudge for years. Libras are someone you want on your side. Usually great at sports and are extreme sports fanatics. Kind a dumb at times.</p>
+
+<h3>SCORPIO – The Addict</h3>
+
+<p>EXTREMELY adorable. Loves to joke. Very Good sense of humor. Will try almost anything once. Loves to be pampered. Energetic. Predictable. Always get what they want. Attractive. Loves being in long relationships. Talkative. Loves to party but at times to the extreme. Loves the smell and feel of money and is good at making it but just as good at spending it! Very protective over loved ones. HARD workers. Can be a good friend but if is disrespected by a friend, friendship will end. Romantic. Caring.</p>
+
+<h3>SAGITTARIUS – The Promiscuous One</h3>
+
+<p>Spontaneous. High appeal. Rare to find. Great when found. Loves being in long relationships. So much love to give. A loner most of the time. Loses patience easily and will not take crap. If in a bad mood stay FAR away. Gets offended easily and remembers the offense forever. Loves deeply but at times will not show it and feels that it is a sign of weakness. Has many fears but will not show it. VERY private person. Defends loved ones will with all their abilities. Can be childish often. Not one to mess with. Very pretty. Very romantic. Nice to everyone they meet. Their Love is one of a kind. Silly, fun and sweet. Have own unique appeal. Most caring person you will ever meet! Amazing in bed..!!! Not the kind of person you want to mess with – you might end up crying.</p>
+
+<h3>CAPRICORN – The Passionate Lover</h3>
+
+<p>Love to bust. Nice. Sassy. Intelligent. Sexy. Grouchy at times and annoying to some. Lazy and love to take it easy. But when they find a job or something they like to do, they put their all into it. Proud, understanding and sweet.
+Irresistible. Loves being in long relationships. Great talker. Always gets what he or she wants. Cool. Loves to win against other signs especially Gemini’s in sports. Likes to cook but would rather go out to eat at good restaurants. Extremely fun. Loves to joke. Smart.</p>
+
+<h3>AQUARIUS – Does It In The Water</h3>
+
+<p>Trustworthy. Attractive. One of a kind, loves being in long-term relationships. Can be clumsy at times. Proud of themselves in whatever they do. Messy, and unorganized. Procrastinators. Great lovers, when their not sleeping. Extreme thinkers. Loves their pets usually more then their family. Can be VERY irritating to others. When they try to explain or tell a story. Unpredictable. Will exceed your expectations. Not a Fighter.</p>
+
+<h3>PISCES – The Partner for Life</h3>
+
+<p>Caring and kind. Smart. Center of attention. Messy at times and irresponsible! Smart but lazy. High appeal. Has the last word. Good to find, hard to keep. Passionate, wonderful lovers. Fun to be around. Too trusting at times and gets hurt easily. Lover of animals. VERY caring, make wonderful nurses or doctors. They always try to do the right thing sometimes get the short end of the stick. They sometimes get used by others and hurt because of their trusting. Extremely weird but in a good way. Good Sense of Humor!!! Thoughtful. Always gets what he or she wants. Loves to joke. Very popular. Silly, fun and sweet. Good friend to other but need to be choosy on who they allow their friends to be.</p>
+
+	<div class="text-center"><a href="#articles-index" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">ALL ARTICLES</a></div>
+	</article>
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#article-5" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="article-5">
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+	<article data-role="content" class="ui-body-a">
+	
+	<h1>Business Star Signs - What's Your Business Sign?</h1>
+
+<h3>Marketing</h3>
+<p>You are ambitious yet stupid. You chose a marketing degree to avoid having to study in college, concentrating instead on drinking and socializing which is pretty much what your job responsibilities are now. Least compatible with sales.</p>
+
+<h3>Sales</h3>
+<p>Laziest of all signs, often referred to as “marketing without a degree.” You are also self centered and paranoid. Unless someone calls you and begs you to take their money, you like to avoid contact with customers so you can “concentrate on the big picture.” You seek admiration for your golf game throughout your life.</p>
+
+<h3>Technology</h3>
+<p>Unable to control anything in your personal life, you are instead content to completely control everything that happens at your workplace. Often even you don’t understand what you are saying but who can tell. It is written that Geeks shall inherit the Earth.</p>
+
+<h3>Engineering</h3>
+<p>One of only two signs that actually studied in school. It is said that 90% of all personal ads are placed by engineers. Accounting: The only other sign that studied in school. You are mostly immune from office politics. You are the most feared person in the organisation; combined with your extreme organizational traits, the majority of rumours concerning you say that you are completely insane.</p>
+
+<h3>Human resources</h3>
+<p>Ironically, given your access to confidential information, you tend to be the biggest gossip within the organization. Possibly the only other person that does less work than marketing, you are unable to return any calls today because you have to get a haircut and eat lunch.</p>
+
+<h3>Management and middle management</h3>
+<p>Catty, cut-throat, yet completely spineless, you are destined to remain at your current job for the rest of your life. Unable to make a single decision you tend to measure your worth by the number of meetings you can schedule for yourself. Romantically compatible with other middle managers as everyone in you social circle is a middle manager.</p>
+
+<h3>Senior management</h3>
+<p>Read above again. Same sign, different title.</p>
+
+<h3>Customer service</h3>
+<p>Cheery, positive, you are a bus ride away from taking your own life. As children very few of you asked your parents for a little cubicle for your room and a headset so you could pretend to play “customer service”. Continually passed over for promotions, your best bet is to sleep with your manager.</p>
+
+<h3>Consultant</h3>
+<p>Lacking any specific knowledge, you use acronyms to avoid revealing your utter lack of experience. You have convinced yourself that your skills are in demand and that you could get a higher paying job with any other organisation in a heartbeat. You will spend an eternity contemplating these career opportunities without ever taking direct action.</p>
+
+<h3>Recruiter (Head-hunter)</h3>
+<p>As a person that profits from the success of others, you are disdained by most people who actually work for a living. Paid on commission and susceptible to alcoholism, your ulcers and frequent heart attacks correspond directly with fluctuations in the stock market.</p>
+
+<h3>Partner, President or CEO</h3>
+<p>You are brilliant or lucky. Your inability to understand complex systems such as the fax machine suggests the latter.</p>
+
+<h3>Government Worker</h3>
+<p>Paid to take days off. Government workers are genius inventors, like the invention of new Holidays. They usually suffer from deep depression or anxiety.</p>
+
+
+
+	<div class="text-center"><a href="#articles-index" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">ALL ARTICLES</a></div>
+	</article>
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#article-6" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="article-6">
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+	<article data-role="content" class="ui-body-a">
+	
+	<h1>How to Make Anybody Fall in Love With Your Zodiac</h1>
+
+	<p>This will give you an idea about how to make anybody (related to a particular zodiac sign) fall in love with you.</p>
+
+<h3>Sagittarius</h3>
+
+<div class="videoWrapper">
+<iframe src="https://www.youtube.com/embed/UfWaURBxPtk?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?time_continue=1&v=UfWaURBxPtk" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+
+<h3>Scorpio</h3>
+
+<div class="videoWrapper">
+<iframe src="https://www.youtube.com/embed/EkxoUfgVHkk?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=EkxoUfgVHkk" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+
+<h3>Libra</h3>
+
+<div class="videoWrapper">
+<iframe src="https://www.youtube.com/embed/rjZVQrlewZI?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=rjZVQrlewZI" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+
+<h3>Virgo</h3>
+
+<div class="videoWrapper">
+<iframe src="https://www.youtube.com/embed/hvNAXfBkQQk?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=hvNAXfBkQQk" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+
+<h3>Leo</h3>
+
+<div class="videoWrapper">
+<iframe src="https://www.youtube.com/embed/3aul4uA2JNg?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=3aul4uA2JNg" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+
+<h3>Cancer</h3>
+
+<div class="videoWrapper">
+<iframe src="https://www.youtube.com/embed/wRWCxVYtep8?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=wRWCxVYtep8" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+
+<h3>Gemini</h3>
+
+<div class="videoWrapper">
+<iframe src="https://www.youtube.com/embed/AtKSumm0acM?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=AtKSumm0acM" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+
+<h3>Taurus</h3>
+
+<div class="videoWrapper">
+<iframe src="https://www.youtube.com/embed/eSAOGoF1w-o?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=eSAOGoF1w-o" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+
+<h3>Aries</h3>
+
+<div class="videoWrapper">
+<iframe src="https://www.youtube.com/embed/gmJMchgLh1Y?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=gmJMchgLh1Y" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+
+<h3>Pisces</h3>
+
+<div class="videoWrapper">
+<iframe src="https://www.youtube.com/embed/nH3DwioIKJU?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=nH3DwioIKJU" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+
+<h3>Aquarius</h3>
+
+<div class="videoWrapper">
+<iframe src="https://www.youtube.com/embed/gB9xc6ioiW8?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=gB9xc6ioiW8" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+
+<h3>Capricorn</h3>
+
+<div class="videoWrapper">
+<iframe src="https://www.youtube.com/embed/K2YDYp-Bci8?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=K2YDYp-Bci8" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+
+	<div class="text-center"><a href="#articles-index" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">ALL ARTICLES</a></div>
+	</article>
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#article-7" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="article-7">
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+	<article data-role="content" class="ui-body-a">
+	
+	<h1>Zodiac Signs Qualities - Positives & Negatives</h1>
+
+<h3>VIRGO – The Perfectionist</h3>
+<p>Dominant in relationships. Conservative. Always wants the last word. Argumentative. Worries. Very smart. Dislikes noise and chaos. Eager. Hardworking. Loyal. Beautiful. Easy to talk to. Hard to please. Harsh. Practical and very fussy. Often shy. Pessimistic.</p>
+
+<h3>SCORPIO – The Intense One</h3>
+<p>Very energetic. Intelligent. Can be jealous and/or possessive. Hardworking. Great kisser. Can become obsessive or secretive. Holds grudges. Attractive. Determined. Loves being in long relationships. Talkative. Romantic. Can be self-centered at times. Passionate and Emotional.</p>
+
+<h3>LIBRA – The Harmonizer</h3>
+<p>Nice to everyone they meet. Can’t make up their mind. Have own unique appeal. Creative, energetic, and very social. Hates to be alone. Peaceful, generous. Very loving and beautiful. Flirtatious. Give in too easily. Procrastinators. Very gullible.</p>
+
+<h3>ARIES – The Daredevil</h3>
+<p>Energetic. Adventurous and spontaneous. Confident and enthusiastic. Fun loving. Loves a challenge. EXTREMELY impatient. Sometimes selfish. Short fuse (Easily angered). Lively, passionate, and sharp wit. Outgoing. Lose interest quickly – easily bored. Egotistical. Courageous and assertive. Tends to be physical and athletic.</p>
+
+<h3>AQUARIUS – The Sweetheart</h3>
+<p>Optimistic and honest. Sweet personality. Very independent. Inventive and intelligent. Friendly and loyal. Can seem unemotional. Can be a bit rebellious. Very stubborn, but original and unique Attractive on the inside and out. Eccentric personality.</p>
+
+<h3>GEMINI – The Chatterbox</h3>
+<p>Smart and witty. Outgoing, very chatty, Lively, energetic. Adaptable but needs to express themselves. Argumentative and outspoken. Likes change. Versatile. Busy, sometimes nervous and tense. Gossips. May seem superficial or inconsistent, but is only changeable. Beautiful physically and mentally.</p>
+
+<h3>LEO – The Boss</h3>
+<p>Very organized. Need order in their lives – like being in control. Like boundaries. Tend to take over everything. Bossy. Like to help others. Social and outgoing. Extroverted. Generous, warm-hearted. Sensitive. Creative energy. Full of themselves. Loving. Doing the right thing is important to Leos. Attractive.</p>
+
+<h3>CANCER – The Protector</h3>
+<p>Moody, emotional. May be shy. Very loving and caring. Pretty/handsome. Excellent partners for life. Protective. Inventive and imaginative. Cautious. Touchy-feely kind of person. Needs love from others. Easily hurt, but sympathetic.</p>
+
+<h3>PISCES – The Dreamer</h3>
+<p>Generous, kind, and thoughtful. Very creative and imaginative. May become secretive and vague. Sensitive. Don’t like details Dreamy and unrealistic. Sympathetic and loving. Kind. Unselfish. Good kisser. Beautiful.</p>
+
+<h3>CAPRICORN – The Go-Getter</h3>
+<p>Patient and wise. Practical and rigid. Ambitious. Tends to be good-looking. Humorous and funny. Can be a bit shy and reserved. Often pessimists. Capricorns tend to act before they think and can be unfriendly at times. Hold grudges. Like competition. Get what they want.</p>
+
+<h3>TAURUS – The Enduring One</h3>
+<p>Charming but aggressive. Can come off as boring, but they are not. Hard workers. Warm-hearted. Strong, has endurance. Solid beings who are stable and secure in their ways. Not looking for shortcuts. Take pride in their beauty. Patient and reliable. Make great friends and give good advice. Loving and kind. Loves hard – passionate. Express themselves emotionally. Prone to ferocious temper-tantrums. Determined. Indulge themselves often. Very generous.</p>
+
+<h3>SAGITTARIUS – The Happy-Go-Lucky One</h3>
+<p>Good-natured optimist. Doesn’t want to grow up (Peter Pan Syndrome). Indulges self. Boastful. Likes luxuries and gambling. Social and outgoing. Doesn’t like responsibilities. Often fantasizes. Impatient. Fun to be around. Having lots of friends. Flirtatious. Doesn’t like rules. Sometimes hypocritical. Dislikes being confined – tight spaces or even tight clothes. Doesn’t like being doubted. Beautiful inside and out.</p>
+
+	<div class="text-center"><a href="#articles-index" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">ALL ARTICLES</a></div>
+	</article>
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#article-8" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="article-8">
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+	<article data-role="content" class="ui-body-a">
+	
+	<h1>Zodiac Temper Meter</h1>
+
+<p>Lets have a comparison on how your zodiac sign would have impact on you in angry mood or how different zodiacs react when they are angry.</p>
+
+<h3>ARIES</h3>
+<p>Nothing seems to ruffle you more than a lack of discipline, disloyalty and decorum.But Arians are also known to go into a rage very easily when challenged. Those of you who have been on the receiving end of the Aries temper know that if not calmed down they can even get violent. But one thing is certain if the opponent remains calm and does not react to their outburst, Arians cool down very fast.They are also the first to apologize, which makes them easier to forgive.</p>
+
+<h3>TAURUS</h3>
+<p>You are generally quiet and have control over your emotions. It is difficult to predict what will upset you, so when you do lose your cool, people don’t know how to react. Your temper is like that of a raging bull, and anyone trying to pacify you will be the first one to get a verbal bashing. You generally get upset when you are cornered or when people accuse you of doing something wrong. You also hate being reminded about stakes you’ve made in the past. You also have the potential to be terribly vindictive if rubbed the wrong way.</p>
+
+<h3>GEMINI</h3>
+<p>You are recognised by your cheerful disposition and your jovial nature is not easily susceptible to anger. In fact, you are the best person to have around when there is an ugly scene at a party you can bring the warring factions together quite diplomatically. But when you lose your cool,you yell and scream and will not listen to reason. You must have the last word in a wordy duel. Your capacity to argue aggressively is matched only by your seductive c harm.</p>
+
+<h3>CANCER</h3>
+<p>Considering how charming, caring, and kind you are, you dislike unpleasant scenes, much less creating one yourself. You have great tolerance and rarely get provoked into losing your temper. If someone is unreasonable or trying to create trouble, you are more likely to walk away quietly. But that does not mean you do not have a temper. When angry, in your effort to control your emotions, you tremble, your hands get sweaty, and etimes you fumble for words. Tears roll down your eyes easily and the opponent is touched by your innocence and will seek an apology immediately.</p>
+
+<h3>LEO</h3>
+<p>If anyone has total control over their emotions, it is you. But then,you can be described as stiff, cold and uncaring. You are known to lack spontaneity but you really don’t care about opinions. You don’t like 2 create scenes and will never accept invitations to a party where you suspectthe presence of an unruly lot. But your very presence seems challenging to some and they take vicarious pleasure in your disquiet. When angry you can use very critical language. A dressing-down can humiliate your opponent, causing a strain between both of you forever.</p>
+
+<h3>VIRGO</h3>
+<p>Most of you are gentle and have full control over your emotions, but those of you given to temper tantrums can certainly get violent. When see thing with rage, you yell and shout and tend to break things lying close at hand. You can even harm yourself by banging your hands on a glass top table or wall. You should never get into any argument, for you are a sore loser. You feel that others are trying to persecute you and don’t quite respect your opinions. When hurt, you can also hold grudges forever.</p>
+
+<h3>LIBRA</h3>
+<p>Did someone say that you are the charmers of the zodiac? Well, it’strue. Few have ever seen you ruffled or angry. You are very conscious of your image, and you believe that anger distorts your face and personality.You also think u r above things like anger. But wait before you get into self-congratulatory mood. Your family or those very close to you know u better. You have an unmatched temper amongst all the zodiac signs,and what makes it worse is your capacity to justify it.</p>
+
+<h3>SCORPIO</h3>
+<p>Of course you don’t lose your cool. But your very demeanor (manner) projects haughtiness (arrogance, pride), pride and grand disdain (disregard) for lesser mortals (humans). Others are often found saying that anger sits on your nose, and you are raring to give your peace of mind to the first person who tries to act funny with you. You are selective in the choice of your friends, and have a low tolerance for the superfluous (extra) types. Your tongue-lashing (attack) is generally in a soft hissing tone, for when you scream your voice tends to get shrill and loud, and you do hate drawing attention to yourself! When upset, you are angrier with yourself for having shown weakness, for the last thing that Scorpio wants to show is being out of control.</p>
+
+<h3>SAGITTARIUS</h3>
+<p>You are insensible and generally have complete no control over your emotions. You do get angry quickly and others marvel at your anger levels even when provoked. Actually, you get tongue-tied when angry and you will remove your anger waiting for the other person to calm down. Then you will reason with your opponent and convince the other person in a very gentle manner that the whole thing was just his mistake . You’re also likely to totally sever ties with someone when you’re upset with them.</p>
+
+<h3>CAPRICORN</h3>
+<p>Few will believe that a hardcore practical and materialistic person like you is capable of sensitivity and genuine emotions. You project a hard exterior but are actually very sensitive, a trait you successfully hide from others. You can be seething with anger but will not betray your feelings.But then there are times that even you cannot control your temper. Under such circumstances you can shout and scream, more with frustration at the situation than with anger at any particular person. Your outbursts can shockothers and can make them feel guilty too.</p>
+
+<h3>AQUARIUS</h3>
+<p>You are noble and kind and dislike losing control over your emotions. It is very rare for you to get angry. You are also the pacifier in situations that involve arguments. It is always your endeavor to be perfect and socially correct in your behaviour and attitude, but if misunderstood and slighted you can give in to an angry outburst. You will shout and scream and then walk out from the scene. You cannot easily forget the situation and will be bitter about it for a long time.</p>
+
+<h3>PISCES</h3>
+<p>The only thing that can be said about you dreamers is that you appear even more attractive when angry. You are very sensitive to others feelings,so you rarely hurt them. But when others tend to hurt you, then things take a nasty turn. You will yell and use harsh words, and feel inclined to shake everything and everyone up. Your creative imagery is at its best when angry, and you tend to get pretty dramatic. When upset, you refuse to listen to reason and wish to be left alone. But once you calm down, you repent your tantrums and seek forgiveness. So nobody can be upset with you for too long.</p>
+	
+
+	<div class="text-center"><a href="#articles-index" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">ALL ARTICLES</a></div>
+	</article>
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#article-9" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="article-9">
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+	<article data-role="content" class="ui-body-a">
+	
+	<h1>After Sex, Reaction of Different Zodiac Signs</h1>
+
+<p>This is a comparison between different zodiacs in a very particular way. How a person under specific zodiac would react after having sex?</p>
+
+<h3>Aries</h3>
+<p>I am hungry.</p>
+
+<h3>Taurus</h3>
+<p>Lets do it again.</p>
+
+<h3>Geminie</h3>
+<p>This position sucks, lets try a different one.</p>
+
+<h3>Cancer</h3>
+<p>Lets get married.</p>
+
+<h3>Leo</h3>
+<p>Wasn’t i fantastic.</p>
+
+<h3>Virgo</h3>
+<p>I need to wash the bedsheet.</p>
+
+<h3>Libra</h3>
+<p>I liked it if u liked it.</p>
+
+<h3>Scorpio</h3>
+<p>Perhaps I should untie you.</p>
+
+<h3>Sagittarius</h3>
+<p>Dont call me, I will call you.</p>
+
+<h3>Capricorn</h3>
+<p>Do you have a business card.</p>
+
+<h3>Aquarius</h3>
+<p>Now lets try without clothes.</p>
+
+<h3>Pisces</h3>
+<p>What was your name?</p>
+
+
+	
+	<div class="text-center"><a href="#articles-index" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">ALL ARTICLES</a></div>
+	</article>
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#article-10" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="article-10">
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+	<article data-role="content" class="ui-body-a">
+	
+	<h1>The Way Different Zodiac Sign Say Sorry</h1>
+
+<p>The way people apologize and their style of saying sorry depends a lot on their personality and zodiac traits. No wonder Leo embarrass you when they say sorry while Aries will actually annoy you with their apology..</p>
+
+<h3>Aries</h3>
+
+<p>For starters, Arians think they are so sweet,they could not have possibly said or done things that need an apology. So in the unlikely possibility of them actually going down their knees to apologise, it will be a simple sorry.Nothing less, nothing more.</p>
+
+<h3>Taurus</h3>
+<p>They are so scared to face others when they make a mistake that by the time they resurface to tender an apology, the damage is done. So Taurans end up making foes out of friends because of their laxity in apologizing.</p>
+
+<h3>Gemini</h3>
+<p>Geminis think they are infallible and therefore will never really apologise for anything. But once they realize, they prefer to act as if nothing happened, and behave normally with people who have a problem rather than remind others of the incident by tendering an apology.</p>
+
+<h3>Cancer</h3>
+<p>Cancerians will make you feel sorry for demanding one when they make a mistake. They are the legendary characters that burn hands and slash their fingers! in order to display the quantum of their repentance. Their repentance is dangerous.</p>
+
+<h3>Leo</h3>
+<p>Leos are a delightful bunch even when they are trying to make up for their follies. They will go down their knees, buy flowers, put up sorry posters.. do everything colorful to flatter you and make up for their mistakes. In fact it’s fun to induce them to make a mistake and let them apologize for it.</p>
+
+<h3>Virgo</h3>
+<p>Virgos will first formally set aside a time and date and inform them what they want to tell you. Then they will mentally prepare themselves to talk out the same things. They will finally draft the script and read out whatever they want to. In short, even their heartfelt apologies sound like well-drafted scripts.</p>
+
+<h3>Libra</h3>
+<p>They are very vocal once they realize their folly. They never ever hesitate to come clean and admit their mistakes. In fact, they will go out of their way to convince you about how genuinely sorry they are.</p>
+
+<h3>Scorpio</h3>
+<p>Scorpios are formal and think that tendering an apology is more of a formality. So instead of just saying sorry, they will send a formal mail or send a card, whatever it takes to avoid direct confrontation.</p>
+
+<h3>Sagittarius</h3>
+<p>Sagittarians don’t believe in being sorry or apologizing. For them, it is human to err and therefore saying sorry is just redundant. Interestingly, even if others make mistakes, they are pretty cool and don’t expect much from them.</p>
+
+<h3>Capricorn</h3>
+<p>They can’t take a simple sorry. They need reasons,explanations, written letters and the works to get elicit an ‘ok, you may go now’ phrase. They are hard to please and even harder to appease.</p>
+
+<h3>Aquarius</h3>
+<p>They are sweet, genuine and innovative when they think they are wrong and need to undo the damage.Aquarians are easy on their mistakes and don’t take too much time to do their sorrying.</p>
+
+<h3>Pisces</h3>
+<p>Pisceans don’t easily give in because they believe that everything is about perspective. So if somebody thinks they made a mistake! , it’s because they have a wonky perspective. Pisceans and apologies? No chance!!!</p>
+
+
+	<div class="text-center"><a href="#articles-index" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">ALL ARTICLES</a></div>
+	</article>
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#article-11" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="article-11">
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+	<article data-role="content" class="ui-body-a">
+	
+	<h1>Zodiac Quotes</h1>
+
+	<p>Here are quotes that best describe your zodiac sign.</p>
+
+<h3>Aries</h3>
+<blockquote>I am the master of my fate. I am the captain of my soul.
+<br>
+― William Ernest Henley
+</blockquote>
+
+<h3>Taurus</h3>
+<blockquote>That which does not kill you makes you stronger.
+<br>
+― Friedrich Nietzsche
+</blockquote>
+
+<h3>Gemini</h3>
+<blockquote>A day without laughter is a day wasted.
+<br>
+― Charlie Chaplin
+</blockquote>
+
+<h3>Cancer</h3>
+<blockquote>In the end, only three things matter: how much you loved, how gently you lived, and how gracefully you let go of things not meant for you.
+<br>
+― Buddha
+</blockquote>
+
+<h3>Leo</h3>
+<blockquote>Your love makes me strong, Your hate makes me unstoppable.
+<br>
+― Cristiano Ronaldo
+</blockquote>
+
+<h3>Virgo</h3>
+<blockquote>You have not lived today until you have done something for someone who can never repay you.
+<br>
+― John Bunyan
+</blockquote>
+
+<h3>Libra</h3>
+<blockquote>When you stop expecting people to be perfect, you can like them for who they are.
+<br>
+― Donald Miller
+</blockquote>
+
+<h3>Scorpio</h3>
+<blockquote>Being the richest man in the cemetery doesn’t matter to me. Going to bed at night saying we’ve done something wonderful…that’s what matters to me.
+<br>
+― Steve Jobs
+</blockquote>
+
+<h3>Sagittarius</h3>
+<blockquote>Travel: as much as you can, as far as you can, as long as you can. Life’s not meant to be lived in one place.
+<br>
+― Unknown
+</blockquote>
+
+<h3>Capricorn</h3>
+<blockquote>You were given life; it is your duty (and also your entitlement as a human being) to find something beautiful within life, no matter how slight.
+<br>
+― Elizabeth Gilbert
+</blockquote>
+
+<h3>Aquarius</h3>
+<blockquote>Our prime purpose in this life is to help others. And if you can’t help them, at least don’t hurt them.
+<br>
+― Dalai Lama
+</blockquote>
+
+<h3>Pisces</h3>
+<blockquote>The greatest thing you’ll ever learn is just to love, and be loved in return.
+<br>
+― Moulin Rouge
+</blockquote>
+
+
+	<div class="text-center"><a href="#articles-index" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">ALL ARTICLES</a></div>
+	</article>
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				<li><a href="#articles-index" data-icon="forward" data-transition="slide">NEXT</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="aries" class="zodiac-detail">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+
+<div class="text-center">
+	<img src="images/aries.png">
+	<h1>ARIES</h1>
+	<h3>21 MARCH TO 20 APRIL</h3>
+</div>
+
+<strong>Element:</strong> Fire<br>
+<strong>Quality:</strong> Cardinal<br>
+<strong>Color:</strong> Red<br>
+<strong>Day:</strong> Tuesday<br>
+<strong>Ruler:</strong> Mars<br>
+<strong>Birthstone</strong>: Diamond<br>
+<strong>Compatibility:</strong> Libra, Leo, Sagittarius<br>
+<strong>Lucky Numbers:</strong> 1, 8, 17<br>
+<strong>Lucky Flower:</strong> Milk Thistle, Tulip, Honeysuckle<br>
+<strong>Strengths:</strong> Courageous, determined, confident, enthusiastic, optimistic, honest, passionate<br>
+<strong>Weaknesses:</strong> Impatient, moody, short-tempered, impulsive, aggressive<br>
+<strong>Likes:</strong> Comfortable clothes, taking on leadership roles, physical challenges, individual sports<br>
+<strong>Dislikes:</strong> Inactivity, delays, work that does not use one's talents<br>
+
+<p>As the first sign in the zodiac, the presence of Aries always marks the beginning of something energetic and turbulent. They are continuously looking for dynamic, speed and competition, always being the first in everything - from work to social gatherings. Thanks to its ruling planet Mars and the fact it belongs to the element of Fire (just like Leo and Sagittarius), Aries is one of the most active zodiac signs. It is in their nature to take action, sometimes before they think about it well.</p>
+
+<p>The Sun in such high dignity gives them excellent organizational skills, so you'll rarely meet an Aries who isn't capable of finishing several things at once, often before lunch break! Their challenges show when they get impatient, aggressive and vent anger pointing it to other people. Strong personalities born under this sign have a task to fight for their goals, embracing togetherness and teamwork through this incarnation.</p>
+
+<p>Aries rules the head and leads with the head, often literally walking head first, leaning forwards for speed and focus. Its representatives are naturally brave and rarely afraid of trial and risk. They possess youthful strength and energy, regardless of their age and quickly perform any given tasks.</p>
+
+<p>Aries - the Flying Ram Guided by the story of the Golden Fleece, an Aries is ready to be the hero of the day, fly away and carry many endangered, powerless people on their back. The power of the ram is carried on his back, for he is the gold itself, shiny and attractive to those ready for betrayal. The story of glory that isn't easy to carry is in these two horns, and if this animal doesn't get shorn, allowing change and giving someone a warm sweater, they won't have much to receive from the world. Each Aries has a task to share their position, power, gold, or physical strength with other people willingly, or the energy will be stopped in its natural flow, fear will take over, and the process of giving and receiving will hold balance at zero.</p>
+
+<div class="text-center"><a href="#detail-1" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">BACK TO ALL SIGNS</a></div>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#detail-1" data-icon="grid" data-transition="fade">ALL ZODIACS</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="taurus" class="zodiac-detail">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+
+<div class="text-center">
+	<img src="images/taurus.png">
+	<h1>TAURUS</h1>
+	<h3>21 APRIL TO 21 MAY</h3>
+</div>
+
+<strong>Element:</strong> Earth<br>
+<strong>Quality:</strong> Fixed<br>
+<strong>Color:</strong> Green, Pink<br>
+<strong>Day:</strong> Friday, Monday<br>
+<strong>Ruler:</strong> Venus<br>
+<strong>Birthstone</strong>: Emerald<br>
+<strong>Compatibility:</strong> Scorpio, Cancer<br>
+<strong>Lucky Numbers:</strong> 2, 6, 9, 12, 24<br>
+<strong>Lucky Flower:</strong> Rose, Poppy, Foxglove<br>
+<strong>Strengths:</strong> Reliable, patient, practical, devoted, responsible, stable<br>
+<strong>Weaknesses:</strong> Stubborn, possessive, uncompromising<br>
+<strong>Likes:</strong> Gardening, cooking, music, romance, high quality clothes, working with hands<br>
+<strong>Dislikes:</strong> Sudden changes, complications, insecurity of any kind, synthetic fabrics<br>
+
+<p>Practical and well-grounded, Taurus is the sign that harvests the fruits of labor. They feel the need to always be surrounded by love and beauty, turned to the material world, hedonism, and physical pleasures. People born with their Sun in Taurus are sensual and tactile, considering touch and taste the most important of all senses. Stable and conservative, this is one of the most reliable signs of the zodiac, ready to endure and stick to their choices until they reach the point of personal satisfaction.</p>
+
+<p>Taurus is an Earth sign, just like Virgo and Capricorn, and has the ability to see things from a grounded, practical and realistic perspective. They find it easy to make money and stay on same projects for years, or until they are completed. What we often see as stubbornness can be interpreted as commitment, and their ability to complete tasks whatever it takes is uncanny. This makes them excellent employees, great long-term friends and partners, always being there for people they love. Earthly note makes them overprotective, conservative, or materialistic at times, with views of the world founded on their love of money and wealth.</p>
+
+<p>The ruler of Taurus is Venus, the planet of love, attraction, beauty, satisfaction, creativity and gratitude. This tender nature will make Taurus an excellent cook, gardener, lover, and artist. They are loyal and don't like sudden changes, criticism or the chase of guilt people are often prone to, being somewhat dependable on other people and emotions they seem to be unable to let go of. Still, no matter their potential emotional challenge, these individuals have the ability to bring a practical voice of reason in any chaotic and unhealthy situation.</p>
+
+<p>Taurus – the Wandering Bull Being the one who betrayed their best friend, goddess Hera herself, this is an unfortunate being that has to wander the Earth in order to find freedom. As if something was always poking them behind their back, reminding them of happiness that once was, stinging and pushing forwards, they close up in their own worlds, lonely and separated from their core. To find love, a Taurus has to travel the world, change perspective or make a shift in their entire belief system and their system of values.</p>
+
+<div class="text-center"><a href="#detail-1" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">BACK TO ALL SIGNS</a></div>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#detail-1" data-icon="grid" data-transition="fade">ALL ZODIACS</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="gemini" class="zodiac-detail">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+
+<div class="text-center">
+	<img src="images/gemini.png">
+	<h1>GEMINI</h1>
+	<h3>22 MAY TO 22 JUNE</h3>
+</div>
+
+<strong>Element:</strong> Air<br>
+<strong>Quality:</strong> Mutable<br>
+<strong>Color:</strong> Light-Green, Yellow<br>
+<strong>Day:</strong> Wednesday<br>
+<strong>Ruler:</strong> Mercury<br>
+<strong>Birthstone</strong>: Pearl<br>
+<strong>Compatibility:</strong> Sagittarius, Aquarius<br>
+<strong>Lucky Numbers:</strong> 5, 7, 14, 23<br>
+<strong>Lucky Flower:</strong> Lavender, Myrtle, Lily<br>
+<strong>Strengths:</strong> Gentle, affectionate, curious, adaptable, ability to learn quickly and exchange ideas<br>
+<strong>Weaknesses:</strong> Nervous, inconsistent, indecisive<br>
+<strong>Likes:</strong> Music, books, magazines, chats with nearly anyone, short trips around the town<br>
+<strong>Dislikes:</strong> Being alone, being confined, repetition and routine<br>
+
+<p>Expressive and quick-witted, Gemini represents two different personalities in one and you will never be sure which one you will face. They are sociable, communicative and ready for fun, with a tendency to suddenly get serious, thoughtful and restless. They are fascinated with the world itself, extremely curious, with a constant feeling that there is not enough time to experience everything they want to see.</p>
+
+<p>The sign of Gemini belongs to the element of Air, accompanying Libra and Aquarius, and this connects it to all aspects of the mind. It is ruled by Mercury, the planet that represents communication, writing, and movement. People born under this Sun sign often have a feeling that their other half is missing, so they are forever seeking new friends, mentors, colleagues and people to talk to.</p>
+
+<p>Gemini's changeable and open mind makes them excellent artists, especially writers and journalists, and their skills and flexibility make them shine in trade, driving and team sports. This is a versatile, inquisitive, fun loving sign, born with a wish to experience everything there is out there, in the world. This makes their character inspiring, and never boring.</p>
+
+<p>Gemini - the Caring Twins There is so much childish innocence in the nature of Gemini, telling their tale of brotherhood, love between best friends and relatives who are entirely different by character, circumstances, physical appearance or upbringing. They are in this world to mend differences and make them feel right, ready to give their life for a brother or a friend. Gemini Love and Sex Fun and always ready for an intellectual challenge, Gemini sees love first through communication and verbal contact, and find it as important as physical contact with their partner. When these two combine, obstacles all seem to fade. Inquisitive and always ready to flirt, a Gemini could spend a lot of time with different lovers until they find the right one who is able to match their intellect and energy. They need excitement, variety and passion, and when they find the right person, a lover, a friend and someone to talk to combined into one, they will be faithful and determined to always treasure their heart.</p>
+
+<div class="text-center"><a href="#detail-1" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">BACK TO ALL SIGNS</a></div>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#detail-1" data-icon="grid" data-transition="fade">ALL ZODIACS</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="cancer" class="zodiac-detail">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+
+<div class="text-center">
+	<img src="images/cancer.png">
+	<h1>CANCER</h1>
+	<h3>23 JUNE TO 23 JULY</h3>
+</div>
+
+<strong>Element:</strong> Water<br>
+<strong>Quality:</strong> Cardinal<br>
+<strong>Color:</strong> White<br>
+<strong>Day:</strong> Monday, Thursday<br>
+<strong>Ruler:</strong> Moon<br>
+<strong>Birthstone</strong>: Ruby<br>
+<strong>Compatibility:</strong> Capricorn, Taurus<br>
+<strong>Lucky Numbers:</strong> 2, 3, 15, 20<br>
+<strong>Lucky Flower:</strong> Jasmine, Lily, Evening Primrose<br>
+<strong>Strengths:</strong> Tenacious, highly imaginative, loyal, emotional, sympathetic, persuasive<br>
+<strong>Weaknesses:</strong> Moody, pessimistic, suspicious, manipulative, insecure<br>
+<strong>Likes:</strong> Art, home-based hobbies, relaxing near or in water, helping loved ones, a good meal with friends<br>
+<strong>Dislikes:</strong> Strangers, any criticism of Mom, revealing of personal life<br>
+
+<p>Deeply intuitive and sentimental, Cancer can be one of the most challenging zodiac signs to get to know. They are very emotional and sensitive, and care deeply about matters of the family and their home. Cancer is sympathetic and attached to people they keep close. Those born with their Sun in Cancer are very loyal and able to empathize with other people's pain and suffering.</p>
+
+<p>The sign of Cancer belongs to the element of Water, just like Scorpio and Pisces. Guided by emotion and their heart, they could have a hard time blending into the world around them. Being ruled by the Moon, phases of the lunar cycle deepen their internal mysteries and create fleeting emotional patterns that are beyond their control. As children, they don't have enough coping and defensive mechanisms for the outer world, and have to be approached with care and understanding, for that is what they give in return.</p>
+
+<p>Lack of patience or even love will manifest through mood swings later in life, and even selfishness, self-pity or manipulation. They are quick to help others, just as they are quick to avoid conflict, and rarely benefit from close combat of any kind, always choosing to hit someone stronger, bigger, or more powerful than they imagined. When at peace with their life choices, Cancer representatives will be happy and content to be surrounded by a loving family and harmony in their home.</p>
+
+<p>Cancer - the Brave Crab Sent to this Earth by something they believe in, only to mess with someone bigger than they are, this isn't an animal aware of their strength. Patriotism can make them endanger their own wellbeing, fighting for someone else's cause, as if others can become their higher power. The Crab knows where they're going, but this is often in a wrong direction, at least until they learn their lessons and start relying solely on themselves.</p>
+
+<div class="text-center"><a href="#detail-1" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">BACK TO ALL SIGNS</a></div>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#detail-1" data-icon="grid" data-transition="fade">ALL ZODIACS</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="leo" class="zodiac-detail">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+
+<div class="text-center">
+	<img src="images/leo.png">
+	<h1>LEO</h1>
+	<h3>24 JULY TO 23 AUGUST</h3>
+</div>
+
+<strong>Element:</strong> Fire<br>
+<strong>Quality:</strong> Fixed<br>
+<strong>Color:</strong> Gold, Yellow, Orange<br>
+<strong>Day:</strong> Sunday<br>
+<strong>Ruler:</strong> Sun<br>
+<strong>Birthstone</strong>: Peridot<br>
+<strong>Compatibility:</strong> Aquarius, Gemini<br>
+<strong>Lucky Numbers:</strong> 1, 3, 10, 19<br>
+<strong>Lucky Flower:</strong> Sunflower, Dahlia, Passion Flower<br>
+<strong>Strengths:</strong> Creative, passionate, generous, warm-hearted, cheerful, humorous<br>
+<strong>Weaknesses:</strong> Arrogant, stubborn, self-centered, lazy, inflexible<br>
+<strong>Likes:</strong> Theater, taking holidays, being admired, expensive things, bright colors, fun with friends<br>
+<strong>Dislikes:</strong> Being ignored, facing difficult reality, not being treated like a king or queen<br>
+
+<p>People born under the sign of Leo are natural born leaders. They are dramatic, creative, self-confident, dominant and extremely difficult to resist, able to achieve anything they want to in any area of life they commit to. There is a specific strength to a Leo and their "king of the jungle" status. Leo often has many friends for they are generous and loyal. Self-confident and attractive, this is a Sun sign capable of uniting different groups of people and leading them as one towards a shared cause, and their healthy sense of humor makes collaboration with other people even easier.</p>
+
+<p>Leo belongs to the element of Fire, just like Aries and Sagittarius. This makes them warmhearted, in love with life, trying to laugh and have a good time. Able to use their mind to solve even the most difficult problems, they will easily take initiative in resolving various complicated situations. Ruled by the Sun, Leo worships this fiery entity in the sky, quite literally as well as metaphorically. They are in search for self-awareness and in constant growth of ego. Aware of their desires and personality, they can easily ask for everything they need, but could just as easily unconsciously neglect the needs of other people in their chase for personal gain or status. When a Leo representative becomes too fond and attached to their achievements and the way other people see them, they become an easy target, ready to be taken down.</p>
+
+<p>Leo - the Lion in the Cave The story of the Lion always speaks of bravery. This is an animal fearless and impossible to challenge, hurt or destroy, their only weaknesses being fear and aggression towards those they confront. Living in a cave, a Lion always needs to have one, nesting and finding comfort in hard times. However, they should never stay there for long. With their head high, they have to face others with dignity and respect, never raising a voice, a hand, or a weapon, bravely walking through the forest they rule.</p>
+
+<div class="text-center"><a href="#detail-1" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">BACK TO ALL SIGNS</a></div>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#detail-1" data-icon="grid" data-transition="fade">ALL ZODIACS</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="virgo" class="zodiac-detail">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+
+<div class="text-center">
+	<img src="images/virgo.png">
+	<h1>VIRGO</h1>
+	<h3>24 AUGUST TO 23 SEPTEMBER</h3>
+</div>
+
+<strong>Element:</strong> Earth<br>
+<strong>Quality:</strong> Mutable<br>
+<strong>Color:</strong> Grey, Beige, Pale-Yellow<br>
+<strong>Day:</strong> Wednesday<br>
+<strong>Ruler:</strong> Mercury<br>
+<strong>Birthstone</strong>: Sapphire<br>
+<strong>Compatibility:</strong> Pisces, Cancer<br>
+<strong>Lucky Numbers:</strong> 5, 14, 15, 23, 32<br>
+<strong>Lucky Flower:</strong> Iris, Morning Glory, Chrysanthemum<br>
+<strong>Strengths:</strong> Loyal, analytical, kind, hardworking, practical<br>
+<strong>Weaknesses:</strong> Shyness, worry, overly critical of self and others, all work and no play<br>
+<strong>Likes:</strong> Animals, healthy food, books, nature, cleanliness<br>
+<strong>Dislikes:</strong> Rudeness, asking for help, taking center stage<br>
+
+<p>Virgos are always paying attention to the smallest details and their deep sense of humanity makes them one of the most careful signs of the zodiac. Their methodical approach to life ensures that nothing is left to chance, and although they are often tender, their heart might be closed for the outer world. This is a sign often misunderstood, not because they lack the ability to express, but because they won’t accept their feelings as valid, true, or even relevant when opposed to reason. The symbolism behind the name speaks well of their nature, born with a feeling they are experiencing everything for the first time.</p>
+
+<p>Virgo is an Earth sign, fitting perfectly between Taurus and Capricorn. This will lead to a strong character, but one that prefers conservative, well-organized things and a lot of practicality in their everyday life. These individuals have an organized life, and even when they let go to chaos, their goals and dreams still have strictly defined borders in their mind. Constantly worried that they missed a detail that will be impossible to fix, they can get stuck in details, becoming overly critical and concerned about matters that nobody else seems to care much about.</p>
+
+<p>Since Mercury is the ruling planet of this sign, its representatives have a well-developed sense of speech and writing, as well as all other forms of communication. Many Virgos may choose to pursue a career as writers, journalists, and typists, but their need to serve others makes them feel good as caregivers, on a clear mission to help.</p>
+
+<p>Virgo – the Disappointed Goddess Seeking goodness in humankind is the story of Virgo, and disappointment seems to be inevitable from their point of view. The first time they came from their cloud and jumped onto planet Earth, it felt like their mission is to use their existence for good, discovering ways of justice and purity in other people. Once they fail to find it too many times, Virgos will pull away, get lost, turn to substance abuse, or simply separate from other people to sit on the bench, criticize and judge.</p>
+
+<div class="text-center"><a href="#detail-1" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">BACK TO ALL SIGNS</a></div>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#detail-1" data-icon="grid" data-transition="fade">ALL ZODIACS</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="libra" class="zodiac-detail">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+
+<div class="text-center">
+	<img src="images/law.png">
+	<h1>LIBRA</h1>
+	<h3>24 SEPTEMBER TO 23 OCTOBER</h3>
+</div>
+
+<strong>Element:</strong> Air<br>
+<strong>Quality:</strong> Cardinal<br>
+<strong>Color:</strong> Pink, Green<br>
+<strong>Day:</strong> Friday<br>
+<strong>Ruler:</strong> Venus<br>
+<strong>Birthstone</strong>: Opal<br>
+<strong>Compatibility:</strong> Aries, Sagittarius<br>
+<strong>Lucky Numbers:</strong> 4, 6, 13, 15, 24<br>
+<strong>Lucky Flower:</strong> Narcissus, Magnolia, Bluebells<br>
+<strong>Strengths:</strong> Cooperative,diplomatic, gracious, fair-minded, social<br>
+<strong>Weaknesses:</strong> Indecisive, avoids confrontations, will carry a grudge, self-pity<br>
+<strong>Likes:</strong> Harmony, gentleness, sharing with others, the outdoors<br>
+<strong>Dislikes:</strong> Violence, injustice, loudmouths, conformity<br>
+
+<p>People born under the sign of Libra are peaceful, fair, and they hate being alone. Partnership is very important for them, as their mirror and someone giving them the ability to be the mirror themselves. These individuals are fascinated by balance and symmetry, they are in a constant chase for justice and equality, realizing through life that the only thing that should be truly important to themselves in their own inner core of personality. This is someone ready to do nearly anything to avoid conflict, keeping the peace whenever possible</p>
+
+<p>The sign of Libra is an Air sign, set between Gemini and Aquarius, giving these individuals constant mental stimuli, strong intellect and a keen mind. They will be inspired by good books, insurmountable discussions and people who have a lot to say. Each Libra representative has to be careful when talking to other people, for when they are forced to decide about something that is coming their way, or to choose sides, they suddenly realize that they might be in the wrong place and surrounded by wrong people. No partner should make them forget that they have their own opinion.</p>
+
+<p>Planet ruling the sign of Libra is Venus, making these people great lovers but also fond of expensive, material things. Their lives need to be enriched by music, art, and beautiful places they get a chance to visit.</p>
+
+<p>Libra – The Measure of Our Souls The shortest myth of them all seems to present a good analogy to the shortest constellation in the sky, you might even say that it is non-existent, presented by the pliers of Scorpio. Libra is one dot of balance in the sea of different extremes, manifested only through the fifteenth degree of this magnificent sign, an object among animals and people. There is something awfully insecure about Libra, as if they were unsure which plate to burden next, aware that things pass and teach us to be careful around other people. Whatever we do in our lifetimes, only serves to point the way for our Souls towards that “higher power” to finally measure our existence. Telling us where we went wrong or what we did right, Libras unconsciously teach us that true liberation hides in lightness.</p>
+
+<div class="text-center"><a href="#detail-1" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">BACK TO ALL SIGNS</a></div>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#detail-1" data-icon="grid" data-transition="fade">ALL ZODIACS</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="scorpio" class="zodiac-detail">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+
+<div class="text-center">
+	<img src="images/scorpio.png">
+	<h1>SCORPIO</h1>
+	<h3>24 OCTOBER TO 22 NOVEMBER</h3>
+</div>
+
+<strong>Element:</strong> Water<br>
+<strong>Quality:</strong> Fixed<br>
+<strong>Color:</strong> Scarlet, Red, Rust<br>
+<strong>Day:</strong> Tuesday<br>
+<strong>Ruler:</strong> Pluto, Mars<br>
+<strong>Birthstone</strong>: Topaz<br>
+<strong>Compatibility:</strong> Taurus, Cancer<br>
+<strong>Lucky Numbers:</strong> 8, 11, 18, 22<br>
+<strong>Lucky Flower:</strong> Hibiscus, Angelica, Neroli<br>
+<strong>Strengths:</strong> Resourceful, brave, passionate, stubborn, a true friend<br>
+<strong>Weaknesses:</strong> Distrusting, jealous, secretive, violent<br>
+<strong>Likes:</strong> Truth, facts, being right, longtime friends, teasing, a grand passion<br>
+<strong>Dislikes:</strong> Dishonesty, revealing secrets, passive people<br>
+
+<p>Scorpio-born are passionate and assertive people. They are determined and decisive, and will research until they find out the truth. Scorpio is a great leader, always aware of the situation and also features prominently in resourcefulness.</p>
+
+<p>Scorpio is a Water sign and lives to experience and express emotions. Although emotions are very important for Scorpio, they manifest them differently than other water signs. In any case, you can be sure that the Scorpio will keep your secrets, whatever they may be.</p>
+
+<p>Pluto is the planet of transformation and regeneration, and also the ruler of this zodiac sign. Scorpios are known by their calm and cool behavior, and by their mysterious appearance. People often say that Scorpio-born are fierce, probably because they understand very well the rules of the universe. Some Scorpio-born can look older than they actually are. They are excellent leaders because they are very dedicated to what they do. Scorpios hate dishonesty and they can be very jealous and suspicious, so they need to learn how to adapt more easily to different human behaviors. Scorpios are brave and therefore they have a lot of friends.</p>
+
+<div class="text-center"><a href="#detail-1" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">BACK TO ALL SIGNS</a></div>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#detail-1" data-icon="grid" data-transition="fade">ALL ZODIACS</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="sagittarius" class="zodiac-detail">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+
+<div class="text-center">
+	<img src="images/centaur.png">
+	<h1>SAGITTARIUS</h1>
+	<h3>23 NOVEMBER TO 20 DECEMBER</h3>
+</div>
+
+<strong>Element:</strong> Fire<br>
+<strong>Quality:</strong> Mutable<br>
+<strong>Color:</strong> Blue<br>
+<strong>Day:</strong> Thursday<br>
+<strong>Ruler:</strong> Jupiter<br>
+<strong>Birthstone</strong>: Turquoise<br>
+<strong>Compatibility:</strong> Gemini, Aries<br>
+<strong>Lucky Numbers:</strong> 3, 7, 9, 12, 21<br>
+<strong>Lucky Flower:</strong> Dandelion, Carnation, Peony<br>
+<strong>Strengths:</strong> Generous, idealistic, great sense of humor<br>
+<strong>Weaknesses:</strong> Promises more than can deliver, very impatient, will say anything no matter how undiplomatic<br>
+<strong>Likes:</strong> Freedom, travel, philosophy, being outdoors<br>
+<strong>Dislikes:</strong> Clingy people, being constrained, off-the-wall theories, details<br>
+
+<p>Curious and energetic, Sagittarius is one of the biggest travelers among all zodiac signs. Their open mind and philosophical view motivates them to wander around the world in search of the meaning of life.</p>
+
+<p>Sagittarius is extrovert, optimistic and enthusiastic, and likes changes. Sagittarius-born are able to transform their thoughts into concrete actions and they will do anything to achieve their goals.</p>
+
+<p>Like the other fire signs, Sagittarius needs to be constantly in touch with the world to experience as much as possible. The ruling planet of Sagittarius is Jupiter, the largest planet of the zodiac. Their enthusiasm has no bounds, and therefore people born under the Sagittarius sign possess a great sense of humor and an intense curiosity.</p>
+
+<p>Freedom is their greatest treasure, because only then they can freely travel and explore different cultures and philosophies. Because of their honesty, Sagittarius-born are often impatient and tactless when they need to say or do something, so it's important to learn to express themselves in a tolerant and socially acceptable way.</p>
+
+<div class="text-center"><a href="#detail-1" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">BACK TO ALL SIGNS</a></div>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#detail-1" data-icon="grid" data-transition="fade">ALL ZODIACS</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="capricorn" class="zodiac-detail">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+
+<div class="text-center">
+	<img src="images/capricorn.png">
+	<h1>CAPRICORN</h1>
+	<h3>21 DECEMBER TO 19 JANUARY</h3>
+</div>
+
+<strong>Element:</strong> Earth<br>
+<strong>Quality:</strong> Cardinal<br>
+<strong>Color:</strong> Brown, Black<br>
+<strong>Day:</strong> Saturday<br>
+<strong>Ruler:</strong> Saturn<br>
+<strong>Birthstone</strong>: Garnet<br>
+<strong>Compatibility:</strong> Taurus, Cancer<br>
+<strong>Lucky Numbers:</strong> 4, 8, 13, 22<br>
+<strong>Lucky Flower:</strong> Snapdragon, Cyclamen, Daisy<br>
+<strong>Strengths:</strong> Responsible, disciplined, self-control, good managers<br>
+<strong>Weaknesses:</strong> Know-it-all, unforgiving, condescending, expecting the worst<br>
+<strong>Likes:</strong> Family, tradition, music, understated status, quality craftsmanship<br>
+<strong>Dislikes:</strong> Almost everything at some point<br>
+
+<p>Capricorn is a sign that represents time and responsibility, and its representatives are traditional and often very serious by nature. These individuals possess an inner state of independence that enables significant progress both in their personal and professional lives. They are masters of self-control and have the ability to lead the way, make solid and realistic plans, and manage many people who work for them at any time. They will learn from their mistakes and get to the top based solely on their experience and expertise.</p>
+
+<p>Belonging to the element of Earth , like Taurus and Virgo, this is the last sign in the trio of practicality and grounding. Not only do they focus on the material world, but they have the ability to use the most out of it. Unfortunately, this element also makes them stiff and sometimes too stubborn to move from one perspective or point in a relationship. They have a hard time accepting differences of other people that are too far from their character, and out of fear might try to impose their traditional values aggressively.</p>
+
+<p>Saturn is the ruling planet of Capricorn, and this planet represents restrictions of all kinds. Its influence makes these people practical and responsible, but also cold, distant and unforgiving, prone to the feeling of guilt and turned to the past. They need to learn to forgive in order to make their own life lighter and more positive.</p>
+
+<p>Capricorn – the Goat of Fear A goat with the tail of a fish is created to face fear and create panic. It is the sign of decisions made to be protected from monsters in our minds, lives, and immediate physical surrounding. Always ready to transform into something that scares those scary things off, Capricorn speaks of each natural chain reaction of fear, where one scary thing leads to many others, rising up as defensive mechanisms that only make things worse. Immersed in their secrecy, they face the world just as they are – brave enough to never run away, but constantly afraid of their inner monsters.</p>
+
+<div class="text-center"><a href="#detail-1" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">BACK TO ALL SIGNS</a></div>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#detail-1" data-icon="grid" data-transition="fade">ALL ZODIACS</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="aquarius" class="zodiac-detail">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+
+<div class="text-center">
+	<img src="images/aquarius.png">
+	<h1>AQUARIUS</h1>
+	<h3>20 January to 18 February</h3>
+</div>
+
+<strong>Element:</strong> Air<br>
+<strong>Quality:</strong> Fixed<br>
+<strong>Color:</strong> Light-Blue, Silver<br>
+<strong>Day:</strong> Saturday<br>
+<strong>Ruler:</strong> Uranus, Saturn<br>
+<strong>Birthstone</strong>: Amethyst<br>
+<strong>Compatibility:</strong> Leo, Sagittarius<br>
+<strong>Lucky Numbers:</strong> 4, 7, 11, 22, 29<br>
+<strong>Lucky Flower:</strong> Trillium, Lemon Verbena, Hyacinth<br>
+<strong>Strengths:</strong> Progressive, original, independent, humanitarian<br>
+<strong>Weaknesses:</strong> Runs from emotional expression, temperamental, uncompromising, aloof<br>
+<strong>Likes:</strong> Fun with friends, helping others, fighting for causes, intellectual conversation, a good listener<br>
+<strong>Dislikes:</strong> Limitations, broken promises, being lonely, dull or boring situations, people who disagree with them<br>
+
+<p>Aquarius-born are shy and quiet , but on the other hand they can be eccentric and energetic. However, in both cases, they are deep thinkers and highly intellectual people who love helping others. They are able to see without prejudice, on both sides, which makes them people who can easily solve problems.</p>
+
+<p>Although they can easily adapt to the energy that surrounds them, Aquarius-born have a deep need to be some time alone and away from everything, in order to restore power. People born under the Aquarius sign, look at the world as a place full of possibilities.</p>
+
+<p>Aquarius is an air sign, and as such, uses his mind at every opportunity. If there is no mental stimulation, they are bored and lack a motivation to achieve the best result.</p>
+
+<p>The ruling planet of Aquarius, Uranus has a timid, abrupt and sometimes aggressive nature, but it also gives Aquarius visionary quality. They are capable of perceiving the future and they know exactly what they want to be doing five or ten years from now.</p>
+
+<p>Uranus also gave them the power of quick and easy transformation, so they are known as thinkers, progressives and humanists. They feel good in a group or a community, so they constantly strive to be surrounded by other people.</p>
+
+<p>The biggest problem for Aquarius-born is the feeling that they are limited or constrained. Because of the desire for freedom and equality for all, they will always strive to ensure freedom of speech and movement. Aquarius-born have a reputation for being cold and insensitive persons, but this is just their defence mechanism against premature intimacy. They need to learn to trust others and express their emotions in a healthy way.</p>
+
+<div class="text-center"><a href="#detail-1" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">BACK TO ALL SIGNS</a></div>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#detail-1" data-icon="grid" data-transition="fade">ALL ZODIACS</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="pisces" class="zodiac-detail">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+
+<div class="text-center">
+	<img src="images/pisces.png">
+	<h1>PISCES</h1>
+	<h3>19 FEBRUARY TO 20 MARCH</h3>
+</div>
+
+<strong>Element:</strong> Water<br>
+<strong>Quality:</strong> Mutable<br>
+<strong>Color:</strong> Mauve, Lilac, Purple, Violet, Sea green<br>
+<strong>Day:</strong> Thursday<br>
+<strong>Ruler:</strong> Neptune, Jupiter<br>
+<strong>Birthstone</strong>: Aquamarine<br>
+<strong>Compatibility:</strong> Virgo, Taurus<br>
+<strong>Lucky Numbers:</strong> 3, 9, 12, 15, 18, 24<br>
+<strong>Lucky Flower:</strong> Mullein, Water Lily, Violet<br>
+<strong>Strengths:</strong> Compassionate, artistic, intuitive, gentle, wise, musical<br>
+<strong>Weaknesses:</strong> Fearful, overly trusting, sad, desire to escape reality, can be a victim or a martyr<br>
+<strong>Likes:</strong> Being alone, sleeping, music, romance, visual media, swimming, spiritual themes<br>
+<strong>Dislikes:</strong> Know-it-all, being criticized, the past coming back to haunt, cruelty of any kind<br>
+
+<p>Pisces are very friendly, so they often find themselves in a company of very different people. Pisces are selfless, they are always willing to help others, without hoping to get anything back.</p>
+
+<p>Pisces is a Water sign and as such this zodiac sign is characterized by empathy and expressed emotional capacity.</p>
+
+<p>Their ruling planet is Neptune, so Pisces are more intuitive than others and have an artistic talent. Neptune is connected to music, so Pisces reveal music preferences in the earliest stages of life. They are generous, compassionate and extremely faithful and caring.</p>
+
+<p>People born under the Pisces sign have an intuitive understanding of the life cycle and thus achieve the best emotional relationship with other beings.</p>
+
+<p>Pisces-born are known by their wisdom, but under the influence of Uranus, Pisces sometimes can take the role of a martyr, in order to catch the attention. Pisces are never judgmental and always forgiving. They are also known to be most tolerant of all the zodiac signs.</p>
+
+
+<div class="text-center"><a href="#detail-1" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">BACK TO ALL SIGNS</a></div>
+	
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a data-rel="back" data-icon="back" data-transition="slide" data-direction="reverse">BACK</a></li>
+				<li><a href="#detail-1" data-icon="grid" data-transition="fade">ALL ZODIACS</a></li>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+				
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--INFO //////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="info">
+
+	<header data-role="header" data-position="fixed" data-theme="b" class="">
+		<h1>ZODIAC BOOKLET</h1>
+		<a data-icon="home" data-iconpos="notext" href="#home" data-transition="fade">HOME</a>
+	</header>
+
+	<article data-role="content" class="ui-body-a">
+	<h1>About</h1>
+	<p>This app will not tell you your day will be good or bad. This app is a booklet containing general information about zodiac signs and such interesting stuff. This is a quick reference if you want to learn about different zodiac signs quickly.</p>
+	<p>This app is presented as is and all information in this app is for educational and entertainment purpose only. It should not be taken seriously in any way. The information may not be correct. You can not divide whole human population of planet earth into 12 groups and label with specific characteristics, right? So take it as entertainment and read through several interesting stuff about zodiac signs but don't take it seriously.</p>
+	<p>
+	<span class="text-muted">App Author:</span> M. Javed Khalil Hiroshi<br>
+	<span class="text-muted">Author's Zodiac Sign:</span> Sagittarius<br>
+	<span class="text-muted">Homepage:</span> <a href="https://javedkhalil.com" rel="external" target="_blank">javedkhalil.com</a><br>
+	<span class="text-muted">Facebook:</span> <a href="https://www.facebook.com/decentdeveloper" rel="external" target="_blank">https://www.facebook.com/decentdeveloper</a><br>
+	<span class="text-muted">Email:</span> <a href="mailto:info@javedkhalil.com" rel="external" target="_blank">info@javedkhalil.com</a><br><br>
+	Suggestions and references are welcome. This app will be available on play store. If in any case not, you can contact me and request the latest version or check out my website to download it later.
+	</p>
+	<p class="donations">
+		<span class="text-muted">DONATIONS:</span><br>
+		<span class="text-muted">BTC:</span> <span><a href="https://www.blockchain.com/btc/address/1Lwf9PsZLXb9bumUoqh9YXwsrZ1x9c2Pwi" target="_blank" rel="external">1Lwf9PsZLXb9bumUoqh9YXwsrZ1x9c2Pwi</a></span><br>
+		<span class="text-muted">ETH:</span> <span><a href="https://etherscan.io/address/0xfc079db5eAc7bdAa4a4A41E04ACa3909D4535A12" target="_blank" rel="external">0xfc079db5eAc7bdAa4a4A41E04ACa3909D4535A12</a></span><br>
+		<span class="text-muted">LTC:</span> <span><a href="https://live.blockcypher.com/ltc/address/LdipdV4q8cJaPhtwauR4zdULvD2yx4RaQh/" target="_blank" rel="external">LdipdV4q8cJaPhtwauR4zdULvD2yx4RaQh</a></span><br><br>
+		Donations keep this app ads free, clean and will help in further development.
+	</p>
+
+	<p>Or if you want to build your website, web app or mobile app, we are a team of best web & app developers and work with all technologies out there. Get in touch to get your app developed.</p>
+
+	<p>
+		CREDITS<br>
+		Images used in this app have been taken from search engine and icons from flaticon.com
+	</p>
+
+	</article>
+	
+	<footer data-role="footer" data-position="fixed" data-theme="b">
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#home" data-transition="fade" data-icon="home">HOME</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+</div>
+<!--INFO //////////////////////////////////////////////////////////////////////////////////////-->
+
+<script>
+
+</script>
+
+
+
+</body>
+</html>
