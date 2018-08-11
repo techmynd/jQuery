@@ -172,5 +172,29 @@ select option {
 		width: 100%;
 		margin: 20px 0;
 	}
+
+	.ui-listview a {
+		padding: 20px !important;
+    	text-align: center !important;
+	}
+
+	.ui-listview img {
+		position: static !important;
+		border-radius: 4px;
+		margin: 0 auto;
+	}
+
+	.ui-listview h1 {
+		white-space: normal !important;
+		text-align: center !important;
+	}
+
+	.ui-listview .ui-btn-icon-right:after {
+		display: none;
+	}
+
+	.ui-header h1, .ui-header .ui-title {font-size: 12px;}
+
+
 }
 
