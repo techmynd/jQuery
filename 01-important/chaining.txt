@@ -1,0 +1,14 @@
+$('box1').fadeTo(1000, 0.2);
+$('box2').fadeTo(1000, 0.5);
+$('box3').fadeTo(1000, 0.8);
+
+
+$('box1').fadeTo(1000, 0.2);
+$('box2').delay(1000).fadeTo(1000, 0.5);
+$('box3').delay(1000).fadeTo(1000, 0.8);
+
+
+$('box3').delay(1000).fadeTo(1000, 0.8).fadeOut().delay(500).fadeIn();
+
+
+

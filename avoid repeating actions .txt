@@ -1,0 +1,24 @@
+use stop()
+
+this will prevent multiple actions and wait for the first action to complete and then it will
+let other action trigger once first one is complete
+
+var varname = $('.box');
+
+varname.mouseenter(function(){
+  $(this).stop().fadeTo(1000, 0.5);
+});
+varname.mouseleave(function(){
+  $(this).stop().fadeTo(1000, 1);
+});
+
+=============
+
+or use handler
+use hover >> this is short version of mouseenter and leave
+
+varname.hover(function(){
+  $(this).stop().fadeTo(1000, 0.5);
+}, (function(){
+  $(this).stop().fadeTo(1000, 1);
+});

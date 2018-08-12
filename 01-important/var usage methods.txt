@@ -1,0 +1,20 @@
+var varname = $('.box');
+
+$(varname).click(function(){
+  $(this).fadeTo(1000, 0.5);
+});
+
+or
+
+varname.click(function(){
+  $(this).fadeTo(1000, 0.5);
+});
+
+or 
+
+varname.mouseenter(function(){
+  $(this).fadeTo(1000, 0.5);
+});
+varname.mouseleave(function(){
+  $(this).fadeTo(1000, 1);
+});

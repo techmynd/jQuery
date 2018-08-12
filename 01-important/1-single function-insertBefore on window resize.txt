@@ -1,0 +1,57 @@
+jQuery(document).ready(function(){
+	shiftColsLeftRight();
+});
+
+
+jQuery(window).resize(function() {
+    shiftColsLeftRight();
+});
+
+
+
+function shiftColsLeftRight() {
+    if( jQuery(window).width() <= 991 ) {
+        jQuery('.col-shift-left-js').insertBefore('.col-shift-right-js');
+    } else {
+        jQuery('.col-shift-right-js').insertBefore('.col-shift-left-js');
+
+    }
+}
+
+
+======================================================================================
+above code into this -- find each right side and move it left if screen size is small
+=====================================================================================
+
+
+function shiftColsLeftRight() {
+    if( jQuery(window).width() <= 991 ) {
+
+        jQuery('.col-shift-left-js').each(function() {
+            jQuery(this).parent('.row').find('.col-shift-right-js').insertAfter(this);
+        });  
+
+    } else {
+
+        jQuery('.col-shift-right-js').each(function() {
+            jQuery(this).parent('.row').find('.col-shift-left-js').insertAfter(this);
+        });  
+    }
+}
+
+
+
+
+==================================
+
+
+
+<div class="row rowOne">
+<div class="col-md-6 col-shift-right-js">...</div>
+<div class="col-md-6 col-shift-left-js">...</div>
+</div>
+
+<div class="row rowTwo">
+<div class="col-md-6 col-shift-right-js">...</div>
+<div class="col-md-6 col-shift-left-js">...</div>
+</div>

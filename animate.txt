@@ -1,0 +1,12 @@
+$('.box').animate({ 'margin-left': '+=200px' });
+$('.box').animate({ 'margin-left': '+=200px' }, 1000 );
+
+$('.box').animate({ 'margin-left': '+=200px', 'opacity': '0.5' }, 1000 );
+
+if you dont want to use '' then you have to use camelcase in properties without -
+
+$('.box').animate({ marginLeft: '200px' });
+
+
+
+

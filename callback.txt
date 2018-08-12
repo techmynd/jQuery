@@ -1,0 +1,28 @@
+do something after an action has been performed
+
+$('box1').fadeTo(1000, 0.2);
+
+
+$('box1').fadeTo(1000, 0.2, function() { 
+
+  // animation done // now // do something else here
+
+});
+
+
+callback within call back to chain actions
+
+
+$('box1').fadeTo(1000, 0.2, function() { 
+
+  $('box2').fadeTo(1000, 0.2, function() { 
+  
+     $('box3').fadeTo(1000, 0.2, function() { 
+
+      // and then do something here
+
+     });	
+
+  });
+
+});

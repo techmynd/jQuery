@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <style>
+     h1, .text1, .text2 { opacity: 0; }
+    </style>
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3>Chaining and Call Backs</h3>
+        
+        <br>
+        <br>
+
+        <textarea class="form-control" rows="10">
+<script>
+$(document).ready(function(){
+
+// first do this
+$('h1').fadeTo(1000, 1, function() { 
+  // then do this
+  $('.text1').fadeTo(1000, 1, function() { 
+     // then do this
+     $('.text2').fadeTo(1000, 1, function() { 
+       // then do this
+       $('h1, .text1, .text2').animate({ color: '#ff6600' }, 2000);
+     });  
+  });
+});    
+  
+});
+</script>
+        </textarea>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        
+      
+          <h1>WELCOME</h1>
+          <h2>
+            <span class="text1">TO</span> 
+            <span class="text2">WEBSITE</span>
+          </h2>
+
+          <br><br>
+
+          color animate will work with jquery ui (css and js) not with standalone jquery. color .css() will work but for .animate( color: '#000') to work u need jquery ui.
+        
+
+  
+      </div>
+    </div>
+  </div>  
+
+  <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+$(document).ready(function(){
+  
+  // first do this
+  $('h1').fadeTo(1000, 1, function() { 
+    // then do this
+    $('.text1').fadeTo(1000, 1, function() { 
+       // then do this
+       $('.text2').fadeTo(1000, 1, function() { 
+         // then do this
+         $('h1, .text1, .text2').animate({ color: '#ff6600' }, 2000);
+       });  
+    });
+  });
+  
+});
+  </script>
+
+</body>
+</html>

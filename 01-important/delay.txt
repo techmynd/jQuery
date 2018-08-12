@@ -1,0 +1,4 @@
+$('button').click(function(){
+  $('.saved').slideDown().delay(1000).slideUp();
+});  
+

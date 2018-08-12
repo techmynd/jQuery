@@ -1,0 +1,11 @@
+fadeIn
+fadeOut
+fadeToggle
+fadeTo
+
+$('.box').fadeTo(1000, 0.5);
+$('.box').fadeIn(1000);
+$('.box').fadeOut(1000);
+$('.box').fadeToggle(1000);
+
+0.5 is opacity
