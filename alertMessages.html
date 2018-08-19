@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+    <style>
+      .alert {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 6px 15px;
+        border-radius: 4px;
+        display: none;
+      }
+    </style>
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Alert Messages</h3>
+        <p>Create a function that takes message and class and shows that message and adds the class to a div on clicking different links. Messages and classes are dynamic depending on which link was clicked.</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+      <div></div>
+        
+       <a href="#" class="no1">Something went wrong</a><br>
+       <a href="#" class="no2">Plese check it again</a><br>
+       <a href="#" class="yes">Success</a><br>
+  
+      </div>
+    </div>
+  </div>  
+
+  <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+
+  <div class="alert"></div>
+
+  <script>
+$(document).ready(function(){
+  
+  // function takes message and class name from click
+  function alertMsg(actualMsg, className) {
+ 
+      // if alert div has active class dont proceed
+      if( !$('.alert').hasClass("active") ) {
+
+          // if alert div dont have active class, proceed and add active class
+          $('.alert').addClass("active");
+
+          // process alert message
+          $('.alert').
+          removeClass("alert-danger alert-success alert-warning").
+          addClass(className).
+          fadeIn(100).
+          html(actualMsg).
+          delay(2000).
+          fadeOut(1000);
+
+          // after 4 seconds remove active class from alert and allow links click again
+          setTimeout(function(){
+            $('.alert').removeClass("active");
+          }, 3100);
+
+      }
+
+  }
+
+
+  // trigger alert 1
+  $('.no1').click(function(event){
+    event.preventDefault();
+    alertMsg("Something went wrong", "alert-danger");
+  });
+
+  // trigger alert 2
+  $('.no2').click(function(event){
+    event.preventDefault();
+    alertMsg("Please Check it again", "alert-warning");
+  });
+
+  // trigger alert 3
+  $('.yes').click(function(event){
+    event.preventDefault();
+    alertMsg("Success!", "alert-success");
+  });
+
+  
+
+});
+  </script>
+
+</body>
+</html>
