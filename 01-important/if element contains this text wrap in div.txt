@@ -1,0 +1,15 @@
+$(document).ready(function () {
+  breakLine();  
+});
+                  
+$(window).on('resize', function(){
+  breakLine();    
+});
+
+function breakLine() {
+  if( $(window).width() > 1201 || $(window).width() < 1873 ) {  
+    $(".my-element h3:contains('Essentials')").html(function(_, html) {
+       return html.replace(/(Essentials)/g, '<div class="line-break">$1</div>');
+    });
+  }  
+}
