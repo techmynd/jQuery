@@ -1,0 +1,32 @@
+done(function(){
+output();
+});
+
+above is same as
+
+done(output);
+
+==================
+
+$.ajax({
+method:'GET',
+url:'http://jsonplaceholder.typicode.com/posts/1',
+dataType:'json'
+})
+.done(output)
+.fail(failed)
+.always(always);
+}
+
+function output(data) {
+    console.log(data);
+}
+
+function failed() {
+    console.log("failed");
+}
+
+function always() {
+    console.log("okay");
+}
+
