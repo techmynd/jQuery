@@ -8,14 +8,20 @@ $(window).resize(function(){
 
 function footerStickyControl(){
 	// if navbar + pgwrap + footer height is smaller than total window height, make footer sticky
-	var body_height = $('body').height();
-	var navbar_height = $('.navbar').height();
-	var pgwrap_height = $('.pg-wrap').height();
-	var footer_height = $('.footer').height();
+	var body_height = parseInt($('body').innerHeight());
+	var navbar_height = parseInt($('.navbar').innerHeight());
+	var pgwrap_height = parseInt($('.pg-wrap').innerHeight());
+	var footer_height = parseInt($('.footer').innerHeight());
 	var total_height = navbar_height + pgwrap_height + footer_height;
 	if(total_height < body_height){
 		$('.footer').addClass('sticky');
 	} else {
 		$('.footer').removeClass('sticky');
 	}
+
+	//console.log("total height "+total_height);
+	//console.log("body height "+body_height);
 }
+
+// in this case, innerHeight() is better than height()
+
