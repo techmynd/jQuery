@@ -1,0 +1,5 @@
+// smooth load
+$(window).on('load', function(){
+   $('body').fadeIn();
+
+});
