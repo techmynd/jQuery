@@ -1,0 +1,4 @@
+function alignCenterTagLineToTitle(){
+  var mainTitleWidth = $('.title').width();
+  $('.tagline').css({'min-width': mainTitleWidth+'px'});
+}
