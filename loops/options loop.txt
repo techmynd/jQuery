@@ -1,0 +1,7 @@
+ $(document).ready(function(){
+    var alphas = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+    for(var i=0; i < alphas.length; i++) {
+        $('select').append("<option value="+alphas[i]+">"+alphas[i]+"</option>");
+        $('.another-custom-select').append("<option value="+alphas[i]+">"+alphas[i]+"</option>");
+    }
+  });
