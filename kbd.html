@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keyboard Control</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+    .kbd-instructions {display: none;}
+    .kbd-ctrl {display: inline-block; margin: 0 auto;}
+/*switch button starts*/
+/*just change class and id for each button*/
+.switch {margin-top: 6px;}
+.cmn-toggle { position: absolute; margin-left: -9999px; visibility: hidden; }
+.cmn-toggle + label {display: block;position: relative;cursor: pointer;outline: none;user-select: none;}
+input.cmn-toggle-round + label {padding: 2px;width: 50px;height: 20px;background-color: #dddddd;border-radius: 60px;}
+input.cmn-toggle-round + label:before,
+input.cmn-toggle-round + label:after {
+  display: block;position: absolute;top: 1px;left: 1px;bottom: 1px;content: "";
+}
+input.cmn-toggle-round + label:before {right: 1px;background-color: #f1f1f1;border-radius: 60px;transition: background 0.4s;}
+input.cmn-toggle-round + label:after {
+  width: 20px;background-color: #fff;border-radius: 100%;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {background-color: #8ce196;}
+input.cmn-toggle-round:checked + label:after {margin-left: 27px;}
+/*switch button ends*/
+    </style>
+  </head>
+  <body>
+
+      <br><br>
+
+      <div class="container">
+ 
+        <div class="radio-wrap">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" checked>
+            Option 1
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios">
+            Option 2
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios">
+            Option 3
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios">
+            Option 4
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios">
+            Option 5
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios">
+            Option 6
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios">
+            Option 7
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios">
+            Option 8
+          </label>
+        </div>
+        </div>
+
+
+        <button class="btn btn-default back">Back</button>
+        <button class="btn btn-success next">Next</button>
+
+
+    </div>
+
+    <br><br>
+
+<div class="container">    
+    <div class="alert alert-info">
+        
+        <div class="text-center">
+            <div class="text-center">Keyboard Control <span class="txt-off-on">OFF</span></div>
+            <div class="switch kbd-ctrl">
+              <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+              <label for="cmn-toggle-1"></label>
+            </div>
+        </div>
+
+        <div class="kbd-instructions">
+            <div class="text-center">
+            Keyboard controls are ON<br>
+            Press <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> ... to <kbd>9</kbd> to check relevant option<br>
+            e.g. Pressing <kbd>2</kbd> from keyboard will select second option<br>
+            After selecting option, Press <kbd>Enter &#8629;</kbd> to go to next screen
+            </div>
+        </div>
+    
+    </div>
+</div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            $('.switch').click(function(){
+                if ($('#cmn-toggle-1').is(':checked')) {
+                    $('.kbd-instructions').show();
+                    $('.txt-off-on').text('ON');
+                } else {
+                    $('.kbd-instructions').hide();
+                    $('.txt-off-on').text('OFF');
+                }
+            });
+
+            // check which key is being pressed
+            /*
+            $(document).keydown(function(e) {
+                console.log(e.keyCode);
+            });
+            */
+            /*
+            $(document).keypress(function(e) {
+                console.log(e.keyCode);
+            });
+            */
+
+            // keydown vs keypress
+            // keydown and keyup talk about which key has been changed. 
+            // keypress tells which character that key represents.
+            // keypress not detecting right arrow key click so i will go with keydown
+            
+            // document.onkeydown = checkKey;
+            // document.onkeypress = checkKey;
+
+            // on right arrow key press, go next
+            // on other key press - select relevant radio
+            $(document).keydown(function(e) {
+
+                if ($('#cmn-toggle-1').is(':checked')) {
+
+                //function checkKey(e) {
+                    switch(e.which) {
+
+                        // case 39: // right
+                        // right arrow key behaves like tab sometimes and shifts control to the next element
+                        // so i am not using right arrow key for next click
+                        //case 32: // spacebar // not using spacebar - spacebar shifts page down
+                        case 13: // Enter
+                        $('.next').trigger("click");
+                        alert("next clicked");
+
+                        break;
+
+                        case 97: // 1
+                        case 49: // 1
+                        $('.radio-wrap .radio:nth-child(1) label').trigger("click");
+                        //$('.radio:nth-child(1) label').css("border","1px solid #ff6600");
+                        break;
+
+                        case 98: // 2
+                        case 50: // 2
+                        $('.radio-wrap .radio:nth-child(2) label').trigger("click");
+                        break;
+
+                        case 99: // 3
+                        case 51: // 3
+                        $('.radio-wrap .radio:nth-child(3) label').trigger("click");
+                        break;
+
+                        case 100: // 4
+                        case 52: // 4
+                        $('.radio-wrap .radio:nth-child(4) label').trigger("click");
+                        break;
+
+                        case 101: // 5
+                        case 53: // 5
+                        $('.radio-wrap .radio:nth-child(5) label').trigger("click");
+                        break;
+
+                        case 102: // 6
+                        case 54: // 6
+                        $('.radio-wrap .radio:nth-child(6) label').trigger("click");
+                        break;
+
+                        case 103: // 7
+                        case 55: // 7
+                        $('.radio-wrap .radio:nth-child(7) label').trigger("click");
+                        break;
+
+                        case 104: // 8
+                        case 56: // 8
+                        $('.radio-wrap .radio:nth-child(8) label').trigger("click");
+                        break;
+
+                        case 105: // 9
+                        case 57: // 9
+                        $('.radio-wrap .radio:nth-child(8) label').trigger("click");
+                        break;
+
+                        //case 37: // left
+                        //break;
+
+                        //case 38: // up
+                        //break;
+
+                        //case 40: // down
+                        //break;
+
+                        default: return; // exit this handler for other keys
+                    }
+                    e.preventDefault();
+                //} // function checkKey ends
+                }
+            });
+
+        }); // document ready ends
+
+    </script>
+
+  </body>
+</html>
