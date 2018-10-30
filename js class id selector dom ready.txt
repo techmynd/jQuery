@@ -1,0 +1,4 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+      var myElement = document.querySelector(".button");
+      myElement.style.backgroundColor = "#b0d1d9";
+});

@@ -1,0 +1,8 @@
+$('.words').keyup(function(){
+   // get length from eitor characters
+   
+var textFilter = $('.words').val();
+var filteredText = textFilter.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '');
+$('.words').val(filteredText);
+
+});
