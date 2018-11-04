@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery UI</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+
+<style type="text/css">
+    
+</style>    
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div id="main" style="width: 700px; height: 400px; border: 1px solid #000;">
+      <div class="sub1" style="background: red; width: 100px; height: 100px; display: inline-block; margin: 2px;"></div>
+      <div class="sub2" style="background: green; width: 100px; height: 100px; display: inline-block; margin: 2px;"></div>
+      <div class="sub3" style="background: orange; width: 100px; height: 100px; display: inline-block; margin: 2px;"><span class="x" style="color: #fff; padding: 4px; display: inline-block;">X</span></div>
+      <div class="sub4" style="background: grey; width: 100px; height: 100px; display: inline-block; margin: 2px;"></div>
+    </div>
+  </div>
+  
+  <br>
+  <br>
+ 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <script>
+$(document).ready(function(){
+  
+  $('.sub1').draggable({axis:"x", cursor:"grab"});
+  $('.sub2').draggable({axis:"y", cursor:"grab"});
+  $('.sub3').draggable({containment:"#main", cursor:"grab", handle:".x"});
+  $('.sub4').draggable({containment:"#main",axis:"x", cursor:"grab"});
+  
+});
+  </script>
+
+</body>
+</html>
