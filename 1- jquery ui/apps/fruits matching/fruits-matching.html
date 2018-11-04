@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fruits Matching Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+
+	<style>
+		#fruits, #droparea
+		{
+			float:left;
+			width:100%;
+			padding:50px;
+		}
+		#fruits div, #droparea div
+		{
+			width:130px;
+			height:130px;
+			border:4px solid black;
+			float:left;
+			margin:5px;
+			padding:5px;
+			border-radius:5px;
+			background: white;
+			text-align: center;
+			cursor:pointer;
+			font-size:25px;
+		}
+		#droparea div
+		{
+
+			line-height:130px; 
+		}
+		#fruits div img
+		{
+			width:100px;
+			height:100px;
+		}
+	</style>
+	
+</head>
+<body>
+	<div id="fruits"></div>
+	<div id="droparea"></div>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<script>
+		var score = 0;
+		var fruitsArr = ["images/apple.jpg",
+						 "images/kiwi.jpg",
+						 "images/pineapple.jpg",
+						 "images/watermelon.jpg",
+						 "images/orange.jpg",
+						 "images/strawberry.jpg",
+						 "images/banana.jpg"];
+		var namesArr = ["Apple", "Pineapple", "Orange", "Banana", "Strawberry", "Watermelon", "Kiwi"];
+		$(document).ready(function(){
+			shuffle(fruitsArr);
+			$.each(fruitsArr, function(index, value){
+				
+				// this is important
+				// we are removing images/ and .jpg from fruitArr item to get the value(text) of fruit
+				// remove 7 characters from left (images/)and 4 (.jpg) from right 
+				var fruit = value.slice(7,-4);
+
+				$("<div><img src=" + value + " /></div>")
+				.appendTo("#fruits")
+				.draggable({revert:true, scope:fruit});
+			});
+			shuffle(namesArr);
+			$.each(namesArr, function(index, value){
+				$("<div>" + value + "</div>")
+				.appendTo("#droparea")
+				.droppable({scope:value.toLowerCase(),
+					drop:function(event, ui){
+					$(ui.draggable).append($(this).text());
+					score++;
+					$(this).hide("puff", "fast");
+					
+					if (score == namesArr.length)
+					{
+						$("<div><p>Congratulations!!! Do you want to play again?</p></div>")
+						.dialog({modal:true,
+								buttons:[{text:"Yes",
+										 click:function(){
+										 window.location.reload();
+										}},
+										{text:"No",
+										click:function(){
+											$(this).dialog("close");
+										}}]
+						});
+					}
+				}});
+			});
+		});
+		
+		function shuffle(arr)
+		{
+			return arr.sort(function(){
+				return .5 - Math.random();
+			});
+		}
+	</script>
+
+</body>
+</html>

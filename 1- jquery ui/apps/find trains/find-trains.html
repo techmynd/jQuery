@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find Trains</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+
+
+<style>
+	#container, #table
+	{
+		float:left;
+		width:400px;
+		height:400px;
+		border:2px solid black;
+		border-radius:10px;
+		margin:70px;
+		padding:10px;
+		background: #6eb7d6;
+	}
+	#table
+	{
+		display: none;
+	}
+	h2{
+		text-align: center;
+		color:white;
+	}
+	label{
+		color:white;
+		padding:5px;
+		margin:5px;
+		font-size: 25px;
+	}
+	input
+	{
+		width:90%;
+		height:25px;
+		border-radius: 10px;
+		font-size: 25px;
+		padding:5px;
+		margin:5px;
+	}
+	#btnSearch
+	{
+		border-radius: 10px;
+	}
+	table
+	{
+		width:100%;
+		font-size: 25px;
+	}
+	th
+	{
+		border-bottom: 2px solid black;
+	}
+	td{
+		padding:5px;
+		text-align: center;
+	}
+	#result
+	{
+		margin:0px auto;
+	}
+	p{
+		font-size: 25px;
+	}
+</style>
+
+</head>
+<body>
+	<div id="container">
+		<h2>Find Trains</h2>
+		<label for="from">Leaving from:</label><br />
+		<input id="from" type="text" /><br /><br />
+		<label for="to">Going to:</label><br />
+		<input id="to" type="text" /><br /><br />
+		<label for="calendar">Date of travel:</label><br />
+		<input id="calendar" type="text" /><br /><br />
+		<button id="btnSearch">Search Trains</button>
+	</div>
+	<div id="table">
+		<div id="result"></div>
+	</div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+	var stations = [
+						{label:"Trivandrum", value:"TVN"},
+						{label:"Vellore", value:"VLR"},
+						{label:"Kottayam", value:"KYM"},
+						{label:"Hyderabad", value:"HDB"},	
+						{label:"Ernakulam", value:"ERK"},
+						{label:"Coimbatore", value:"CBR"},
+						{label:"Thrissur", value:"THR"},
+						{label:"Chennai", value:"CHN"},
+						{label:"Bangalore", value:"BNG"},
+						{label:"Palakkad", value:"PLD"},
+						{label:"Mangalore", value:"MNG"}						
+					];
+	var trains = [
+					{
+						name:"Venad Express",
+						number: 16153,
+						stops:["THR", "ERK", "KYM", "TVN"]
+					 },
+					 {
+						name:"Trivandrum Chennai Express",
+						number: 2017,
+						stops:["CHN", "CBR", "THR", "ERK", "TVN"]
+					 },
+					 {
+						name:"Coimbatore Express",
+						number: 80339,
+						stops:["CBR", "BNG", "PLD", "HDB", "KYM"]
+					 },
+					 {
+						name:"Mangalore Special",
+						number: 1832,
+						stops:["MNG", "VLR", "PLD", "BNG", "TVN"]
+					 },
+					 {
+						name:"Rajadhani Express",
+						number: 5686,
+						stops:["VLR", "PLD", "HDB", "CHN"]
+					 },
+					 {
+						name:"Triveni Special",
+						number: 9655,
+						stops:["THR", "PLD", "HDB", "CHN", "CBR"]
+					 },
+					 {
+						name:"Kalindi Express",
+						number: 125,
+						stops:["THR", "ERK", "KYM", "VLR", "MNG"]
+					 }
+				  ];
+	$(document).ready(function(){
+		$("#from, #to, #calendar").val("");
+		$("#btnSearch").click(function(){
+			var fromStation = $("#from").val().split(" - ")[1];
+			var toStation = $("#to").val().split(" - ")[1];
+			var trainsArr = [];
+			$.each(trains, function(index, value){
+				for(key in value)
+				{
+					if (key == "stops")
+					{
+						if (jQuery.inArray(fromStation, value[key]) != -1 &&
+							jQuery.inArray(toStation, value[key]) != -1)
+						{
+							trainsArr.push(value["number"]);
+							trainsArr.push(value["name"]);
+						}
+					}
+				}
+			});
+			var content;
+			if (trainsArr.length == 0)
+			{
+				content = "<p><b>Sorry!!! There is no train in this route!!!</b></p>";
+			}
+			else
+			{
+				content = "<table><tr><th>Train No:</th><th>Train Name:</th></tr>";
+				for( var j=0;j<trainsArr.length;)
+				{
+					var k = 1;
+					content += "<tr><td>" + trainsArr[j] + "</td><td>" + trainsArr[j+k] + "</td></tr>";
+					j = j + 2;
+				}
+				content += "</table>";
+			}
+			$("#result").html(content);
+			$("#table").css("display", "block");
+		});
+		$("#calendar").datepicker({dateFormat:"dd MM yy (DD)", minDate:new Date(), maxDate:"+2m"});
+		$("#btnSearch").button();
+		$("#from, #to").autocomplete({source:stations,
+		 select:function(event, ui){
+			$(this).val(ui.item.label + " - " + ui.item.value);
+			return false;
+		}});
+	});
+</script>
+
+</body>
+</html>

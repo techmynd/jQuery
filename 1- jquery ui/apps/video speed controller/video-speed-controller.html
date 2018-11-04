@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video Speed Controller</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+
+<style>
+	#container
+	{
+		width:500px;
+		height:450px;
+		border:2px solid purple;
+		margin:50px auto;
+	}
+	h2{
+		color:purple;
+		text-align: center;
+	}
+	#myVideo
+	{
+		margin-left:50px;
+		border:1px solid purple;
+	}
+	#ground
+	{
+		width: 307px;
+		height:79px;
+		background: url(background.gif) no-repeat;
+		margin:20px auto;
+		padding:20px 0 0 4px;
+	}
+	#speedSlider
+	{
+		width:289px;
+		height:29px;
+		left:4px;
+		top:4px;
+		background: url(slider.gif) no-repeat;
+		position:relative;
+		border:none;
+	}
+	#speedSlider .ui-slider-handle
+	{
+		background: url(handle.gif) no-repeat;
+		width: 24px;
+		height:26px;
+		top:1px;
+		border:none;
+	}
+</style>
+
+</head>
+<body>
+	<div id="container">
+		<h2>Video Speed Controller</h2>
+		<video id="myVideo" width="400" autoplay loop>
+			<source src="1.mp4" type="video/mp4" />
+		</video>
+		<div id="ground">
+			<div id="speedSlider"></div>
+		</div>
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <script>
+	$(document).ready(function(){
+		$("#speedSlider").slider({min:0, max:2, value:1, step:.01,
+		 change:function(event, ui){
+			$("#myVideo")[0].playbackRate = ui.value;
+		}});
+	});
+</script>
+
+
+</body>
+</html>
