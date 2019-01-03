@@ -1,0 +1,6 @@
+if($(".sidebar")[0]){
+
+}
+
+// before initializing any script / library use this
+
