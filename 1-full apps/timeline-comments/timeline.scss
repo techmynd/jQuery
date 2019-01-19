@@ -1,0 +1,378 @@
+
+.timeline-comments {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin: 20px 0;
+    > .title {
+        border-bottom: 1px solid #e0e1e5;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        h3 {
+            // Timeline
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .checkbox {
+            float: right;
+            label {
+                font-size: 13px;
+                cursor: pointer;
+                font-weight: 500;
+            }
+            input {
+                margin: 3px 4px 0 0;
+                float: left;
+            }
+        }
+    }
+
+    //////////////////////////////////////////
+    .timeline-area-wrap {
+        
+        position: relative;
+        z-index: 20;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            top: 0;
+            bottom: 0;
+            z-index: 10;
+            left: 38px;
+            background-color: #e2e3e7;
+            @media all and (max-width: 480px) {
+                left: 29px;
+            }
+        }
+
+        .new-comment {
+            z-index: 30;
+            position: relative;
+            .wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                }
+                .commenter-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 20px;
+
+                    @media all and (max-width: 480px) {
+                        padding: 0 10px;
+                    }
+
+                    .commenter {
+                        width: 38px;
+                        height: 38px;
+                        background-color: #f85f61;
+                        font-size: 12px;
+                        color: #fff;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: center;
+                        border: 1px solid #eee;
+                    }
+                }
+                .btn {  
+                    position: absolute;
+                    right: 4px;
+                    top: 5px;
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                    z-index: 10;
+                    padding: 4px 10px;
+                    font-size: 13px;
+                    border-radius: 3px;
+                    &:hover, &:focus {
+                        //background-color: #eee;
+                        outline: none;
+                        box-shadow: none;
+                        background-color: #d6e9c6;
+                        color: #3c763d;
+                    }
+                    @media all and (max-width: 480px) {
+                        right: 0;
+                        top: 45px;
+                    }
+                }
+                .form-control {
+                    padding-right: 70px;
+                    background-color: #fff;
+                    font-size: 14px; 
+                    border-radius: 3px;
+                    @media all and (max-width: 480px) {
+                        padding-right: 12px;
+                    }
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                        border-color: #999;
+                    }
+                }
+            }
+            .msg {
+                text-align: right;
+                font-size: 12px;
+                margin-top: 6px;
+                margin-right: 2px;
+                color: #666;
+                @media all and (max-width: 480px) {
+                    padding-left: 40px;
+                    margin-top: 40px;
+                }
+            }
+        }
+
+        .when {
+            margin-left: 60px;
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            @media all and (max-width: 480px) {
+                margin-left: 58px;
+            }
+        }
+        .comment-wrap {
+            z-index: 30;
+            position: relative;
+            margin-bottom: 20px;
+            .comment-block {
+                background-color: #fff;
+                border: 1px solid #ccc;
+                padding: 20px;
+                @media all and (max-width: 480px) {
+                    padding: 10px;
+                    //padding-bottom: 47px;
+                }
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start; 
+                justify-content: center;
+                border-radius: 3px;
+                .commenter-icon {
+                    display: flex;
+                    flex-direction: column;
+                    .commenter {
+                        width: 38px;
+                        height: 38px;
+                        background-color: #f85f61;
+                        color: #fff;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: center;
+                        border: 1px solid #eee;
+                        font-size: 12px;
+                    }
+                }
+                .comment-matter {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    padding-left: 20px;
+                    position: relative;
+                    @media all and (max-width: 480px) {
+                        padding-left: 10px;
+                    }
+                    .actions {
+                        position: absolute;
+                        right: -12px;
+                        top: -12px;
+                        font-size: 14px;
+                        display: inline-block;
+                        @media all and (max-width: 480px) {
+                            right: -4px;
+                            top: -2px;
+                        }
+                        .fa {
+                            cursor: pointer;
+                            opacity: 0.5;
+                            display: inline-block;
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                        .tick {
+                            color: #3c763d;
+                            display: none;
+                        }
+                    }
+                    .title {
+                        font-size: 14px;
+                        font-weight: 600;
+                        padding-right: 60px;
+                        text-transform: capitalize;
+                        span {
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: #666;
+                            display: inline-block;
+                            margin-left: 4px;
+                            @media all and (max-width: 480px) {
+                                display: block;
+                                margin-left: 0px;
+                                margin-bottom: 6px;
+                            }
+                        }
+                    }
+                    .comment-text {
+                        margin: 0;
+                        font-size: 12px;
+                    }
+                }
+                .comment-editor {
+                    display: none;
+                }
+                form {
+                    display: block;
+                    position: relative;
+                    margin-top: 6px;
+                    .btn {  
+                        position: absolute;
+                        right: 4px;
+                        top: 5px;
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                        z-index: 10;
+                        padding: 4px 10px;
+                        font-size: 13px;
+                        border-radius: 3px;
+                        &:hover, &:focus {
+                            background-color: #eee;
+                            outline: none;
+                            box-shadow: none;
+                        }
+                        @media all and (max-width: 480px) {
+                            right: 0;
+                            top: 45px;
+                        }
+                    }
+                    .btn-update-comment {
+                        &:hover {
+                            background-color: #d6e9c6;
+                            color: #3c763d;
+                        }
+                    }
+                    .btn.btn-cancel-comment {
+                        right: 60px;
+                        opacity: 0.7;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                    .old-comment-text {
+                        padding-right: 130px;
+                        background-color: #fff;
+                        font-size: 14px; 
+                        border-radius: 3px;
+                        @media all and (max-width: 480px) {
+                            padding-right: 12px;
+                            margin-bottom: 38px;
+                        }
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                            border-color: #999;
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .notification-block-wrap {
+            z-index: 30;
+            position: relative;
+            padding-top: 20px;
+            .notification-block {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                justify-content: center;
+                justify-items: center;
+                margin-bottom: 40px;
+                @media all and (max-width: 600px) {
+                    display: block;
+                }
+                .dot-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+                    @media all and (max-width: 600px) {
+                        display: block;
+                    }
+                    .dot {
+                        background-color: #117bd3;
+                        border-radius: 50%;
+                        width: 10px;
+                        height: 10px;
+                        margin: 0 35px 0 34px;
+                        @media all and (max-width: 480px) {
+                            margin: 0 35px 0 25px;
+                        }
+                    }
+                }
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    text-align: left;
+                    padding-top: 2px;
+                    @media all and (max-width: 600px) {
+                        display: block;
+                        padding-left: 78px;
+                        margin-top: -15px;
+                    }
+                    @media all and (max-width: 600px) {
+                        padding-left: 60px;
+                    }
+                    .hidden-details {
+                        display: none;
+                        margin-top: 10px;
+                    }
+                    .fa {
+                        cursor: pointer;
+                    }
+                }
+                .time {
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 100px;
+                    font-size: 12px;
+                    color: #666;
+                    text-align: right;
+                    @media all and (max-width: 600px) {
+                        display: block;
+                        margin-top: 10px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+    //////////////////////////////////////////
+
+    form {
+        display: block;
+    }
+
+}
+
+.dummy-comment {
+    display: none;
+}
+

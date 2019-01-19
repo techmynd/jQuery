@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timeline</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="timeline.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+        @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        body {
+            background-color: #f4f3ef;
+        }
+    </style>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+
+
+        <!--copy from here-->
+            <div class="timeline-comments">
+                <div class="title">
+                    <h3>Timeline</h3>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="show comments" id="">
+                            Show comments
+                        </label>
+                    </div>
+                </div>
+                <div class="timeline-area-wrap">
+                    
+                    <div class="new-comment">
+                        <div class="wrapper">
+                            <div class="commenter-wrap">
+                                <div class="commenter">
+                                    OD
+                                </div>
+                            </div>
+                            <form class="new-comment-form">
+                                <button class="btn">Post</button>
+                                <input class="form-control new-comment-text" rows="1" placeholder="Leave a comment...">
+                            </form>
+                        </div>
+                        <div class="msg">Only you are other staff can see comments</div>
+                    </div>
+
+                    <div class="all-comments-wrap">
+
+                        <div class="when">Today</div>
+
+                        <div class="new-comment-populate-area">
+                            <!--// populate new comments here -->
+                        </div>
+
+                        <div class="comment-wrap">
+                            <div class="comment-block">
+                                <div class="commenter-icon">
+                                    <div class="commenter">
+                                        OD
+                                    </div>
+                                </div>
+                                <div class="comment-matter">
+                                    <div class="actions">
+                                        <i class="fa fa-check fa-fw tick"></i>
+                                        <i class="fa fa-pencil fa-fw edit-comment"></i>
+                                        <i class="fa fa-trash-o fa-fw delete-comment"></i>
+                                    </div>
+                                    <div class="title">Owen De Veries <span>Just Now</span></div>
+                                    <p class="comment-text">This is just for testing purpose.</p>
+                                    <div class="comment-editor">
+                                        <form class="update-comment-form">
+                                            <button class="btn btn-update-comment">Save</button>
+                                            <button class="btn btn-cancel-comment">Cancel</button>
+                                            <input class="form-control old-comment-text" rows="1">
+                                        </form>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+
+                        <div class="comment-wrap">
+                            <div class="comment-block">
+                                <div class="commenter-icon">
+                                    <div class="commenter">
+                                        OD
+                                    </div>
+                                </div>
+                                <div class="comment-matter">
+                                    <div class="actions">
+                                        <i class="fa fa-check fa-fw tick"></i>
+                                        <i class="fa fa-pencil fa-fw edit-comment"></i>
+                                        <i class="fa fa-trash-o fa-fw delete-comment"></i>
+                                    </div>
+                                    <div class="title">Garey Simon <span>Just Now</span></div>
+                                    <p class="comment-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit ea veritatis quod dolor voluptatum reprehenderit voluptates, laboriosam voluptatem. Nisi quibusdam illum iusto excepturi itaque harum adipisci voluptatibus ullam dignissimos amet.</p>
+                                    <div class="comment-editor">
+                                        <form class="update-comment-form">
+                                            <button class="btn btn-update-comment">Save</button>
+                                            <button class="btn btn-cancel-comment">Cancel</button>
+                                            <input class="form-control old-comment-text" rows="1">
+                                        </form>
+                                    </div>
+                                </div>     
+                            </div>
+                        </div>
+
+                        <div class="comment-wrap">
+                            <div class="comment-block">
+                                <div class="commenter-icon">
+                                    <div class="commenter">
+                                        OD
+                                    </div>
+                                </div>
+                                <div class="comment-matter">
+                                    <div class="actions">
+                                        <i class="fa fa-check fa-fw tick"></i>
+                                        <i class="fa fa-pencil fa-fw edit-comment"></i>
+                                        <i class="fa fa-trash-o fa-fw delete-comment"></i>
+                                    </div>
+                                    <div class="title">Mark Weins <span>Just Now</span></div>
+                                    <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores neque dolor quam accusamus sapiente.</p>
+                                    <div class="comment-editor">
+                                        <form class="update-comment-form">
+                                            <button class="btn btn-update-comment">Save</button>
+                                            <button class="btn btn-cancel-comment">Cancel</button>
+                                            <input class="form-control old-comment-text" rows="1">
+                                        </form>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+
+                        <div class="when">Yesterday</div>
+
+                        <div class="comment-wrap">
+                            <div class="comment-block">
+                                <div class="commenter-icon">
+                                    <div class="commenter">
+                                        OD
+                                    </div>
+                                </div>
+                                <div class="comment-matter">
+                                    <div class="actions">
+                                        <i class="fa fa-check fa-fw tick"></i>
+                                        <i class="fa fa-pencil fa-fw edit-comment"></i>
+                                        <i class="fa fa-trash-o fa-fw delete-comment"></i>
+                                    </div>
+                                    <div class="title">Mark Weins <span>Just Now</span></div>
+                                    <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores neque dolor quam accusamus sapiente.</p>
+                                    <div class="comment-editor">
+                                        <form class="update-comment-form">
+                                            <button class="btn btn-update-comment">Save</button>
+                                            <button class="btn btn-cancel-comment">Cancel</button>
+                                            <input class="form-control old-comment-text" rows="1">
+                                        </form>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+
+                        <div class="comment-wrap">
+                            <div class="comment-block">
+                                <div class="commenter-icon">
+                                    <div class="commenter">
+                                        OD
+                                    </div>
+                                </div>
+                                <div class="comment-matter">
+                                    <div class="actions">
+                                        <i class="fa fa-check fa-fw tick"></i>
+                                        <i class="fa fa-pencil fa-fw edit-comment"></i>
+                                        <i class="fa fa-trash-o fa-fw delete-comment"></i>
+                                    </div>
+                                    <div class="title">Mark Weins <span>Just Now</span></div>
+                                    <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores neque dolor quam accusamus sapiente.</p>
+                                    <div class="comment-editor">
+                                        <form class="update-comment-form">
+                                            <button class="btn btn-update-comment">Save</button>
+                                            <button class="btn btn-cancel-comment">Cancel</button>
+                                            <input class="form-control old-comment-text" rows="1">
+                                        </form>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="notification-block-wrap">
+                        
+                        <div class="notification-block">
+                            <div class="dot-wrap">
+                                <div class="dot"></div>
+                            </div>
+                            <div class="text"><div class="inner">You archived this order.</div></div>
+                            <div class="time">4:39 am EST</div>
+                        </div>
+
+                        <div class="notification-block">
+                            <div class="dot-wrap">
+                                <div class="dot"></div>
+                            </div>
+                            <div class="text"><div class="inner">You archived this order. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magni necessitatibus optio totam! Itaque sequi odit iusto nisi, explicabo deleniti velit hic rerum, illum vitae, voluptatum perspiciatis sit dolores ipsum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti accusantium vel quaerat, maiores iste voluptates maxime mollitia autem consequuntur illo ad est doloremque ullam suscipit id ut placeat laborum. Optio?</div></div>
+                            <div class="time">4:39 am EST</div>
+                        </div>
+
+                        <div class="notification-block">
+                            <div class="dot-wrap">
+                                <div class="dot"></div>
+                            </div>
+                            <div class="text">
+                                <div class="inner">You archived this order. <i class="fa fa-caret-right fa-fw"></i>
+                                <div class="hidden-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique temporibus, soluta omnis reprehenderit recusandae quisquam dicta fugit ut veniam facilis qui molestias! Officiis, aut blanditiis molestiae non quaerat repellat officia.</div>
+                                </div>
+                            </div>
+                            <div class="time">4:39 am EST</div>
+                        </div>
+
+                        <div class="notification-block">
+                            <div class="dot-wrap">
+                                <div class="dot"></div>
+                            </div>
+                            <div class="text"><div class="inner">You archived this order. <i class="fa fa-caret-right fa-fw"></i>
+                                <div class="hidden-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique temporibus, soluta omnis reprehenderit recusandae quisquam dicta fugit ut veniam facilis qui molestias! Officiis, aut blanditiis molestiae non quaerat repellat officia.</div></div></div>
+                            <div class="time">4:39 am EST</div>
+                        </div>
+
+                        <div class="notification-block">
+                            <div class="dot-wrap">
+                                <div class="dot"></div>
+                            </div>
+                            <div class="text"><div class="inner">You archived this order. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magni necessitatibus optio totam! Itaque sequi odit iusto nisi, explicabo deleniti velit hic rerum, illum vitae, voluptatum perspiciatis sit dolores ipsum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti accusantium vel quaerat, maiores iste voluptates maxime mollitia autem consequuntur illo ad est doloremque ullam suscipit id ut placeat laborum. Optio?</div></div>
+                            <div class="time">4:39 am EST</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        <!--copy ends here-->
+
+
+
+
+        <!-- this is dummy comment thats hidden but loads on new comment posting-->    
+        <div class="dummy-comment">
+            <div class="comment-wrap">
+                <div class="comment-block">
+                    <div class="commenter-icon">
+                        <div class="commenter">
+                            OD
+                        </div>
+                    </div>
+                    <div class="comment-matter">
+                        <div class="actions">
+                            <i class="fa fa-check fa-fw tick"></i>
+                            <i class="fa fa-pencil fa-fw edit-comment"></i>
+                            <i class="fa fa-trash-o fa-fw delete-comment"></i>
+                        </div>
+                        <div class="title">Mark Weins <span>Just Now</span></div>
+                        <p class="comment-text"></p>
+                        <div class="comment-editor">
+                            <form class="update-comment-form">
+                                <button class="btn btn-update-comment">Save</button>
+                                <button class="btn btn-cancel-comment">Cancel</button>
+                                <input class="form-control old-comment-text" rows="1">
+                            </form>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+
+    </div><!--.container-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="custom.js"></script>
+
+  </body>
+</html>
