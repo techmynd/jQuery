@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Header shrink</title>
+    <link href="style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="header">
+        <div class="logo">
+            <a href=""><img src="logo.png" /></a>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="height: 2000px;">
+      not a perfect example // it has glitches
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      var scrollPos = 0;
+      $(window).scroll(function(){
+        var scrollPosNew = $(this).scrollTop();
+        
+        console.log(scrollPosNew);
+
+        var headerHeight = $('.header').height();
+        
+        if(scrollPosNew > scrollPos) {
+          if(headerHeight > 60) {
+            $('.header').css({"height": (headerHeight - scrollPosNew) + "px"});
+            console.log("is going down", headerHeight);
+          }
+        } else {
+          if(headerHeight < 150) {
+            $('.header').css({"height": (headerHeight + scrollPosNew) + "px"});
+            console.log("is going up", headerHeight);
+          }
+        }
+        scrollPos = scrollPosNew;
+
+      });
+    </script>
+  </body>
+</html>
