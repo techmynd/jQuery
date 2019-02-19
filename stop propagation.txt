@@ -1,0 +1,3 @@
+$('.dropdown-user').on('click', function(e){
+    e.stopPropagation();
+  });
