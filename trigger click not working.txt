@@ -1,0 +1,16 @@
+solution
+========
+
+function ghostLinkGo() {
+  $(".product-box .overlay, .product-box .product-image").click(function() {
+    $(this)
+      .closest(".product-box")
+      .find(".ghost-link")[0]
+      .click();
+    // console.log(
+    //   $(this)
+    //     .closest(".product-box")
+    //     .find(".ghost-link"),
+    // );
+  });
+}
